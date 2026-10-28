@@ -1,0 +1,46 @@
+{
+  "_id": "3255af48ac3d9a8a",
+  "name": "Diving Armor",
+  "type": "armor",
+  "img": "systems/sr2e/assets/item_icons/armor/armor-jacket.webp",
+  "system": {
+    "legality": "Legal",
+    "equipped": false,
+    "isLayered": false,
+    "ballistic": 4,
+    "impact": 2,
+    "concealability": 0,
+    "weight": 2,
+    "cost": 1750,
+    "availability": "5/48 hours",
+    "streetIndex": 1.25,
+    "notes": "Like regular armor but made of materials that don't absorb water, and streamlined so it doesn't impair swimming. Cyberpirates p.173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Diving Armor table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3255af48ac3d9a8a"
+}

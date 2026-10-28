@@ -1,0 +1,46 @@
+{
+  "_id": "18a97b1fc86afcd3",
+  "name": "JIM Diving Exoskeleton",
+  "type": "armor",
+  "img": "systems/sr2e/assets/item_icons/armor/full-heavy-armor.webp",
+  "system": {
+    "legality": "Legal",
+    "equipped": false,
+    "isLayered": false,
+    "ballistic": 6,
+    "impact": 6,
+    "concealability": 0,
+    "weight": 300,
+    "cost": 25000,
+    "availability": "6/14 days",
+    "streetIndex": 2,
+    "notes": "Plasteel exoskeleton pressurized to 1 atmosphere: dives to 600 m with no decompression risk, 20 hours of self-contained air. Armor Rating 6. The suit has Strength 7; each extra point (to a maximum of 10) costs +5,000¥. The wearer takes −2 Quickness and Reaction and rolls only one Initiative die — apply by hand. Modified for a rigger interface, those penalties vanish, it works as a vehicle control rig, and a jacked rigger uses the Control Pool in place of the Combat Pool. Cyberpirates p.173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "JIM Diving Exoskeleton table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!18a97b1fc86afcd3"
+}

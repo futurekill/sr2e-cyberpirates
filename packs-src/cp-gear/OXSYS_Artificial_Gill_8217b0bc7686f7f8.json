@@ -1,0 +1,46 @@
+{
+  "_id": "8217b0bc7686f7f8",
+  "name": "OXSYS Artificial Gill",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 0.5,
+    "cost": 3250,
+    "availability": "4/12 hours",
+    "streetIndex": 1,
+    "notes": "Wraparound face-piece whose jaw filters extract oxygen from water by forced osmosis; no training needed. Pure oxygen: shallow water only (under 7 m) — deeper, the diver risks oxygen toxicity. Cyberpirates p.173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "OXSYS Artificial Gill table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8217b0bc7686f7f8"
+}

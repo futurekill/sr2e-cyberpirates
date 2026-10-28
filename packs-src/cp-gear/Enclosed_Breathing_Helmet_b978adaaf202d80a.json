@@ -1,0 +1,46 @@
+{
+  "_id": "b978adaaf202d80a",
+  "name": "Enclosed Breathing Helmet",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 1,
+    "cost": 960,
+    "availability": "5/96 hours",
+    "streetIndex": 1.5,
+    "notes": "Commercial divers' helmet filled with air or mixed gas from the tank so the diver can speak; outside speakers carry speech into the water. Includes a halogen head lamp and a speaker jack for an external underwater radio or cablephone. Cyberpirates p.173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Enclosed Breathing Helmet table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!b978adaaf202d80a"
+}

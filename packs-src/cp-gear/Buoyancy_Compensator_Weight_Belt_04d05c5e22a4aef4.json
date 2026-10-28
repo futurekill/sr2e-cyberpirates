@@ -1,0 +1,46 @@
+{
+  "_id": "04d05c5e22a4aef4",
+  "name": "Buoyancy Compensator + Weight Belt",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 12,
+    "cost": 475,
+    "availability": "4/12 hours",
+    "streetIndex": 1,
+    "notes": "Inflatable vest worn with a weight belt for neutral buoyancy; it can also send a helpless diver to the surface (Ascent, Descent and Buoyancy, p.157). Part of the standard diving gear set (face mask, snorkel, fins, wet suit, breathing regulator, buoyancy compensator and weight belt, scuba tank). Weight is on dry land; worn for diving it imposes no weight penalty. Cyberpirates p.172–173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Standard Diving Gear Table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!04d05c5e22a4aef4"
+}

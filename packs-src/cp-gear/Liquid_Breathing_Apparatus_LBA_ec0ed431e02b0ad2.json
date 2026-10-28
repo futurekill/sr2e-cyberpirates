@@ -1,0 +1,46 @@
+{
+  "_id": "ec0ed431e02b0ad2",
+  "name": "Liquid Breathing Apparatus (LBA)",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 25,
+    "cost": 50000,
+    "availability": "8/21 days",
+    "streetIndex": 2.5,
+    "notes": "Scuba-like rig with an enclosed helmet; the diver inhales a super-oxygenated fluid, down to 3,000 m. Immune to decompression sickness, oxygen toxicity and nitrogen narcosis, but not HPNS. Speech is impossible: talk by radio, keypad or a cybercomm link. Cyberpirates p.173–174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "LBA table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ec0ed431e02b0ad2"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "d15fd75a3df1ce40",
+  "name": "Drysuit",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 3.5,
+    "cost": 1500,
+    "availability": "4/36 hours",
+    "streetIndex": 1.25,
+    "notes": "Encloses the diver in a sheath of air; used in Arctic waters and for long dives below 200 m. −2 to Body Tests against helium chills (p.159) and to any other underwater Resistance Test against cold or hypothermia — apply by hand. Cyberpirates p.172–173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Drysuit table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!d15fd75a3df1ce40"
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "6ebb7ae67558a840",
+  "name": "Scuba Tank",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 18,
+    "cost": 3000,
+    "availability": "4/12 hours",
+    "streetIndex": 1,
+    "notes": "Aluminum/titanium tank holding air or mixed gas at up to 300 bars; metahumans breathe about 4 bars a minute on average (varies with depth, lungs and activity). Part of the standard diving gear set (face mask, snorkel, fins, wet suit, breathing regulator, buoyancy compensator and weight belt, scuba tank). Weight is on dry land; worn for diving it imposes no weight penalty. Cyberpirates p.172–173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Standard Diving Gear Table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!6ebb7ae67558a840"
+}

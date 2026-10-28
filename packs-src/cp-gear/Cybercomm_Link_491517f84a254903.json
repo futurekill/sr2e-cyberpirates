@@ -1,0 +1,46 @@
+{
+  "_id": "491517f84a254903",
+  "name": "Cybercomm Link",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "electronics",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 0,
+    "cost": 62000,
+    "availability": "8/2 weeks",
+    "streetIndex": 3,
+    "notes": "Transducer and radio transmitter that turn thoughts into words and send and receive them unspoken, with no outward sign. Quadruples the words available as a Free Action (core p.81). Listed with the LBA. Cyberpirates p.174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "LBA table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!491517f84a254903"
+}

@@ -56,6 +56,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-gear",
+      "label": "Cyberpirates Gear & Armor",
+      "path": "packs/cp-gear",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -65,7 +76,8 @@
       "packs": [
         "cp-qualities",
         "cp-skills",
-        "cp-weapons"
+        "cp-weapons",
+        "cp-gear"
       ]
     }
   ],

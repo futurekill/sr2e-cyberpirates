@@ -1,0 +1,46 @@
+{
+  "_id": "9844ed14b915c186",
+  "name": "Full Face Mask",
+  "type": "gear",
+  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "system": {
+    "category": "survival",
+    "rating": 0,
+    "quantity": 1,
+    "legality": "Legal",
+    "equipped": false,
+    "concealability": 0,
+    "weight": 0,
+    "cost": 360,
+    "availability": "4/24 hours",
+    "streetIndex": 1.25,
+    "notes": "Covers eyes, nose and mouth; a quick-release takes a standard breathing regulator, and side plugs take communication systems, voice microphones and other add-ons. Cyberpirates p.173."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 173,
+        "cell": "Full Face Mask table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!9844ed14b915c186"
+}
