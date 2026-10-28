@@ -34,6 +34,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-skills",
+      "label": "Cyberpirates Skills",
+      "path": "packs/cp-skills",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -41,7 +52,8 @@
       "name": "Cyberpirates!",
       "sorting": "m",
       "packs": [
-        "cp-qualities"
+        "cp-qualities",
+        "cp-skills"
       ]
     }
   ],

@@ -1,0 +1,48 @@
+{
+  "_id": "12b4feec49aefe68",
+  "name": "Diving",
+  "type": "skill",
+  "img": "icons/svg/waterfall.svg",
+  "system": {
+    "category": "active",
+    "linkedAttribute": "intelligence",
+    "rating": 0,
+    "concentration": {
+      "name": "",
+      "rating": 0
+    },
+    "specialization": {
+      "name": "",
+      "rating": 0
+    },
+    "isMagical": false,
+    "notes": "Active Skill covering all underwater diving: safe diving times, oxygen-nitrogen-helium mixtures, surface intervals between dives, and using diving gear (it may come into play when equipment fails). Defaults to Intelligence, six dots (+12 default) — apply by hand. Concentrations: Deep-water Diving (JIM, LBA), Mixed-gas Diving."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 144,
+        "cell": "Skills text",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!12b4feec49aefe68"
+}

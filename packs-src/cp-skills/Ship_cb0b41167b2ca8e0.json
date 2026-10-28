@@ -1,0 +1,48 @@
+{
+  "_id": "cb0b41167b2ca8e0",
+  "name": "Ship",
+  "type": "skill",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "category": "active",
+    "linkedAttribute": "quickness",
+    "rating": 0,
+    "concentration": {
+      "name": "",
+      "rating": 0
+    },
+    "specialization": {
+      "name": "",
+      "rating": 0
+    },
+    "isMagical": false,
+    "notes": "Vehicle Skill for piloting, navigating and handling a large surface ship (Cyberpirates ship rules — not automated). Defaults to Motorboat, one dot (+2 default) — apply by hand. Concentrations: Diesel (SV), Nuclear (SV), Turbine (SV); specializing means a specific class of vessel. Related new concentrations of existing skills: Armed/Unarmed Combat (Underwater) — −1 Combat Skill for surface melee; Etiquette (Maritime)."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 144,
+        "cell": "Skills text",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!cb0b41167b2ca8e0"
+}
