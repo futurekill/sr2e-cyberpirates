@@ -1,0 +1,119 @@
+{
+  "_id": "2b736f73301c41c0",
+  "name": "Ancestor Spirits",
+  "pages": [
+    {
+      "_id": "e1cd78461a3084c4",
+      "name": "Ancestor shamans",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Some West African shamans draw their power from their ancestors instead of the Spirits of Man. An <strong>ancestor shaman</strong> still follows an animal totem and otherwise uses the normal magic rules.</p>\n<ul><li>They summon <strong>ancestor spirits</strong> instead of any other Spirits of Man, and conjure other nature spirits normally. Totem bonuses for conjuring Spirits of Man apply to ancestor spirits.</li>\n<li>Ancestor-spirit <strong>shamanic adepts</strong> conjure only ancestor spirits and cast only spells their totem favors. Ancestral <strong>conjuring adepts</strong> summon whatever an ancestor shaman can, but have no Sorcery.</li>\n<li>Any shaman may conjure ancestor spirits, whatever the totem: swap one of the totem's conjuring bonuses for a bonus to ancestor spirits (gamemaster and player agree which).</li>\n<li><strong>Fetishes:</strong> summoning takes three fetishes tied to that ancestor — usually one object made for them before death (a stool, say) and two things they enjoyed in life. Each one missing costs the spirit 1 service.</li>\n<li><strong>Time:</strong> hours equal to the spirit's Force, divided by the number of the spirit's relatives present (the shaman included; they needn't be willing). Services and Drain are normal.</li>\n<li>No Great Form or Ally ancestor spirits are known.</li>\n<li>They come from a \"plane of death\" shaped by the summoner's own beliefs. A shaman can quest there for their totem only with an ancestor spirit as guide (metaplane rules: Grimoire p.93).</li></ul>\n<p><em>Play them like living relatives. Cyberpirates p.152.</em></p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "c408d49c5fb624f1",
+      "name": "Ancestor spirit",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<table><tr><th>B</th><th>Q</th><th>S</th><th>C</th><th>I</th><th>W</th><th>E</th><th>R</th><th>Attacks</th></tr>\n<tr><td>F + 2</td><td>F × 3</td><td>F + 1</td><td>F</td><td>F</td><td>F</td><td>F(A)</td><td>F</td><td>(Strength)M Stun</td></tr></table>\n<p><strong>Powers:</strong> Accident, Confusion, Divination, Guard, Manifestation, Search.</p>\n<p>\"× 3\" is the running multiplier when manifested. Ancestor spirits have <strong>no domain</strong>: their powers reach 5 km per point of Force.</p>\n<p><em>Not yet summonable in Foundry: its (Strength)M Stun attack needs a system change (the system's spirit attacks take their Power from Force). Until then, run it from this page. Cyberpirates p.152.</em></p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "e97c973aaec7197c",
+      "name": "Divination (spirit power)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Asked to prophesy, the spirit reads the emotions and drives of everyone within its powers' area and guesses what they will do next. The gamemaster rolls <strong>dice equal to the spirit's Force</strong> against a TN set by the question:</p>\n<table><tr><th>The question is</th><th>TN</th></tr>\n<tr><td>Very vague (\"What does next month hold for me?\")</td><td>4</td></tr>\n<tr><td>Vague (\"Are my old enemies catching up?\")</td><td>5</td></tr>\n<tr><td>General (\"Will I get hurt on this job?\")</td><td>6</td></tr>\n<tr><td>Specific (\"Is this official taking bribes?\")</td><td>8</td></tr>\n<tr><td>Very specific (\"What is the name of the man following me?\")</td><td>10</td></tr></table>\n<ul><li><strong>0 successes:</strong> a cryptic answer, often badly misleading.</li>\n<li><strong>1–2:</strong> cryptic, but with a truth underneath.</li>\n<li><strong>3–4:</strong> mildly helpful.</li>\n<li><strong>5+:</strong> about the detail the questioner wanted.</li></ul>\n<p>The answer is at most twice the spirit's Force in words, and as specific or vague as suits the story. <em>Cyberpirates p.152.</em></p>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 152,
+        "cell": "Ancestral Spirits; Ancestor Spirit stat block; Divination",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!2b736f73301c41c0"
+}

@@ -100,6 +100,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-reference",
+      "label": "Cyberpirates Reference",
+      "path": "packs/cp-reference",
+      "type": "JournalEntry",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -113,9 +124,13 @@
         "cp-gear",
         "cp-cyberware",
         "cp-critters",
-        "cp-vehicles"
+        "cp-vehicles",
+        "cp-reference"
       ]
     }
   ],
-  "flags": {}
+  "flags": {},
+  "esmodules": [
+    "scripts/register-cyberpirates.mjs"
+  ]
 }

@@ -1,0 +1,409 @@
+{
+  "_id": "5380be6859990d12",
+  "name": "African Totems",
+  "pages": [
+    {
+      "_id": "8f939f302e15954f",
+      "name": "About these totems",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The totems most common among Ghanaian and Ivory Coast shamans; Caribbean shamans of African descent may follow them too. Any of them may also conjure ancestor spirits (see <em>Ancestor Spirits</em>).</p>\n<p>Spell and conjuring dice are automated when the totem is chosen on the Magic tab. \"Spirits of the Sky\" means mist and storm spirits (the system's <em>wind</em> spirits too). The system has no <strong>jungle</strong> domain, so jungle-spirit bonuses, Banishing dice, conditional bonuses and every disadvantage are applied by hand. <em>Cyberpirates p.152.</em></p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1d331b7d6ea221f3",
+      "name": "Agwengwere (Hyena)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Aggressive, capricious and cunning, Hyena serves herself first, angers fast and stands her ground against bigger rivals — even lions, over a kill.</p>\n<p><strong>Favored environment:</strong> Savannah</p><p><strong>Advantages:</strong> +2 dice for combat spells, +2 dice to Banishing.</p><p><strong>Disadvantages:</strong> −1 die for health spells. A Willpower (4) Test to do anything that brings her no benefit.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Agwengwere (Hyena)</em> as the totem. Automated: spells +2 combat; −1 health; conjuring —. <strong>By hand:</strong> +2 Banishing; the Willpower test.</p><p><em>Cyberpirates p.152.</em></p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "de6e82bd836a8c6b",
+      "name": "Anansi (Spider)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Spider in her African aspect: creator, destroyer and trickster. She waits and plots, and her web is delicate but strong; she strikes fast and without remorse.</p>\n<p><strong>Favored environment:</strong> Quiet, dark places where few ever look</p><p><strong>Advantages:</strong> +1 die for illusion and manipulation spells; +1 die for conjuring.</p><p><strong>Disadvantages:</strong> +2 TN for Magic Tests in open areas; +1 TN when the shaman has no time to think a situation through (gamemaster's call).</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Anansi (Spider)</em> as the totem. Automated: spells +1 illusion, +1 manipulation; conjuring —. <strong>By hand:</strong> the +1 conjuring die (the book doesn't name a spirit type); both disadvantages.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "c7d052a2a50081bf",
+      "name": "Asenna (Bat)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Bat is a traveller and restless seeker with far-reaching goals, at home anywhere and uneasy standing still.</p>\n<p><strong>Favored environment:</strong> Anywhere</p><p><strong>Advantages:</strong> +2 dice for detection and manipulation spells; +1 die for conjuring Spirits of the Sky.</p><p><strong>Disadvantages:</strong> +2 to all magical TNs in direct sunlight. Distracted and irritable after a week in one place.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Asenna (Bat)</em> as the totem. Automated: spells +2 detection, +2 manipulation; conjuring +1 wind, +1 mist, +1 storm. <strong>By hand:</strong> both disadvantages.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "ec3e7498da34dd0c",
+      "name": "Awoba (Leopard)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Leopard has stamina and great bursts of speed: aggressive, vicious when cornered, reclusive and nocturnal, trusting keen senses over intellect — so appearances can fool him.</p>\n<p><strong>Favored environment:</strong> Forest and savannah</p><p><strong>Advantages:</strong> +2 dice for combat and health spells; +2 dice for conjuring nature spirits during hours of darkness.</p><p><strong>Disadvantages:</strong> −1 die on Spell Resistance Tests against illusions. Must defend family from harm, to the death if need be (no test to avoid it).</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Awoba (Leopard)</em> as the totem. Automated: spells +2 combat, +2 health; conjuring —. <strong>By hand:</strong> the +2 conjuring at night; both disadvantages.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "45c426e0e1583022",
+      "name": "Danwane (Dove)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Dove is a peaceful messenger and mediator who helps others to the point of martyrdom, and prides herself on staying aware of everything around her.</p>\n<p><strong>Favored environment:</strong> Forests and savannah</p><p><strong>Advantages:</strong> +2 dice for health spells, +1 die for detection spells, +1 die for conjuring Spirits of the Sky.</p><p><strong>Disadvantages:</strong> Cannot cast combat spells. A successful Willpower (4) Test to deliberately kill a metahuman.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Danwane (Dove)</em> as the totem. Automated: spells +2 health, +1 detection; conjuring +1 wind, +1 mist, +1 storm. <strong>By hand:</strong> the combat-spell ban (the system won't stop the cast); the Willpower test.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1e0da4ec4ea1ccd4",
+      "name": "Nau (Crocodile)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Like Anlo (Shark), Crocodile is a relentless, savage hunter with no fixed home who knows the secrets of the sea.</p>\n<p><strong>Favored environment:</strong> On or by the sea and rivers</p><p><strong>Advantages:</strong> +2 dice for combat spells; +1 die for illusion spells; +2 dice for conjuring sea and river spirits.</p><p><strong>Disadvantages:</strong> Wounded in combat, or after a kill: a Willpower Test, TN 3 modified by injury. On 2 or fewer successes the shaman goes berserk for up to 3 turns (minus the successes), attacking the nearest living target with their most powerful weapon or spell.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Nau (Crocodile)</em> as the totem. Automated: spells +2 combat, +1 illusion; conjuring +2 sea, +2 river. <strong>By hand:</strong> the berserk test.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "60c034409b5fe498",
+      "name": "Onini (Python)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Python is huge, slow and ponderous — no match for fast events — but immensely strong, quick to recover, merciless once on top, and able to dominate others by will. Peaceful, but unforgiving if provoked.</p>\n<p><strong>Favored environment:</strong> Jungle</p><p><strong>Advantages:</strong> +2 dice for health and manipulation spells; +2 dice for conjuring jungle spirits.</p><p><strong>Disadvantages:</strong> To stop fighting or any ongoing activity: a successful Willpower (6) Test.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Onini (Python)</em> as the totem. Automated: spells +2 health, +2 manipulation; conjuring —. <strong>By hand:</strong> +2 jungle spirits (no jungle domain in the system); the Willpower test.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "759a1c9a6dce7547",
+      "name": "Osebo (Cheetah)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Like Jaguar, Cheetah is a skilled hunter and warrior who takes the most direct route, and a jack of many trades rarely at a loss.</p>\n<p><strong>Favored environment:</strong> Savannah</p><p><strong>Advantages:</strong> +2 dice for combat spells; +2 dice for conjuring savannah (prairie) spirits.</p><p><strong>Disadvantages:</strong> −1 die for health spells. Natural Reaction of at least 4. Proud of her competence; hates admitting she can't do something.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Osebo (Cheetah)</em> as the totem. Automated: spells +2 combat; −1 health; conjuring +2 prairie. <strong>By hand:</strong> the Reaction minimum (check at creation); the roleplaying.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "c24c201f9120c922",
+      "name": "Owoh (Cobra)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Cobra is a skilled, stealthy hunter who hypnotizes prey to draw it close; slow to decide, uncompromising, and dislikes surprises.</p>\n<p><strong>Favored environment:</strong> Jungle</p><p><strong>Advantages:</strong> +2 dice for combat and illusion spells; +1 die for conjuring jungle spirits.</p><p><strong>Disadvantages:</strong> Can't fight to stun: either abstains or goes for the kill. Slow when startled: surprised, +1 to all TNs for the whole combat.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Owoh (Cobra)</em> as the totem. Automated: spells +2 combat, +2 illusion; conjuring —. <strong>By hand:</strong> +1 jungle spirits (no jungle domain in the system); both disadvantages.</p><p><em>Cyberpirates p.153.</em></p>"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "a62f8e28015e4d65",
+      "name": "Sase (Jackal)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Like Rat, Jackal is a stealthy, selfish thief and a reluctant warrior who would rather run — but also mischievous, playful and unconventional.</p>\n<p><strong>Favored environment:</strong> Savannah</p><p><strong>Advantages:</strong> +2 dice for detection and illusion spells; +2 dice for conjuring savannah (prairie) spirits.</p><p><strong>Disadvantages:</strong> −1 die for all combat spells.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Sase (Jackal)</em> as the totem. Automated: spells +2 detection, +2 illusion; −1 combat; conjuring +2 prairie.</p><p><em>Cyberpirates p.154.</em></p>"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "49e3728d536aba91",
+      "name": "Wurega (Parrot)",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Parrot is a colorful, wisecracking show-off: brightest plumage, loudest voice, showiest magic, and always the center of attention.</p>\n<p><strong>Favored environment:</strong> Jungle</p><p><strong>Advantages:</strong> +2 dice for illusion spells; +2 dice for conjuring jungle spirits.</p><p><strong>Disadvantages:</strong> +1 to magical TNs without an appreciative audience.</p>\n<p class=\"sr2e-auto\"><strong>In Foundry:</strong> pick <em>Wurega (Parrot)</em> as the totem. Automated: spells +2 illusion; conjuring —. <strong>By hand:</strong> +2 jungle spirits (no jungle domain in the system); the audience modifier.</p><p><em>Cyberpirates p.154.</em></p>"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "85ca4f66e05f9d97",
+      "name": "Revised totems",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Local West African names for standard totems — use the standard totem (Awakenings p.151–155):</p>\n<table><tr><th>Local name</th><th>Use</th></tr>\n<tr><td>Agona (Crow)</td><td>Raven</td></tr><tr><td>Anlo (Shark)</td><td>Shark</td></tr><tr><td>Gbwegen (Lion)</td><td>Lion</td></tr>\n<tr><td>Gwobeag (Dog)</td><td>Dog</td></tr><tr><td>Kpwire (Mouse)</td><td>Gecko</td></tr><tr><td>Oyoko (Falcon)</td><td>Eagle</td></tr>\n<tr><td>Weme (Deer/Antelope)</td><td>Horse</td></tr></table>\n<p>Raven, Shark, Lion, Dog and Eagle are in the core system's totem list. Gecko and Horse are not: until a module adds them, run them by hand. <em>Cyberpirates p.154.</em></p>"
+      },
+      "sort": 1300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 153,
+        "cell": "New Totems; Revised Totems",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!5380be6859990d12"
+}

@@ -8,6 +8,9 @@
 - [ ] The "Cyberpirates!" folder shows every pack; each opens.
 - [ ] An Edge and a Flaw drop onto a character and count build points like the Companion's.
 - [ ] Diving and Ship skills drop and roll.
+- [ ] Quench batch `sr2e-cyberpirates.totems` passes (keep the Quench window open while it runs).
+- [ ] A shaman can pick each African totem on the Magic tab; a Nau shaman's combat spell shows +2 totem dice.
+- [ ] The Reference journal opens: Ancestor Spirits (3 pages), African Totems (13 pages).
 - [ ] Speargun, harpoon gun, gyrojet pistol attack; gyrojet ammo loads.
 - [ ] Harpoon gun and speargun damage cards resist with Impact armor (also after reloading a harpoon item).
 - [ ] Explosive gyrojets add +2 Power; APDS gyrojets halve Ballistic armor.

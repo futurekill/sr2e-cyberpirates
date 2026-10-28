@@ -7,7 +7,7 @@
   "scripts": {
     "build-packs": "node tools/build-packs.mjs",
     "extract-packs": "node tools/extract-packs.mjs",
-    "validate": "node tools/validate-packs.mjs && node tools/roundtrip.mjs",
+    "validate": "node tools/validate-packs.mjs && node tools/roundtrip.mjs && node tools/check-totems.mjs",
     "lint": "eslint .",
     "snapshot-schema": "node tools/snapshot-schema.mjs"
   },

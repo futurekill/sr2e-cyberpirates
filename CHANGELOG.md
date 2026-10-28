@@ -19,3 +19,7 @@
 - Vehicles (9): Banca (non-powered / outboard motor / sail), Mitsuhama Anago, Hughes WK-2S Sea
   Stallion, Vulkan Electronaut, Saeder-Krupp D. J. Locker, Vulkan Delphin RQ7 and its Coastal Patrol
   variant. Sonar, Sonar Signature, Depth, fuel and the subs' special rules are in the notes.
+- African totems (11): Agwengwere, Anansi, Asenna, Awoba, Danwane, Nau, Onini, Osebo, Owoh, Sase,
+  Wurega — selectable on the Magic tab with their spell and conjuring dice (registered at setup).
+- Cyberpirates Reference journal: ancestor shamans, the ancestor spirit, Divination, a page per
+  totem (what's automated, what's by hand), and the revised local-name totems.
