@@ -19,8 +19,8 @@ export default [
     languageOptions: { ecmaVersion: 2024, sourceType: "module", globals: { ...globals.node } }
   },
   {
-    // Loaded by Foundry in the browser.
-    files: ["scripts/**/*.mjs"],
+    // Loaded by Foundry in the browser (and the console check script).
+    files: ["scripts/**/*.mjs", "tools/foundry-check.js"],
     languageOptions: { globals: { ...globals.browser, ...foundryGlobals } }
   },
   {
