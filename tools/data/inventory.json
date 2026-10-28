@@ -1,0 +1,320 @@
+{
+ "cp-critters": [
+  {
+   "_id": "0de20e887b23cb7d",
+   "name": "Mami Wata"
+  },
+  {
+   "_id": "1ed6135ddac8ba15",
+   "name": "Alufye"
+  },
+  {
+   "_id": "2b05f89e7231367e",
+   "name": "Busaw"
+  },
+  {
+   "_id": "468bd7ec87babc35",
+   "name": "Kiwigs"
+  },
+  {
+   "_id": "605b57f6936eddb2",
+   "name": "Gomatia"
+  },
+  {
+   "_id": "60f7f72152cfdaf4",
+   "name": "King Cobra (Awakened)"
+  },
+  {
+   "_id": "6c17cee786d3a2de",
+   "name": "Anwuma Bavole"
+  },
+  {
+   "_id": "6c2c6b7777e03182",
+   "name": "King Cobra"
+  },
+  {
+   "_id": "901b0e33a342c5a4",
+   "name": "Sasabonsam"
+  },
+  {
+   "_id": "974effae3566837b",
+   "name": "Reticulated Python"
+  },
+  {
+   "_id": "a9d5caf42751fb6d",
+   "name": "Green Mamba"
+  },
+  {
+   "_id": "d9588afe644725c6",
+   "name": "Reticulated Python (Awakened)"
+  },
+  {
+   "_id": "daaf2e1f93704ff6",
+   "name": "Buwaya"
+  },
+  {
+   "_id": "de90384bc5bef0a3",
+   "name": "Asonwu"
+  },
+  {
+   "_id": "ec93162105d01d8b",
+   "name": "Ekyelebenle"
+  },
+  {
+   "_id": "f95ca5893764c2bd",
+   "name": "Enwontzane"
+  }
+ ],
+ "cp-cyberware": [
+  {
+   "_id": "014ea2f8c8ff9e0d",
+   "name": "Peg Leg (Knee Length)"
+  },
+  {
+   "_id": "015622d4b77f0c20",
+   "name": "Hook Hand"
+  },
+  {
+   "_id": "403af3a283659b6a",
+   "name": "Peg Leg (Hip Length)"
+  },
+  {
+   "_id": "d72bccc22eef9110",
+   "name": "Air Tank (Cybergill)"
+  },
+  {
+   "_id": "f394775779275593",
+   "name": "OXSYS Cybergill"
+  },
+  {
+   "_id": "f4b0121d69aae8de",
+   "name": "Nitrogen Monitor"
+  },
+  {
+   "_id": "fd72b13e6dbd35a9",
+   "name": "Cyberfins"
+  }
+ ],
+ "cp-gear": [
+  {
+   "_id": "04d05c5e22a4aef4",
+   "name": "Buoyancy Compensator + Weight Belt"
+  },
+  {
+   "_id": "18a97b1fc86afcd3",
+   "name": "JIM Diving Exoskeleton"
+  },
+  {
+   "_id": "2b86181a298e37a1",
+   "name": "Breathing Regulator"
+  },
+  {
+   "_id": "31f9ad15c65e23f6",
+   "name": "Face Mask + Snorkel"
+  },
+  {
+   "_id": "3255af48ac3d9a8a",
+   "name": "Diving Armor"
+  },
+  {
+   "_id": "3d1ff676cd85e621",
+   "name": "Wet Suit"
+  },
+  {
+   "_id": "491517f84a254903",
+   "name": "Cybercomm Link"
+  },
+  {
+   "_id": "4f602377ddaceaf7",
+   "name": "Dual Tank Manifold Assembly"
+  },
+  {
+   "_id": "6ebb7ae67558a840",
+   "name": "Scuba Tank"
+  },
+  {
+   "_id": "8217b0bc7686f7f8",
+   "name": "OXSYS Artificial Gill"
+  },
+  {
+   "_id": "9844ed14b915c186",
+   "name": "Full Face Mask"
+  },
+  {
+   "_id": "a46d322efcbc37da",
+   "name": "Fins"
+  },
+  {
+   "_id": "b978adaaf202d80a",
+   "name": "Enclosed Breathing Helmet"
+  },
+  {
+   "_id": "d15fd75a3df1ce40",
+   "name": "Drysuit"
+  },
+  {
+   "_id": "ec0ed431e02b0ad2",
+   "name": "Liquid Breathing Apparatus (LBA)"
+  }
+ ],
+ "cp-qualities": [
+  {
+   "_id": "1258fa4a0e011983",
+   "name": "Braggart"
+  },
+  {
+   "_id": "61a6a085b6e0cec1",
+   "name": "Sea Madness"
+  },
+  {
+   "_id": "8ab46ae201e4ab6f",
+   "name": "Water Sprite"
+  },
+  {
+   "_id": "c076a957272eb9b0",
+   "name": "Natural Immunity (Cyberpirates)"
+  },
+  {
+   "_id": "ca097e4e850955b5",
+   "name": "Connected"
+  },
+  {
+   "_id": "f95c736b9cf5d90f",
+   "name": "Sea Legs"
+  },
+  {
+   "_id": "fa299c77e7806f1f",
+   "name": "Pirate Family"
+  },
+  {
+   "_id": "fd79c4cdec8ca715",
+   "name": "Liar"
+  }
+ ],
+ "cp-reference": [
+  {
+   "_id": "2b736f73301c41c0",
+   "name": "Ancestor Spirits"
+  },
+  {
+   "_id": "5380be6859990d12",
+   "name": "African Totems"
+  }
+ ],
+ "cp-ships": [
+  {
+   "_id": "4a81fc54741218fd",
+   "name": "Ship Weapons and Accessories"
+  },
+  {
+   "_id": "f72259fd87c4ca00",
+   "name": "Ships and Submarines"
+  }
+ ],
+ "cp-skills": [
+  {
+   "_id": "12b4feec49aefe68",
+   "name": "Diving"
+  },
+  {
+   "_id": "cb0b41167b2ca8e0",
+   "name": "Ship"
+  }
+ ],
+ "cp-vehicles": [
+  {
+   "_id": "0151c741b3d28598",
+   "name": "Banca (Outboard Motor)"
+  },
+  {
+   "_id": "269dc5cc45ad3d41",
+   "name": "Vulkan Delphin RQ7 (Coastal Patrol)"
+  },
+  {
+   "_id": "278b92e0fd2bd8b5",
+   "name": "Banca (Sail)"
+  },
+  {
+   "_id": "39f4baa1ca3174cd",
+   "name": "Vulkan Electronaut"
+  },
+  {
+   "_id": "6a52022e3884a5f8",
+   "name": "Mitsuhama Anago"
+  },
+  {
+   "_id": "7d833ff5fa7227bb",
+   "name": "Saeder-Krupp D. J. Locker"
+  },
+  {
+   "_id": "8021dee394b93db4",
+   "name": "Hughes WK-2S Sea Stallion"
+  },
+  {
+   "_id": "c4950a51fad8f411",
+   "name": "Banca"
+  },
+  {
+   "_id": "fb1996b2811c8745",
+   "name": "Vulkan Delphin RQ7"
+  }
+ ],
+ "cp-weapons": [
+  {
+   "_id": "0d9e728f157a6f32",
+   "name": "Harpoon (Standard)"
+  },
+  {
+   "_id": "30eb2a2dcd0afca6",
+   "name": "Harpoon (Explosive Head)"
+  },
+  {
+   "_id": "3677e88cf8a08211",
+   "name": "Explosive Gyrojets"
+  },
+  {
+   "_id": "3bb3af08458208fe",
+   "name": "Sling Launcher"
+  },
+  {
+   "_id": "42f51e029855c200",
+   "name": "FN-AAL Gyrojet Pistol"
+  },
+  {
+   "_id": "4ba20211d9e06f3e",
+   "name": "Colt M24A3 Water Carbine"
+  },
+  {
+   "_id": "7c2033e677f20c81",
+   "name": "Ball Gyrojets"
+  },
+  {
+   "_id": "84015e4d75585f1b",
+   "name": "Harpoon"
+  },
+  {
+   "_id": "9c7a4d39fe14a3d1",
+   "name": "Speargun"
+  },
+  {
+   "_id": "ba7117e8aa7095da",
+   "name": "Ink Grenade"
+  },
+  {
+   "_id": "bc0c38f46b0eac7b",
+   "name": "APDS Gyrojets"
+  },
+  {
+   "_id": "bd58b227eded64d1",
+   "name": "Rattan Sticks"
+  },
+  {
+   "_id": "d682777e5320a68d",
+   "name": "Harpoon Gun"
+  },
+  {
+   "_id": "ed2ca4cba1383be7",
+   "name": "Spear"
+  }
+ ]
+}

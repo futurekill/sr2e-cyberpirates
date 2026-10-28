@@ -10,37 +10,31 @@
     "body": {
       "base": 2,
       "mod": 0,
-      "value": 2,
       "racial": 0
     },
     "quickness": {
       "base": 4,
       "mod": 0,
-      "value": 4,
       "racial": 0
     },
     "strength": {
       "base": 3,
       "mod": 0,
-      "value": 3,
       "racial": 0
     },
     "charisma": {
       "base": 0,
       "mod": 0,
-      "value": 0,
       "racial": 0
     },
     "intelligence": {
       "base": 3,
       "mod": 0,
-      "value": 3,
       "racial": 0
     },
     "willpower": {
       "base": 2,
       "mod": 0,
-      "value": 2,
       "racial": 0
     },
     "essence": {

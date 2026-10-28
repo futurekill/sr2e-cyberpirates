@@ -24,5 +24,6 @@ invalid fields through. Cyberware/bioware `streetIndex` is a STRING field; every
 The transcription tables live in each `tools/gen-*.mjs` (one source of truth per pack) rather than
 separate `tools/data/*` files, except the inherited core statistics (`tools/data/inherited.mjs`).
 Every document — and every journal page — carries `flags["sr2e-cyberpirates"].source {page, cell,
-verified: "300dpi+visual"}`; the validator rejects anything less. NPC derived fields (Reaction and
-Initiative base/value, movement) are never authored.
+verified: "300dpi+visual"}`; the validator rejects anything less. NPC derived fields (attribute values,
+Reaction and Initiative base/value, movement) are never authored. Generators keep
+`tools/data/inventory.json` (commit it with packs-src); foundry-check compares Foundry's packs with it.

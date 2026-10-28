@@ -15,7 +15,7 @@ import { writePack } from "./lib.mjs";
 
 const V = "300dpi+visual";
 const ICON = "systems/sr2e/assets/item_icons/weapons/";
-const attr = (v) => ({ base: v, mod: 0, value: v, racial: 0 });
+const attr = (v) => ({ base: v, mod: 0, racial: 0 });   // value is derived (base + mod, floored at 1)
 
 function attack(owner, { name = "Natural Attack", code, type = "physical", reach = 0, notes = "", humanoid = false, skill = "" }) {
   return { _id: idFor(`critter-attack:${owner}`, name), name, type: "weapon",

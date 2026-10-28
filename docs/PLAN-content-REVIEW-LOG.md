@@ -56,3 +56,11 @@ Partly: (2) the offline validator stays top-level plus a derived-path list; the 
 check is foundry-check's recursive comparison against the live models (authoritative, in Foundry).
 (8) transcription tables stay in the generators (documented in CLAUDE.md) instead of tools/data.
 (12) the versioned CHANGELOG section is written at release time, as in every module.
+
+## Code review 2 — Codex: REVISE, 2 findings — both fixed
+(1) The generators now write `tools/data/inventory.json` (every pack's ids and names); the validator
+requires it to equal packs-src, and foundry-check requires every inventory pack and document in
+Foundry's indexes (and flags index entries not in it). Negative test in Foundry: a phantom inventory
+entry is reported "missing from the pack". (2) Critter attributes no longer author `value`; the
+validator rejects all six NPC attribute `.value` paths. Derived values in Foundry match the book
+(Busaw B7 Q5 S6 C1 I4 W5 R4), with the disclosed floor (Anwuma Bavole S 0 → 1).

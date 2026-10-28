@@ -17,7 +17,8 @@ const COLLECTION = { Item: "items", Actor: "actors", JournalEntry: "journal" };
 // Derived by the system every preparation: authoring them stores stale numbers.
 const DERIVED = { bioware: ["actualBodyCost"], npc: ["movement"], vehicle: [] };
 // Nested paths NPCData recomputes every preparation (authoring them only stores a stale number).
-const DERIVED_PATHS = { npc: ["reaction.base", "reaction.value", "initiative.base", "initiative.value"] };
+const DERIVED_PATHS = { npc: ["reaction.base", "reaction.value", "initiative.base", "initiative.value",
+  ...["body", "quickness", "strength", "charisma", "intelligence", "willpower"].map(a => `${a}.value`)] };
 // Scalar field classes → the JS type a source value must have (Foundry would coerce it silently).
 const KIND = { NumberField: "number", StringField: "string", HTMLField: "string", BooleanField: "boolean" };
 let problems = 0;
@@ -75,6 +76,17 @@ for (const pack of packs.sort()) {
     };
     rec(doc, f);
     for (const pg of doc.pages ?? []) rec(pg, `${f} → page ${pg.name}`);
+  }
+}
+
+// The inventory (tools/data/inventory.json, written by the generators) must list exactly packs-src.
+{
+  const inv = existsSync("tools/data/inventory.json") ? JSON.parse(readFileSync("tools/data/inventory.json", "utf8")) : {};
+  for (const name of new Set([...Object.keys(inv), ...Object.keys(TYPE_OF)])) {
+    const dir = join(ROOT, name);
+    const ids = existsSync(dir) ? readdirSync(dir).filter(f => f.endsWith(".json") && !f.startsWith("_folder")).map(f => JSON.parse(readFileSync(join(dir, f), "utf8"))._id).sort() : [];
+    const want = (inv[name] ?? []).map(d => d._id).sort();
+    if (JSON.stringify(ids) !== JSON.stringify(want)) note(`${name}: tools/data/inventory.json doesn't match packs-src (re-run the generator)`);
   }
 }
 

@@ -24,6 +24,16 @@
     if (a !== b) out.push(`${path}: ${JSON.stringify(a)} → ${JSON.stringify(b)}`);
   };
   let n = 0;
+  // The independent inventory: every expected pack and document must be in Foundry's indexes.
+  const inventory = await fetch(`modules/${MOD}/tools/data/inventory.json`).then(r => r.ok ? r.json() : null);
+  if (!inventory) problems.push("tools/data/inventory.json not served — run from the dev checkout");
+  for (const [name, docs] of Object.entries(inventory ?? {})) {
+    const pack = game.packs.get(`${MOD}.${name}`);
+    if (!pack) { problems.push(`${MOD}.${name}: pack not loaded`); continue; }
+    const index = await pack.getIndex();
+    for (const d of docs) if (!index.has(d._id)) problems.push(`${pack.collection} ${d.name}: missing from the pack`);
+    for (const e of index) if (!docs.some(d => d._id === e._id)) problems.push(`${pack.collection} ${e.name}: in the pack but not in the inventory`);
+  }
   for (const pack of game.packs.filter(p => p.metadata.packageName === MOD)) {
     const name = pack.metadata.name;
     if (pack.invalidDocumentIds?.size) problems.push(`${pack.collection}: invalid documents ${[...pack.invalidDocumentIds].join(", ")}`);
