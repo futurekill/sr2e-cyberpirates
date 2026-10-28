@@ -26,6 +26,14 @@ summaries, never pasted text. `_work/` (renders, OCR) stays out of git.
 | `cp-vehicles` | Actor `vehicle` | craft printed with the STANDARD vehicle stats (Handling, Speed, Accel, Body, Armor, Signature, Autonav, Sensor…): bancas (non-powered / outboard / sail), Mitsuhama Anago (and its Fugu variant), Hughes WK-2S Sea Stallion, and any submarine printed that way — book p.175–179 |
 | `cp-ships` | JournalEntry (reference) | ships and submarines printed in SHIP-RULE terms (Hull, Bulwark, Sonar, Accommodation, Depth): Cunard Princess Victoria, Maersk Jorgensen, CSS Stuart, Shiawase Aohana, MF Akihito, the larger submarines; ship weapons (missiles, naval guns, ANDREWS) and accessories (torpedo probe, noisemaker, decoy) p.176–182 — one page each with the printed stats, because without ship rules a vehicle actor for them would be half-working (user ruling: content only) |
 
+| (script) totems | `CONFIG.SR2E.totems` via `scripts/register-cyberpirates.mjs` (the Grimoire module's pattern: an esmodule extending the config in place at setup) | the African totems with full entries (Agwengwere/Hyena, Anansi/Spider, Asenna/Bat, Awoba/Leopard, Danwane/Dove, Nau/Crocodile, Onini/Python, Osebo/Cheetah, Owoh/Cobra, Sase/Jackal, Wurega/Parrot) book p.152–154, plus Python and Cobra for the Philippines (p.149 points to p.153); spell and conjuring bonuses/penalties in the core totem shape, disadvantages in comments/notes as the Grimoire does. The "revised totems" (Agona = Raven, Anlo = Shark, …) are local NAMES for existing totems: a journal page, not new totems |
+| (script) ancestor spirits | `CONFIG.SR2E.spiritDomains` + `spiritProfiles` + `spiritDomainProfile` + `spiritPowers`/`spiritDomainPowers` via the same script | the Ancestor Spirit (book p.152): B F+2, Q F×3, S F+1, C/I/W F, E F(A), R F, attack (Strength)M Stun; powers Accident, Confusion, Divination (new power: label + rules summary), Guard, Manifestation, Search. Ancestor-shaman conjuring limits, fetishes and conjuring time are noted for the GM, not enforced (content only) |
+
+**Template critters** (vampire and shapeshifter variants printed as "C", "C×5", "C+E", "A+2"): follow
+the Paranormal Animals precedent (its Nosferatu): an example actor with typical values and the
+book's formulas spelled out in the biography. **Named NPCs** in the setting (Masaru, the dragon)
+stay out, as fiction NPCs.
+
 Each pack: one generator `tools/gen-<pack>.mjs` from a transcription table in `tools/data/`
 (the Street Samurai Catalog pattern), deterministic ids, `npm run validate` (schema fields only,
 no derived fields, sorted rating rows, every number traced to a page in the data file), lint.
