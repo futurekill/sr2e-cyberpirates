@@ -26,3 +26,12 @@ export function itemDoc(ns, { name, type, img, system, src }) {
   return { _id, name, type, img, system, effects: [], flags: sourceFlag(src), folder: null, sort: 0,
     _stats: STATS, ownership: { default: 0 }, _key: `!items!${_id}` };
 }
+
+/** A text journal page and a journal entry (pages sorted in order), for the reference generators. */
+export const journalPage = (entry, name, content, sort) => ({ _id: idFor(`page:${entry}`, name), name, type: "text",
+  title: { show: true, level: 1 }, text: { format: 1, content }, sort, ownership: { default: -1 }, flags: {}, _stats: STATS });
+export function journalEntry(name, src, pages) {
+  const _id = idFor("journal", name);
+  return { _id, name, pages: pages.map((p, i) => journalPage(name, p[0], p[1], (i + 1) * 100000)), folder: null, sort: 0,
+    flags: sourceFlag(src), ownership: { default: 0 }, _stats: STATS, _key: `!journal!${_id}` };
+}

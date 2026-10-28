@@ -1,0 +1,380 @@
+{
+  "_id": "4a81fc54741218fd",
+  "name": "Ship Weapons and Accessories",
+  "pages": [
+    {
+      "_id": "d3ef1a534c047716",
+      "name": "About ship weapons",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Antiship missiles use Rigger 2's <strong>Extended Range Missile</strong> rules (Rigger 2 p.89). Besides Damage, Weight, Intelligence and Cost they carry vehicle ratings — Handling, a fixed Speed, Body (no Armor) and Signature — and a Range: the farthest the missile can fly. Ship weapons have no Availability or Street Index; the gamemaster sets them. <em>Cyberpirates p.179.</em></p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "d24a6ade352a7383",
+      "name": "SS-N-49 \"Sirocco\" Antiship Missile",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A Russian antiship missile sold worldwide; the design is over fifteen years old but keeps up its Soviet ancestors' fearsome reputation.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed</th><td>800</td></tr><tr><th>Range</th><td>350 km</td></tr><tr><th>Body</th><td>3</td></tr><tr><th>Signature</th><td>5</td></tr><tr><th>Intelligence</th><td>3</td></tr><tr><th>Damage</th><td>20SN</td></tr><tr><th>Weight</th><td>750 kg</td></tr><tr><th>Cost</th><td>600,000¥</td></tr></table><p><em>Cyberpirates p.179.</em></p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "650ca3d8ff9bcedd",
+      "name": "UGM-188 Sea Saber Antiship Missile",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The North American counterpart of the Sirocco (UCAS, Confederate and Royal Navy): shorter range, but faster, smarter and harder-hitting.</p><table><tr><th>Handling</th><td>3</td></tr><tr><th>Speed</th><td>1,000</td></tr><tr><th>Range</th><td>250 km</td></tr><tr><th>Body</th><td>4</td></tr><tr><th>Signature</th><td>5</td></tr><tr><th>Intelligence</th><td>4</td></tr><tr><th>Damage</th><td>24DN</td></tr><tr><th>Weight</th><td>900 kg</td></tr><tr><th>Cost</th><td>750,000¥</td></tr></table><p><em>Cyberpirates p.180.</em></p>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "9021c066e5c6104f",
+      "name": "Javelot Aerial Defense Missile",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A French long-range air-defense missile against aircraft, antiship missiles and cruise missiles.</p><table><tr><th>Handling</th><td>3</td></tr><tr><th>Speed</th><td>1,100</td></tr><tr><th>Range</th><td>120 km</td></tr><tr><th>Body</th><td>3</td></tr><tr><th>Signature</th><td>5</td></tr><tr><th>Intelligence</th><td>4</td></tr><tr><th>Damage</th><td>18D</td></tr><tr><th>Weight</th><td>495 kg</td></tr><tr><th>Cost</th><td>425,000¥</td></tr></table><p>It can also attack surface ships, at <strong>8MN</strong>.</p><p><em>Cyberpirates p.180.</em></p>"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "1d8c7152a5ed1ae0",
+      "name": "AN/EDQ-12 ANDREWS",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Air Defense Naval Directed Energy Weapons System: a particle beam that fries an incoming missile's control circuits (it veers off target — Area-Effect Scatter, Rigger 2 p.60, if you like) or detonates it in flight, equally likely at the gamemaster's call. It also engages aircraft, and fits only nuclear-powered ships.</p><table><tr><th>Type</th><td>L-ATGM</td></tr><tr><th>Concealability</th><td>NA</td></tr><tr><th>Ammo</th><td>50</td></tr><tr><th>Mode</th><td>SA/BF</td></tr><tr><th>Damage</th><td>20D</td></tr><tr><th>Weight</th><td>1,200</td></tr><tr><th>Cost</th><td>600,000¥</td></tr></table><ul><li>Works like a vehicle laser (the Ares Firelance): Power −2 at medium range, −4 at long, −6 at extreme.</li>\n<li>Antivehicle: vehicles don't automatically stage the Damage Level down, and only half the vehicle's Armor (round down) reduces the Power.</li>\n<li>Ammo is shots before recharging: a full recharge takes 10 minutes; idle, it regains 1 shot per 4 Combat Turns with no firing (firing within three turns wastes the accumulated time).</li>\n<li>A rigger jacked into or directly controlling a vehicle or missile it hits takes Physical damage from ASIST backlash (as the Loral-Vought \"Zapper\", Rigger 2 p.94).</li>\n<li>Against other ships: <strong>9LN</strong>. Needs a medium or larger remote turret.</li></ul><p><em>Cyberpirates p.180.</em></p>"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "3072f27856464bf2",
+      "name": "Naval guns",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Backup weapons against targets too small for antiship missiles, or against ships that lack them. Remote-operated with autoloaders; light naval guns can fire semi-automatic. Shells against normal targets do explosive damage under the Manual Gunnery or Indirect Fire rules (Rigger 2 p.56), Power −1 per 2 meters from the burst; the second Damage Code is ship damage. Weapon Value for turret space (Rigger 2 p.135): light 7, medium 10.</p>\n<table><tr><th></th><th>Light Naval Gun</th><th>Medium Naval Gun</th></tr>\n<tr><th>Type</th><td>Special</td><td>Special</td></tr><tr><th>Concealability</th><td>NA</td><td>NA</td></tr>\n<tr><th>Ammo</th><td>500</td><td>500</td></tr><tr><th>Mode</th><td>SA</td><td>SS</td></tr>\n<tr><th>Damage</th><td>20D / 8LN</td><td>25D / 11MN</td></tr><tr><th>Weight</th><td>250</td><td>600</td></tr>\n<tr><th>Cost</th><td>225,000¥</td><td>475,000¥</td></tr>\n<tr><th colspan=\"3\">Ammunition (per 100 shots): Concealability NA, damage as weapon</th></tr>\n<tr><th>Weight</th><td>2,500</td><td>7,500</td></tr><tr><th>Cost</th><td>8,000¥</td><td>15,000¥</td></tr></table>\n<table><tr><th>Range</th><th>Short</th><th>Medium</th><th>Long</th><th>Extreme</th></tr>\n<tr><th>Light</th><td>100–2,500 m</td><td>2.5–6 km</td><td>6–12 km</td><td>12–18 km</td></tr>\n<tr><th>Medium</th><td>100–4,000 m</td><td>4–12 km</td><td>12–18 km</td><td>18–25 km</td></tr></table>\n<p><em>Cyberpirates p.180–181.</em></p>"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "b07588709351c71a",
+      "name": "Mk 197 MADCAP Torpedo",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The most widely used torpedo of the era: up to 75 knots, an active sonar-seeker warhead as standard (passive sonar or thermal heads available). Launched by subs and surface ships, or dropped from anti-submarine helicopters.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed</th><td>115</td></tr><tr><th>Range</th><td>15 km</td></tr><tr><th>Body</th><td>4</td></tr><tr><th>Signature</th><td>5/5</td></tr><tr><th>Intelligence</th><td>2</td></tr><tr><th>Damage</th><td>14DN</td></tr><tr><th>Weight</th><td>750 kg</td></tr><tr><th>Cost</th><td>350,000¥</td></tr></table><ul><li>It activates on splashdown; range is measured from the splash point. Sonar Rating 1 for active-sonar range.</li><li>Wire-guided: a rigger on the sub controls it until the cable is cut, then its own Intelligence takes over. Helicopter-dropped MADCAPs have no wire and can't be rigged.</li></ul><p><em>Cyberpirates p.181.</em></p>"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "f2fee710f208f5aa",
+      "name": "RUR-15D ASROC",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A MADCAP strapped to a rocket: it flies 4–16 km, then the torpedo drops into the water and homes in.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed</th><td>Rocket 750; torpedo 115</td></tr><tr><th>Range</th><td>Rocket 16 km; torpedo 15 km from the splash point</td></tr><tr><th>Body</th><td>4</td></tr><tr><th>Signature</th><td>5/5</td></tr><tr><th>Intelligence</th><td>2</td></tr><tr><th>Damage</th><td>14DN</td></tr><tr><th>Weight</th><td>2,250 kg (950 kg for the torpedo alone)</td></tr><tr><th>Cost</th><td>350,000¥</td></tr></table><p>The rocket stage is unguided: no Intelligence in flight, no rigger control after launch, and no blind fire at subs behind a thermocline.</p><p><em>Cyberpirates p.181.</em></p>"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "492fc6ad0de02616",
+      "name": "UIM-199 Kingfisher SSAM",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A subsurface-to-air missile that lets a submerged sub kill dipping-sonar aircraft without surfacing; fired from a torpedo tube or a vertical-launch tube.</p><table><tr><th>Intelligence</th><td>4</td></tr><tr><th>Damage</th><td>14D</td></tr><tr><th>Weight</th><td>25 kg</td></tr><tr><th>Availability</th><td>14/21 days</td></tr><tr><th>Cost</th><td>15,000¥</td></tr><tr><th>Street Index</th><td>NA</td></tr><tr><th>Range</th><td>Short 20–100 m · Medium 101–220 m · Long 221–600 m · Extreme 601–2,200 m</td></tr></table><p>The sub must be at 50 m or shallower to launch; range counts from where the missile surfaces. Two fit in one vertical-launch tube.</p><p><em>Cyberpirates p.181.</em></p>"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "92d920a8e842713d",
+      "name": "Torpedo Probe",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A Mark 197 body carrying a sonar array instead of explosives: it reports other subs back to the mother ship over an optical cable.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed</th><td>150</td></tr><tr><th>Range</th><td>15 km (depth 750 meters)</td></tr><tr><th>Body</th><td>4</td></tr><tr><th>Signature</th><td>5/3</td></tr><tr><th>Intelligence</th><td>2</td></tr><tr><th>Damage</th><td>None</td></tr><tr><th>Sonar</th><td>4</td></tr><tr><th>Weight</th><td>950 kg</td></tr><tr><th>Cost</th><td>150,000¥</td></tr></table><p>Fixed speed 150 m per Combat Turn (about 100 knots); the cable limits it to 3 km (about 20 turns, a minute of recon). Steered from the sub by joystick, or by rigger link if the sub has a remote control deck.</p><p><em>Cyberpirates p.182.</em></p>"
+      },
+      "sort": 1000000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "e3f0cb5e59ed2729",
+      "name": "Noisemaker",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A meter-long perforated canister of chemicals that froths into a mass of bubbles, confusing sonar and torpedoes. When a sub releases one, other craft take <strong>+3 to all TNs</strong> to detect or target it for that Combat Turn and the next two (ten seconds).</p>\n<table><tr><th>Weight</th><td>75 kg</td></tr><tr><th>Cost</th><td>500¥</td></tr><tr><th>Availability</th><td>6/48 hours</td></tr><tr><th>Street Index</th><td>4.5</td></tr></table><p><em>Cyberpirates p.182.</em></p>"
+      },
+      "sort": 1100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "7a92b2c6bfc73665",
+      "name": "Decoy",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A torpedo body with a sound system that imitates a moving submarine.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed</th><td>150</td></tr><tr><th>Range</th><td>15 km (depth 750 meters)</td></tr><tr><th>Body</th><td>4</td></tr><tr><th>Signature</th><td>5/3</td></tr><tr><th>Intelligence</th><td>2</td></tr><tr><th>Damage</th><td>NA</td></tr><tr><th>Sonar</th><td>4</td></tr><tr><th>Weight</th><td>950 kg</td></tr><tr><th>Cost</th><td>150,000¥</td></tr></table><p>When it deploys, every torpedo fired at the sub makes an <strong>Intelligence (6) Test</strong>: success, it stays locked on the sub; failure, it strikes the decoy.</p><p><em>Cyberpirates p.182.</em></p>"
+      },
+      "sort": 1200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 179,
+        "cell": "Ship Weapons; Vehicle Accessories p.179–182",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!4a81fc54741218fd"
+}

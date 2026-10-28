@@ -2,17 +2,11 @@
 // totems and the revised (local-name) totems. Descriptions are original summaries; numbers were read
 // from 300 dpi renders. Each totem page says what scripts/register-cyberpirates.mjs automates and
 // what the GM adjudicates.
-import { idFor, sourceFlag, STATS, writePack } from "./lib.mjs";
+import { journalEntry, writePack } from "./lib.mjs";
 import { CYBERPIRATES_TOTEMS as T } from "../scripts/register-cyberpirates.mjs";
 
 const V = "300dpi+visual";
-const page = (entry, name, content, sort) => ({ _id: idFor(`page:${entry}`, name), name, type: "text",
-  title: { show: true, level: 1 }, text: { format: 1, content }, sort, ownership: { default: -1 }, flags: {}, _stats: STATS });
-const entry = (name, src, pages) => {
-  const _id = idFor("journal", name);
-  return { _id, name, pages: pages.map((p, i) => page(name, p[0], p[1], (i + 1) * 100000)), folder: null, sort: 0,
-    flags: sourceFlag({ ...src, verified: V }), ownership: { default: 0 }, _stats: STATS, _key: `!journal!${_id}` };
-};
+const entry = (name, src, pages) => journalEntry(name, { ...src, verified: V }, pages);
 
 const ANCESTOR = entry("Ancestor Spirits", { page: 152, cell: "Ancestral Spirits; Ancestor Spirit stat block; Divination" }, [
   ["Ancestor shamans", `<p>Some West African shamans draw their power from their ancestors instead of the Spirits of Man. An <strong>ancestor shaman</strong> still follows an animal totem and otherwise uses the normal magic rules.</p>

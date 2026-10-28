@@ -23,3 +23,7 @@
   Wurega — selectable on the Magic tab with their spell and conjuring dice (registered at setup).
 - Cyberpirates Reference journal: ancestor shamans, the ancestor spirit, Divination, a page per
   totem (what's automated, what's by hand), and the revised local-name totems.
+- Cyberpirates Ships journal: how to read ship statistics; the Princess Victoria, Jorgensen, Stuart,
+  Aohana and Akihito ships and the Triton, Vaneyev and New Hampshire submarines; antiship and
+  air-defense missiles, ANDREWS, naval guns, MADCAP, ASROC, Kingfisher, torpedo probe, noisemaker
+  and decoy. Reference only — the ship rules are run from the book.

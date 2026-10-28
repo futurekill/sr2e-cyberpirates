@@ -11,6 +11,7 @@
 - [ ] Quench batch `sr2e-cyberpirates.totems` passes (keep the Quench window open while it runs).
 - [ ] A shaman can pick each African totem on the Magic tab; a Nau shaman's combat spell shows +2 totem dice.
 - [ ] The Reference journal opens: Ancestor Spirits (3 pages), African Totems (13 pages).
+- [ ] The Ships journal opens: Ships and Submarines (9 pages), Ship Weapons and Accessories (12 pages); stat tables render.
 - [ ] Speargun, harpoon gun, gyrojet pistol attack; gyrojet ammo loads.
 - [ ] Harpoon gun and speargun damage cards resist with Impact armor (also after reloading a harpoon item).
 - [ ] Explosive gyrojets add +2 Power; APDS gyrojets halve Ballistic armor.

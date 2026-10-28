@@ -1,0 +1,293 @@
+{
+  "_id": "f72259fd87c4ca00",
+  "name": "Ships and Submarines",
+  "pages": [
+    {
+      "_id": "6254e37b6001f20b",
+      "name": "Reading ship statistics",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A <strong>ship</strong> is any vessel over 50 m long and 100 tonnes; anything smaller is a boat (the small craft are vehicle actors in the Cyberpirates Vehicles compendium). Ships use ship ratings in place of some vehicle attributes (p.162–163):</p>\n<ul><li><strong>Speed (Cavitation):</strong> the number in parentheses is the Cavitation Threshold. Faster than that, the propellers' noise lowers the ship's Sonar Signature (easier to find and hit by sonar and torpedoes; p.169). Speed × 1.54 = knots. Boats have no Cavitation Threshold.</li>\n<li><strong>Hull</strong> replaces Body, on a larger scale: 1 = 100–200 tonnes, 2 = 201–500, 3 = 501–1,000, 4 = 1,001–5,000, 5 = 5,001–10,000, 6 = 10,001–25,000, 7 = 25,000–50,000, 8 = 50,001–100,000, 9 = 100,001–250,000, 10+ = over 250,000.</li>\n<li><strong>Bulwark</strong> replaces Armor in ship combat (to convert Hull and Bulwark to Armor or Barrier Ratings, see Ramming, p.164–165).</li>\n<li><strong>Signature</strong> \"N/M\": normal Signature (radar, thermographic and other sensors) / Sonar Signature.</li>\n<li><strong>Sonar</strong>: the ship's sonar and contact-analysis capability (Sensors and Sonar, p.168).</li>\n<li><strong>Depth</strong> (submarines and minisubs): the safe maximum depth in meters; deeper, the hull takes crush damage (p.168).</li>\n<li><strong>Accommodation</strong> replaces Seating: the crew and passengers the ship can house.</li>\n<li><strong>Load</strong> works as for vehicles (Rigger 2 p.24). Ship electronics add Hull × 5 to their Flux Rating, but surface-to-surface scanning, jamming and communication stops at the 35 km horizon line.</li></ul>\n<p>The ship rules themselves (crews, ship combat, ramming, damage control, sonar, thermoclines) are not automated: run them from the book. <em>Cyberpirates p.162–163.</em></p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "e7138ca92d7aa9ac",
+      "name": "Cunard Princess Victoria Liner",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Cunard Cruise Lines' latest liner, a typical 2050s cruise ship: moderately large with a fair range. Reputable liners keep to patrolled sea lanes; less reputable ones offer entertainment of doubtful legality.</p><table><tr><th>Handling</th><td>5</td></tr><tr><th>Speed (Cavitation)</th><td>50 (15)</td></tr><tr><th>Acceleration</th><td>1</td></tr><tr><th>Hull</th><td>6</td></tr><tr><th>Bulwark</th><td>0</td></tr><tr><th>Signature / Sonar Signature</th><td>1/1</td></tr><tr><th>Autonav</th><td>4</td></tr><tr><th>Sensor</th><td>1</td></tr><tr><th>Sonar</th><td>1</td></tr><tr><th>Cost</th><td>150M¥</td></tr><tr><th>Accommodation</th><td>350</td></tr><tr><th>Entry points</th><td>4 standard + 2 cargo doors</td></tr><tr><th>Cargo</th><td>8,000 CF</td></tr><tr><th>Load</th><td>15,000 kg</td></tr><tr><th>Fuel</th><td>Diesel (15 kiloliters)</td></tr><tr><th>Economy</th><td>200 km/kiloliter</td></tr><tr><th>Other</th><td>Lifestyle amenities (High)</td></tr></table><p><em>Cyberpirates p.176.</em></p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "0031897f7808c303",
+      "name": "Maersk Jorgensen-class Fast Freighter",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A small, generic cargo freighter — unusual in an age of container and roll-on/roll-off ships — built by Maersk for tramp shipping with no fixed timetable.</p><table><tr><th>Handling</th><td>5</td></tr><tr><th>Speed (Cavitation)</th><td>25 (10)</td></tr><tr><th>Acceleration</th><td>1</td></tr><tr><th>Hull</th><td>8</td></tr><tr><th>Bulwark</th><td>0</td></tr><tr><th>Signature / Sonar Signature</th><td>1/1</td></tr><tr><th>Autonav</th><td>3</td></tr><tr><th>Sensor</th><td>1</td></tr><tr><th>Sonar</th><td>1</td></tr><tr><th>Cost</th><td>80M¥</td></tr><tr><th>Accommodation</th><td>25</td></tr><tr><th>Entry points</th><td>2 extra-large cargo doors + 2 standard</td></tr><tr><th>Cargo</th><td>270,000 CF</td></tr><tr><th>Load</th><td>75,000 kg</td></tr><tr><th>Fuel</th><td>Diesel (24 kiloliters)</td></tr><tr><th>Economy</th><td>150 km/kiloliter</td></tr><tr><th>Other</th><td>Crane (5,000 kg)</td></tr></table><p><em>Cyberpirates p.176.</em></p>"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "01f82b9b2ba9bb4f",
+      "name": "CSS Stuart-class Corvette",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>A fast missile boat built in numbers for the CAS Navy for coastal patrol and defense and to support light surface action groups. Typical fit: a Victory rotary autocannon and sixteen Block II Outlaw missiles (Rigger 2 p.93) in two remote turrets; anti-submarine Stuarts carry four MADCAPs instead, anti-air ones Vogeljäger SAMs.</p><table><tr><th>Handling</th><td>3</td></tr><tr><th>Speed (Cavitation)</th><td>70 (30)</td></tr><tr><th>Acceleration</th><td>5</td></tr><tr><th>Hull</th><td>4</td></tr><tr><th>Bulwark</th><td>6</td></tr><tr><th>Signature / Sonar Signature</th><td>3/4</td></tr><tr><th>Autonav</th><td>4</td></tr><tr><th>Sensor</th><td>4</td></tr><tr><th>Sonar</th><td>3</td></tr><tr><th>Cost</th><td>30M¥</td></tr><tr><th>Accommodation</th><td>35</td></tr><tr><th>Entry points</th><td>2 standard + 1 extra-large cargo door</td></tr><tr><th>Cargo</th><td>125 CF</td></tr><tr><th>Load</th><td>2,500 kg</td></tr><tr><th>Fuel</th><td>Diesel (10 kiloliters)</td></tr><tr><th>Economy</th><td>100 km/kiloliter</td></tr><tr><th>Other</th><td>Medium remote turret with Victory autocannon and 500 rounds; 2 medium remote turrets with 8 Block II Outlaw missiles</td></tr></table><p><em>Cyberpirates p.176.</em></p>"
+      },
+      "sort": 400000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "4f544201ed9b1e8d",
+      "name": "Shiawase Aohana-class Frigate",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>One of the first corporate warships after extraterritoriality: an escort for corporate convoys in pirate waters. Strong in anti-submarine work (six ASROCs, twenty MADCAPs, a pad for one Sea Stallion — not included) and air defense (a dozen-plus Javelots, an anti-aircraft Victory autocannon); weak against surface ships (six SS-N-49 Siroccos and a light naval gun).</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed (Cavitation)</th><td>45 (20)</td></tr><tr><th>Acceleration</th><td>4</td></tr><tr><th>Hull</th><td>4</td></tr><tr><th>Bulwark</th><td>9</td></tr><tr><th>Signature / Sonar Signature</th><td>2/4</td></tr><tr><th>Autonav</th><td>4</td></tr><tr><th>Sensor</th><td>6</td></tr><tr><th>Sonar</th><td>4</td></tr><tr><th>Cost</th><td>100M¥</td></tr><tr><th>Accommodation</th><td>300</td></tr><tr><th>Entry points</th><td>2 standard + 2 standard + 1 double-sized door</td></tr><tr><th>Cargo</th><td>1,700 CF</td></tr><tr><th>Load</th><td>50,000 kg</td></tr><tr><th>Fuel</th><td>Gas turbine (50 kiloliters)</td></tr><tr><th>Economy</th><td>80 km/kiloliter</td></tr><tr><th>Other</th><td>2 medium remote turrets (Victory rotary autocannon with 2,000 rounds; light naval gun with 500 rounds); 2 vertical launch systems (12 tubes each)</td></tr></table><p><em>Cyberpirates p.177.</em></p>"
+      },
+      "sort": 500000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "473f1154de4229e6",
+      "name": "MF Akihito-class Carrier",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The Imperial Japanese Navy's nuclear flagship class: over 125,000 tonnes, three reactors, more than fifty aircraft. Its own weapons are for air and missile defense: twenty-four AIM-11RS SAMs (Rigger 2 p.93) and four ANDREWS. Six were in commission as of 2059, two of them on duty in the Philippines (MF Meiji near Manila, MF Hirohito off Subic Bay).</p><table><tr><th>Handling</th><td>5</td></tr><tr><th>Speed (Cavitation)</th><td>45</td></tr><tr><th>Acceleration</th><td>3</td></tr><tr><th>Hull</th><td>9</td></tr><tr><th>Bulwark</th><td>12</td></tr><tr><th>Signature / Sonar Signature</th><td>1/2</td></tr><tr><th>Autonav</th><td>4</td></tr><tr><th>Sensor</th><td>7</td></tr><tr><th>Sonar</th><td>2</td></tr><tr><th>Cost</th><td>750M¥</td></tr><tr><th>Accommodation</th><td>6,000</td></tr><tr><th>Entry points</th><td>1 plane elevator + 1 standard + 1 standard</td></tr><tr><th>Cargo</th><td>3.75M CF</td></tr><tr><th>Load</th><td>100M kg</td></tr><tr><th>Fuel</th><td>Nuclear</td></tr><tr><th>Economy</th><td>Effectively infinite</td></tr><tr><th>Other</th><td>Aircraft facilities, flight deck (300 m, catapult and arrestor cables), 2 remote large turrets with AIM-11RS launchers (12 missiles each), 4 remote medium turrets with ANDREWS</td></tr></table><p><em>Cyberpirates p.177.</em></p>"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "d2f3325cf2b6eee1",
+      "name": "Kvaerner Triton-class Medium Transport Submarine",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The most common commercial transport sub: 30,000 tonnes, a bubble-fusion reactor overhauled every twelve years, and an oxygen generator that lets it stay under indefinitely.</p><table><tr><th>Handling</th><td>5</td></tr><tr><th>Speed (Cavitation)</th><td>30 (20)</td></tr><tr><th>Acceleration</th><td>1</td></tr><tr><th>Hull</th><td>7</td></tr><tr><th>Bulwark</th><td>3</td></tr><tr><th>Signature / Sonar Signature</th><td>5/4</td></tr><tr><th>Autonav</th><td>3</td></tr><tr><th>Sensor</th><td>2</td></tr><tr><th>Sonar</th><td>2</td></tr><tr><th>Cost</th><td>250M¥</td></tr><tr><th>Accommodation</th><td>40</td></tr><tr><th>Entry points</th><td>1 emergency hatch + 2 oversize cargo hatches + 1 passenger hatch</td></tr><tr><th>Depth</th><td>4,500 meters</td></tr><tr><th>Cargo</th><td>200,000 CF</td></tr><tr><th>Load</th><td>25M kg</td></tr><tr><th>Fuel</th><td>Nuclear</td></tr><tr><th>Economy</th><td>Effectively infinite</td></tr><tr><th>Other</th><td>Electrolytic oxygen generator, enviroseal (water and engine), living amenities (Basic)</td></tr></table><p><em>Cyberpirates p.178.</em></p>"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "4fd82a472d12b344",
+      "name": "Krasnaya Sormova Vaneyev-class Hunter-Killer Submarine",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>An economical medium diesel/electric sub from the Komsomolsk yards, common in brown-water navies — and rumored to be in the hands of pirate gangs preying on unescorted merchantmen.</p><table><tr><th>Handling</th><td>3</td></tr><tr><th>Speed (Cavitation)</th><td>45 (30)</td></tr><tr><th>Acceleration</th><td>2</td></tr><tr><th>Hull</th><td>4</td></tr><tr><th>Bulwark</th><td>9</td></tr><tr><th>Signature / Sonar Signature</th><td>6/6</td></tr><tr><th>Autonav</th><td>3</td></tr><tr><th>Sensor</th><td>4</td></tr><tr><th>Sonar</th><td>4</td></tr><tr><th>Cost</th><td>125M¥</td></tr><tr><th>Accommodation</th><td>85</td></tr><tr><th>Entry points</th><td>1 hatch + 1 emergency hatch</td></tr><tr><th>Depth</th><td>400 meters</td></tr><tr><th>Cargo</th><td>400 CF</td></tr><tr><th>Load</th><td>50,000 kg</td></tr><tr><th>Fuel</th><td>Diesel/electric (18 kiloliters/10 kPF)</td></tr><tr><th>Economy</th><td>175 km/kiloliter; 100 km/kPF</td></tr><tr><th>Other</th><td>Electrolytic oxygen generator, enviroseal (water and engine), living amenities (Basic)</td></tr></table><p><em>Cyberpirates p.179.</em></p>"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "5891fd328aaba415",
+      "name": "USS New Hampshire-class Attack Submarine",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>The UCAS Navy's newest attack sub, replacing the Seawolf II and Toronto classes: SEAL insertion and extraction to cruise-missile strikes. Four torpedo tubes (MADCAPs and Sea Sabers, up to forty stored) and a sixteen-tube vertical launch cluster for cruise missiles or Kingfisher SSAMs.</p><table><tr><th>Handling</th><td>4</td></tr><tr><th>Speed (Cavitation)</th><td>50 (35)</td></tr><tr><th>Acceleration</th><td>2</td></tr><tr><th>Hull</th><td>5</td></tr><tr><th>Bulwark</th><td>9</td></tr><tr><th>Signature / Sonar Signature</th><td>8/8</td></tr><tr><th>Autonav</th><td>4</td></tr><tr><th>Sensor</th><td>7</td></tr><tr><th>Sonar</th><td>9</td></tr><tr><th>Cost</th><td>800M¥</td></tr><tr><th>Accommodation</th><td>105</td></tr><tr><th>Entry points</th><td>1 hatch + 1 emergency hatch</td></tr><tr><th>Depth</th><td>750 meters</td></tr><tr><th>Cargo</th><td>600 CF</td></tr><tr><th>Load</th><td>75,000 kg</td></tr><tr><th>Fuel</th><td>Nuclear</td></tr><tr><th>Economy</th><td>Effectively infinite</td></tr><tr><th>Other</th><td>Electrolytic oxygen generator, enviroseal (water and engine), living amenities (Basic), 4 torpedo tubes, vertical launch system (16 tubes)</td></tr></table><p><em>Cyberpirates p.179.</em></p>"
+      },
+      "sort": 900000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 176,
+        "cell": "Ships and Submarines stat blocks p.176–179",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!journal!f72259fd87c4ca00"
+}

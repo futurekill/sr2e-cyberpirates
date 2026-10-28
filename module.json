@@ -111,6 +111,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-ships",
+      "label": "Cyberpirates Ships",
+      "path": "packs/cp-ships",
+      "type": "JournalEntry",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -125,7 +136,8 @@
         "cp-cyberware",
         "cp-critters",
         "cp-vehicles",
-        "cp-reference"
+        "cp-reference",
+        "cp-ships"
       ]
     }
   ],
