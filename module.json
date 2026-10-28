@@ -89,6 +89,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-vehicles",
+      "label": "Cyberpirates Vehicles",
+      "path": "packs/cp-vehicles",
+      "type": "Actor",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -101,7 +112,8 @@
         "cp-weapons",
         "cp-gear",
         "cp-cyberware",
-        "cp-critters"
+        "cp-critters",
+        "cp-vehicles"
       ]
     }
   ],

@@ -1,0 +1,70 @@
+{
+  "_id": "7d833ff5fa7227bb",
+  "name": "Saeder-Krupp D. J. Locker",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "",
+    "handling": 4,
+    "speed": 30,
+    "acceleration": 3,
+    "body": 4,
+    "armor": 0,
+    "signature": 6,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 5,
+    "load": 400,
+    "seating": "1 bucket + 1 bucket",
+    "cost": 55000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>A two-person submarine for underwater exploration, retrieval and rescue, working down to 900 m on 50 man-hours of independent air. Swivel-mount lamps and an extendible claw (a poor weapon, but it loads the isolated cargo hold underwater).</p><ul><li>Signature 6/7: Sonar Signature 7. Sonar 1. Depth: 900 meters.</li><li>Entry: 1 hatch. Fuel: diesel/electric (300 liters/250 PF). Economy: 1 km/liter; 1 km/PF.</li><li>Other: enviroseal (water and engine), life support (10 man-hours), mechanical claw arm (Strength 16).</li><li>The claw follows the mechanical arm rules (Rigger 2 p.34), but the operator takes +3 on all Success Tests for its clumsy design.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 178,
+        "cell": "Saeder-Krupp D. J. Locker stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Saeder-Krupp D. J. Locker",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!7d833ff5fa7227bb"
+}

@@ -1,0 +1,70 @@
+{
+  "_id": "0151c741b3d28598",
+  "name": "Banca (Outboard Motor)",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "",
+    "handling": 3,
+    "speed": 30,
+    "acceleration": 4,
+    "body": 2,
+    "armor": 0,
+    "signature": 5,
+    "pilot": 0,
+    "sensor": 0,
+    "cargo": 4,
+    "load": 40,
+    "seating": "8, front to back",
+    "cost": 300,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 0,
+    "notes": "<p>A non-powered Philippine river boat; the statistics apply to any similar small river boat anywhere. It can be fitted with sails or an outboard motor.</p><ul><li>Sensor —. Entry: open. Fuel: gasoline (10 liters). Economy: 7 km/liter.</li><li>If rowed instead: Speed = the rowers' combined Strength ÷ 2, Acceleration always 1; rowing is a Complex Action.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 175,
+        "cell": "Banca table: Outboard Motor",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Banca (Outboard Motor)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 6,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!0151c741b3d28598"
+}

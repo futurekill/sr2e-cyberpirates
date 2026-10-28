@@ -1,0 +1,70 @@
+{
+  "_id": "8021dee394b93db4",
+  "name": "Hughes WK-2S Sea Stallion",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "",
+    "handling": 5,
+    "speed": 190,
+    "acceleration": 14,
+    "body": 4,
+    "armor": 0,
+    "signature": 3,
+    "pilot": 0,
+    "sensor": 3,
+    "cargo": 46,
+    "load": 2000,
+    "seating": "2 bucket + 3 bucket (×3)",
+    "cost": 925000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 3,
+    "notes": "<p>The naval variant of Hughes's WK-2 Stallion, built for search and rescue, reconnaissance and anti-submarine warfare.</p><ul><li>Entry: 2 + 1 double-sized. Landing/takeoff: VTOL.</li><li>Fuel: jet (1,250 liters). Economy: 0.2 km/liter.</li><li>Other: 2 fuselage torpedo mounts (2,000 kg total ordnance weight), magnetic anomaly detector.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 176,
+        "cell": "Hughes WK-2S Sea Stallion stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Hughes WK-2S Sea Stallion",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 12,
+    "height": 12,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!8021dee394b93db4"
+}

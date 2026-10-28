@@ -1,0 +1,70 @@
+{
+  "_id": "fb1996b2811c8745",
+  "name": "Vulkan Delphin RQ7",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "",
+    "handling": 4,
+    "speed": 50,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 0,
+    "signature": 6,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 160,
+    "load": 1500,
+    "seating": "2 bucket + 2 bucket",
+    "cost": 150000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The Electronaut's \"big brother\": room for up to eight people with long-range accommodations, yet still nimble in flooded tunnels.</p><ul><li>Signature 6/6: Sonar Signature 6. Sonar 1. Depth: 150 meters.</li><li>Entry: 1 hatch. Fuel: diesel/electric (300 liters/300 PF). Economy: 1 km/liter; 1 km/PF.</li><li>Diesel engine while surfaced, electric batteries while submerged; running the diesel recharges the batteries at 1 PF per hour.</li><li>Other: enviroseal (water and engine), life support (80 man-hours), living amenities (Basic).</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 178,
+        "cell": "Delphin RQ7 table: Standard",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Vulkan Delphin RQ7",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 12,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!fb1996b2811c8745"
+}

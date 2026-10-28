@@ -16,3 +16,6 @@
   its Awakened variant, Alufye, Anwuma Bavole, Asonwu, Ekyelebenle, Green Mamba, Enwontzane, Gomatia,
   Mami Wata, Sasabonsam. The vampire templates, shapeshifters and Chupacabras wait on a system change
   (Essence above 6 — docs/NEEDS-SYSTEM.md).
+- Vehicles (9): Banca (non-powered / outboard motor / sail), Mitsuhama Anago, Hughes WK-2S Sea
+  Stallion, Vulkan Electronaut, Saeder-Krupp D. J. Locker, Vulkan Delphin RQ7 and its Coastal Patrol
+  variant. Sonar, Sonar Signature, Depth, fuel and the subs' special rules are in the notes.

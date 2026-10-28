@@ -1,0 +1,70 @@
+{
+  "_id": "39f4baa1ca3174cd",
+  "name": "Vulkan Electronaut",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "",
+    "handling": 4,
+    "speed": 15,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 0,
+    "signature": 8,
+    "pilot": 0,
+    "sensor": 1,
+    "cargo": 12,
+    "load": 150,
+    "seating": "1 bucket + 1 bucket",
+    "cost": 35000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>A two-person minisub from the Allied German States with many add-on utility modules. Built for recovery work in the drowned cities of North Germany and the United Netherlands; now a popular recreational craft on the Côte d'Azur and in the Caribbean.</p><ul><li>Signature 8/8: Sonar Signature 8. Sonar 1. Depth: 150 meters.</li><li>Entry: 1 hatch. Fuel: electric (250 PF). Economy: 1 km/PF.</li><li>Other: enviroseal (water and engine), life support (10 man-hours).</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 178,
+        "cell": "Vulkan Electronaut stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Vulkan Electronaut",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 2,
+    "height": 5,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!39f4baa1ca3174cd"
+}

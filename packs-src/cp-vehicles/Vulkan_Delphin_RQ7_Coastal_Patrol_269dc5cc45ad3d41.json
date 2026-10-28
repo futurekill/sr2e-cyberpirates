@@ -1,0 +1,70 @@
+{
+  "_id": "269dc5cc45ad3d41",
+  "name": "Vulkan Delphin RQ7 (Coastal Patrol)",
+  "type": "vehicle",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "",
+    "handling": 4,
+    "speed": 50,
+    "acceleration": 4,
+    "body": 4,
+    "armor": 9,
+    "signature": 5,
+    "pilot": 0,
+    "sensor": 5,
+    "cargo": 152,
+    "load": 680,
+    "seating": "2 bucket + 2 bucket",
+    "cost": 34000000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The Wasserschutzpolizei coastal-patrol Delphin: four mini-torpedo tubes, a remote-controlled heavy machine gun turret and a plethora of electronic toys.</p><ul><li>Signature 5/5: Sonar Signature 5. Sonar 3. Depth: 150 meters.</li><li>Entry: 1 hatch. Fuel: diesel/electric (300 liters/300 PF). Economy: 1 km/liter; 1 km/PF.</li><li>Diesel engine while surfaced, electric batteries while submerged; running the diesel recharges the batteries at 1 PF per hour.</li><li>Other: enviroseal (water and engine), life support (80 man-hours), living amenities (Basic), internal mini-torpedo launchers, small turret with HMG and 500 rounds of ammunition.</li><li>Mini-torpedoes: standard AVMs (core p.99) that only work against waterborne surface or underwater targets; 4LN damage. Add the weapons from the system compendium.</li></ul>"
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 178,
+        "cell": "Delphin RQ7 table: Coastal Patrol Variant",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Vulkan Delphin RQ7 (Coastal Patrol)",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 3,
+    "height": 12,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/anchor.svg",
+      "fit": "contain"
+    },
+    "disposition": 0
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!269dc5cc45ad3d41"
+}
