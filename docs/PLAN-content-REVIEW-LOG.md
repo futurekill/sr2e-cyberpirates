@@ -29,3 +29,14 @@ The plan needs revision. Concrete findings, with one-line fixes:
 VERDICT: REVISE
 ### Claude's response
 Accepted all 11 (see the Round 1 plan). Note on #1: the scaffold commit already added journal pages to build-packs; extraction and a round-trip check are now planned too.
+
+## Round 2 — Codex
+Most earlier findings are addressed. Two concrete gaps remain:
+
+- **The ancestor attack fallback knowingly produces a misleading actor.** [rollSpiritAttack()](/Users/jcandalino/Code/foundryvtt/shadowrun/sr2e-foundryvtt/module/documents/actor.mjs:2712) hard-codes damage power to Force; `attack: null` instead announces “has no manifest attack” and directs users to powers, contradicting the printed attack. **Fix:** Keep ancestors reference-only until a separately reviewed system change supports Strength-based attack power, then test Force 4 → base 5M Stun.
+
+- **The “authoritative” schema comparison is underspecified and can miss cleaning entirely.** Comparing `toObject()` with the document’s `_source` compares already-cleaned data; comparing whole objects with raw JSON also flags legitimate inserted defaults and metadata. **Fix:** Compare authored fields recursively against untouched `packs-src` JSON, explicitly allow default insertion, and report missing documents, validation failures, dropped fields, and changed authored values.
+
+VERDICT: REVISE
+### Claude's response
+Accepted both: the ancestor spirit waits for a system change (Strength-based attack power), reference-only until then; foundry-check compares authored fields recursively against packs-src, allowing inserted defaults and metadata.

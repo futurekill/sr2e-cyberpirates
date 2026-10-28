@@ -1,5 +1,5 @@
 # Plan: Cyberpirates! content module (`sr2e-cyberpirates`)
-_Round 1 — revised after Codex R1 (see PLAN-content-REVIEW-LOG.md)._ User ruling: content only (no underwater or ship rules); Edges &
+_Round 2 — revised after Codex R1–R2 (see PLAN-content-REVIEW-LOG.md)._ User ruling: content only (no underwater or ship rules); Edges &
 Flaws follow the Shadowrun Companion module's model._
 
 ## Goal
@@ -28,7 +28,7 @@ summaries, never pasted text. `_work/` (renders, OCR) stays out of git.
 | `cp-ships` | JournalEntry (reference) | ships and submarines printed in SHIP-RULE terms (Hull, Bulwark, Sonar, Accommodation, Depth): Cunard Princess Victoria, Maersk Jorgensen, CSS Stuart, Shiawase Aohana, MF Akihito, the larger submarines; ship weapons (missiles, naval guns, ANDREWS) and accessories (torpedo probe, noisemaker, decoy) p.176–182 — one page each with the printed stats, because without ship rules a vehicle actor for them would be half-working (user ruling: content only) |
 
 | (script) totems | `CONFIG.SR2E.totems` via `scripts/register-cyberpirates.mjs` (the Grimoire module's pattern: an esmodule extending the config in place at setup) | the African totems with full entries (Agwengwere/Hyena, Anansi/Spider, Asenna/Bat, Awoba/Leopard, Danwane/Dove, Nau/Crocodile, Onini/Python, Osebo/Cheetah, Owoh/Cobra, Sase/Jackal, Wurega/Parrot) book p.152–154 — Python and Cobra are the same entries the Philippines text points to (p.149 → p.153); spell and conjuring bonuses/penalties in the core totem shape. **Player-readable (R1 #6):** every totem also gets a page in a `cp-reference` journal pack with its characteristics, environment, advantages, disadvantages and anything conditional the config can't express (e.g. "+2 conjuring nature spirits during hours of darkness"), marked "adjudicate by hand". The "revised totems" (Agona = Raven, Anlo = Shark, …) are local NAMES for existing totems: a page there, not new totems |
-| (script) ancestor spirits | `CONFIG.SR2E.spiritDomains` + `spiritProfiles` + `spiritDomainProfile` + `spiritPowers`/`spiritDomainPowers` via the same script | the Ancestor Spirit (book p.152): printed B F+2, Q F x 3, S F+1, C/I/W F, E F(A), R F, attack (Strength)M Stun. "F x 3" is the standard critter notation — Quickness F with movement multiplier 3 — so the profile is `{ b: +2, q: 0, mult: 3, s: +1, r: 0 }` (R1 #4; the page's own note confirms "Quickness 'x3' is the Running multiplier"). Its attack is verified against the system's attack shape before it's encoded; if the shape can't express (Strength)M Stun, `attack: null` and the attack goes in the reference page. Powers Accident, Confusion, Divination, Guard, Manifestation, Search — Divination registered as a LABEL only (`spiritPowers` holds labels, R1 #5); its rules (the Divination TN table) live on the reference page. Ancestor-shaman conjuring limits, fetishes and conjuring time are on the reference page for the GM, not enforced |
+| (script) ancestor spirits | `CONFIG.SR2E.spiritDomains` + `spiritProfiles` + `spiritDomainProfile` + `spiritPowers`/`spiritDomainPowers` via the same script | the Ancestor Spirit (book p.152): printed B F+2, Q F x 3, S F+1, C/I/W F, E F(A), R F, attack (Strength)M Stun. "F x 3" is the standard critter notation — Quickness F with movement multiplier 3 — so the profile is `{ b: +2, q: 0, mult: 3, s: +1, r: 0 }` (R1 #4; the page's own note confirms "Quickness 'x3' is the Running multiplier"). Its attack, (Strength)M Stun, can't be expressed today: `rollSpiritAttack()` takes its Power from Force (R2 #1). So the ancestor spirit is registered ONLY after a separately reviewed SYSTEM change adds a Strength-based attack power to the spirit-profile attack shape (listed in `docs/NEEDS-SYSTEM.md`, tested Force 4 → 5M Stun); until then it is a reference page only — never a summonable spirit with a wrong or missing attack. Powers Accident, Confusion, Divination, Guard, Manifestation, Search — Divination registered as a LABEL only (`spiritPowers` holds labels, R1 #5); its rules (the Divination TN table) live on the reference page. Ancestor-shaman conjuring limits, fetishes and conjuring time are on the reference page for the GM, not enforced |
 
 **Template critters** (vampire and shapeshifter variants printed as "C", "C×5", "C+E", "A+2"): an
 example actor with typical values and the book's formulas spelled out in the biography, like the
@@ -70,16 +70,20 @@ verified: "300dpi" }`; the validator REJECTS any row without `verified`, so noth
   `gear`/`armor`/`cyberware` and `npc`/`vehicle` field names and choice values the system defines (a
   checked-in list taken from the pinned system version), numeric bounds (e.g. Essence 0–6), and the
   forbidden derived fields (`actualBodyCost`, `value` on attributes where the system derives them).
-- In Foundry, `tools/foundry-check.js` (run from a macro, QA §1) loads every pack and reports
-  `invalidDocumentIds` and any document whose `toObject()` differs from its source (schema
-  clamping) — the authoritative schema check.
+- In Foundry, `tools/foundry-check.js` (run from a macro, QA §1) is the authoritative schema check
+  (R2 #2): for every pack it reports documents missing from the index, `invalidDocumentIds`
+  (validation failures), and — comparing each loaded document's `toObject()` RECURSIVELY against the
+  untouched `packs-src` JSON it came from, authored fields only — any authored field that was dropped
+  or whose value changed (clamped, coerced). Fields the schema inserted as defaults, and Foundry's
+  metadata (`_stats`, `ownership`, `sort`, `folder`), are allowed and not reported.
 
 ## Checks
 - `npm run validate` + `npm run lint` in CI.
 - **Quench (R1 #9):** the registration script adds a Quench batch `cyberpirates.*` (when Quench is
-  active): the totems exist with their bonuses; the ancestor domain, profile and Divination label are
-  registered; a fresh ancestor spirit summoned at Force 4 gets B6 S5 Q4 (mult 3) and its powers; a
-  saved ancestor actor survives a reload; coexists with the Grimoire module enabled (no key clash).
+  active): the totems exist with their bonuses and coexist with the Grimoire module enabled (no key
+  clash). Once the ancestor spirit lands (after its system change): its domain, profile and
+  Divination label are registered; a fresh ancestor summoned at Force 4 gets B6 S5 Q4 (mult 3), its
+  powers and a 5M Stun attack; a saved ancestor actor survives a reload.
 - In Foundry: every pack opens; a weapon, cyberware, critter and vehicle drop onto a character/
   scene and roll (QA-PLAN).
 
