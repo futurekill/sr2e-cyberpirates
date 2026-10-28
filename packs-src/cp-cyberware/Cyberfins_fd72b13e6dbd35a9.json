@@ -1,0 +1,62 @@
+{
+  "_id": "fd72b13e6dbd35a9",
+  "name": "Cyberfins",
+  "type": "cyberware",
+  "img": "systems/sr2e/assets/item_icons/cyberware/hand-razors.webp",
+  "system": {
+    "location": "bodyware",
+    "grade": "standard",
+    "rating": 0,
+    "legality": "Legal",
+    "installed": true,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "ratingStats": [],
+    "essenceCost": 0.3,
+    "cost": 10500,
+    "availability": "5/48 hours",
+    "streetIndex": 1.25,
+    "isWeapon": true,
+    "weaponType": "melee",
+    "skill": "armed combat",
+    "damageType": "physical",
+    "reach": 0,
+    "damageCode": "(Str)L",
+    "notes": "Retractable spurs and webbing in the hands and feet: extended, the user swims as if wearing standard fins, and can attack with them as hand razors, (Str)L. Not compatible with standard fins or gloves. Cyberpirates p.174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "Cyberfins table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fd72b13e6dbd35a9"
+}

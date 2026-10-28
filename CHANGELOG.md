@@ -10,3 +10,5 @@
 - Diving gear: the six standard pieces, drysuit, dual tank manifold, full face mask, enclosed
   breathing helmet, OXSYS artificial gill, LBA, cybercomm link; armor: Diving Armor (4/2), JIM Diving
   Exoskeleton (6/6; Strength upgrades and penalties in its notes).
+- Cyberware: OXSYS Cybergill and its helium Air Tank, Cyberfins (attack as hand razors), Nitrogen
+  Monitor, Peg Leg (knee / hip), Hook Hand ((Str+1)M). Peg legs and hooks are not cyberlimbs.

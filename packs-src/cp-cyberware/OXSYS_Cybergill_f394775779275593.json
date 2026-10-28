@@ -1,0 +1,56 @@
+{
+  "_id": "f394775779275593",
+  "name": "OXSYS Cybergill",
+  "type": "cyberware",
+  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-air.webp",
+  "system": {
+    "location": "bodyware",
+    "grade": "standard",
+    "rating": 0,
+    "legality": "Legal",
+    "installed": true,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "ratingStats": [],
+    "essenceCost": 1.5,
+    "cost": 12500,
+    "availability": "5/72 hours",
+    "streetIndex": 1.75,
+    "notes": "Gills implanted on both sides of the neck, with a tracheal cutoff valve and pulmonary bypasses: breathes dissolved oxygen straight from the water. Immune to oxygen toxicity; still vulnerable to nitrogen narcosis and decompression sickness from residual lung nitrogen (hence the usual internal helium Air Tank). Cyberpirates p.174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "Cybergill table: Cybergill",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f394775779275593"
+}

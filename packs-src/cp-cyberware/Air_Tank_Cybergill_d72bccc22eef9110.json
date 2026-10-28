@@ -1,0 +1,56 @@
+{
+  "_id": "d72bccc22eef9110",
+  "name": "Air Tank (Cybergill)",
+  "type": "cyberware",
+  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-air.webp",
+  "system": {
+    "location": "bodyware",
+    "grade": "standard",
+    "rating": 0,
+    "legality": "Legal",
+    "installed": true,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "ratingStats": [],
+    "essenceCost": 0.25,
+    "cost": 1200,
+    "availability": "4/5 days",
+    "streetIndex": 1.5,
+    "notes": "Internal tank of pure helium installed with a cybergill to flush residual nitrogen from the lungs. Cyberpirates p.174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "Cybergill table: Air Tank",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!d72bccc22eef9110"
+}

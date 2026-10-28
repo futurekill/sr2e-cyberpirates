@@ -1,0 +1,56 @@
+{
+  "_id": "f4b0121d69aae8de",
+  "name": "Nitrogen Monitor",
+  "type": "cyberware",
+  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-blood.webp",
+  "system": {
+    "location": "bodyware",
+    "grade": "standard",
+    "rating": 0,
+    "legality": "Legal",
+    "installed": true,
+    "attributeMods": {
+      "body": 0,
+      "quickness": 0,
+      "strength": 0,
+      "charisma": 0,
+      "intelligence": 0,
+      "willpower": 0,
+      "reaction": 0,
+      "initiativeDice": 0
+    },
+    "ratingStats": [],
+    "essenceCost": 0.5,
+    "cost": 8500,
+    "availability": "4/24 hours",
+    "streetIndex": 1.25,
+    "notes": "Lung bari-spectrometer and pulmonary-vein electrolytic analyzer. When the character is on the verge of nitrogen narcosis or the bends, roll 2D6: on 8 or less it warns them (a shriek and red letters on a display link). It can't warn of oxygen toxicity, helium chills or HPNS. Cyberpirates p.174."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 174,
+        "cell": "Nitrogen Monitor table",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f4b0121d69aae8de"
+}
