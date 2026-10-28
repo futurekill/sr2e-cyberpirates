@@ -18,7 +18,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 162,
+            "cell": "Ship Attributes; Hull Rating Table (p.163)",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -47,7 +55,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 176,
+            "cell": "Cunard Princess Victoria Liner stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -76,7 +92,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 176,
+            "cell": "Maersk Jorgensen-class Fast Freighter stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -105,7 +129,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 176,
+            "cell": "CSS Stuart-class Corvette stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -134,7 +166,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 177,
+            "cell": "Shiawase Aohana-class Frigate stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -163,7 +203,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 177,
+            "cell": "MF Akihito-class Carrier stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -192,7 +240,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 178,
+            "cell": "Kvaerner Triton-class Medium Transport Submarine stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -221,7 +277,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 179,
+            "cell": "Krasnaya Sormova Vaneyev-class Hunter-Killer Submarine stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -250,7 +314,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 179,
+            "cell": "USS New Hampshire-class Attack Submarine stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",

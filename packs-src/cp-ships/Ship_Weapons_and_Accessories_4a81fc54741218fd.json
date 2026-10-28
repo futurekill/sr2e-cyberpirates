@@ -18,7 +18,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 179,
+            "cell": "Ship Weapons intro",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -47,7 +55,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 179,
+            "cell": "SS-N-49 \"Sirocco\" Antiship Missile stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -76,7 +92,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 180,
+            "cell": "UGM-188 Sea Saber Antiship Missile stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -105,7 +129,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 180,
+            "cell": "Javelot Aerial Defense Missile stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -134,7 +166,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 180,
+            "cell": "AN/EDQ-12 ANDREWS stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -163,7 +203,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 180,
+            "cell": "Naval Guns stat block and range table (p.181)",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -192,7 +240,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 181,
+            "cell": "Mk 197 MADCAP Torpedo stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -221,7 +277,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 181,
+            "cell": "RUR-15D ASROC stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -250,7 +314,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 181,
+            "cell": "UIM-199 Kingfisher SSAM stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -279,7 +351,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 182,
+            "cell": "Torpedo Probe stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -308,7 +388,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 182,
+            "cell": "Noisemaker table",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -337,7 +425,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 182,
+            "cell": "Decoy stat block",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",

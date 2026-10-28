@@ -6,7 +6,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { isDeepStrictEqual } from "node:util";
 
-if (!existsSync("packs-src") || !readdirSync("packs-src").length) { console.log("Round trip: no packs yet."); process.exit(0); }
+if (!existsSync("packs-src") || !readdirSync("packs-src").length) { console.error("Round trip: packs-src is missing."); process.exit(1); }
 const tmp = mkdtempSync(join(tmpdir(), "cp-roundtrip-"));
 const packs = join(tmp, "packs"), src = join(tmp, "src");
 execFileSync("node", ["tools/build-packs.mjs"], { env: { ...process.env, PACKS_OUT: packs }, stdio: "ignore" });

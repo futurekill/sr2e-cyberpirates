@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Constrictor of Malaysian and Philippine jungles, 6–10 m long; eats most mammals.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test.</p><p><em>Printed stats: B 8 · Q 4 × 1 · S 10 · C — · I 1/5 · W 2 · E 6 · R 5; Attacks 8M. Running multiplier ×1; Perception 5. Cyberpirates p.150.</em></p>",
+    "biography": "<p>Constrictor of Malaysian and Philippine jungles, 6–10 m long; eats most mammals.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test.</p><p><em>Printed stats: B 8 · Q 4 × 1 · S 10 · C — · I 1/5 · W 2 · E 6 · R 5; Attacks 8M. Running multiplier ×1; Perception 5. Cyberpirates p.150.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×1 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 2,
-      "mod": 3,
-      "value": 5
+      "mod": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 5,
       "dice": 1,
-      "mod": 0,
-      "value": 5
+      "mod": 0
     },
     "threatRating": 4,
     "nuyen": 0,
-    "movement": {
-      "walk": 4,
-      "run": 4
-    },
     "dualNatured": false
   },
   "items": [

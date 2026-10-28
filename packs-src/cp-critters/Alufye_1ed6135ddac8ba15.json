@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Awakened cockroaches 30–40 cm long from West African rainforests. They trill when threatened, lulling a would-be predator into pleasant lethargy. Harmless, popular pets.</p><p><strong>Powers:</strong> Empathy, Enhanced Senses (Smell, Taste)</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 2 · Q 3 × 2 · S 1 · C — · I 1/4 · W 1 · E 6 · R 3; Attacks none. Running multiplier ×2; Perception 4. Cyberpirates p.154.</em></p>",
+    "biography": "<p>Awakened cockroaches 30–40 cm long from West African rainforests. They trill when threatened, lulling a would-be predator into pleasant lethargy. Harmless, popular pets.</p><p><strong>Powers:</strong> Empathy, Enhanced Senses (Smell, Taste)</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 2 · Q 3 × 2 · S 1 · C — · I 1/4 · W 1 · E 6 · R 3; Attacks none. Running multiplier ×2; Perception 4. Cyberpirates p.154.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×2 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 1 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 2,
-      "mod": 1,
-      "value": 3
+      "mod": 1
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 3,
       "dice": 1,
-      "mod": 0,
-      "value": 3
+      "mod": 0
     },
     "threatRating": 1,
     "nuyen": 0,
-    "movement": {
-      "walk": 3,
-      "run": 6
-    },
     "dualNatured": false
   },
   "items": [],

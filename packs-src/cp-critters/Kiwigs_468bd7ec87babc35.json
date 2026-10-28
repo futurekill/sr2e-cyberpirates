@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Awakened carnivorous boars resembling North American piasmae, but with cloven hooves and pig-like snouts.</p><p><strong>Powers:</strong> Enhanced Physical Attributes (Strength or Quickness, once per day each, for [Essence × 2]D6 turns), Enhanced Reactions, Enhanced Senses (Thermographic Vision, Wide-band Hearing)</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Nuisance)</p><p><em>Printed stats: B 11/2 · Q 4 × 5 · S 13 · C — · I 2/4 · W 4 · E 6 · R 4; Attacks 9D2, +1 Reach. Running multiplier ×5; Perception 4. Cyberpirates p.150.</em></p>",
+    "biography": "<p>Awakened carnivorous boars resembling North American piasmae, but with cloven hooves and pig-like snouts.</p><p><strong>Powers:</strong> Enhanced Physical Attributes (Strength or Quickness, once per day each, for [Essence × 2]D6 turns), Enhanced Reactions, Enhanced Senses (Thermographic Vision, Wide-band Hearing)</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Nuisance)</p><p><em>Printed stats: B 11/2 · Q 4 × 5 · S 13 · C — · I 2/4 · W 4 · E 6 · R 4; Attacks 9D2, +1 Reach. Running multiplier ×5; Perception 4. Cyberpirates p.150.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×5 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 6 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 3,
-      "mod": 1,
-      "value": 4
+      "mod": 1
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 4,
       "dice": 1,
-      "mod": 0,
-      "value": 4
+      "mod": 0
     },
     "threatRating": 6,
     "nuyen": 0,
-    "movement": {
-      "walk": 4,
-      "run": 20
-    },
     "dualNatured": false
   },
   "items": [

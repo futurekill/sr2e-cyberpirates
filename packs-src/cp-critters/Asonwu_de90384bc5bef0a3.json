@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Carnivorous pack hunters like the agropelter: a few hamstring large prey with swift bites, then up to fifty mob it. Their Pestilence disease brings itching, shaking, madness and eventually brain death.</p><p><strong>Powers:</strong> Enhanced Senses (Improved Hearing and Smell, Low-light Vision), Pestilence</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> Multiplier for asonwu movement is 4 (the stat line prints × 3).</p><p><em>Printed stats: B 2 · Q 4 × 3 · S 3 · C — · I 3/4 · W 2 · E 6 · R 6; Attacks 6L. Running multiplier ×3; Perception 4. Cyberpirates p.154.</em></p>",
+    "biography": "<p>Carnivorous pack hunters like the agropelter: a few hamstring large prey with swift bites, then up to fifty mob it. Their Pestilence disease brings itching, shaking, madness and eventually brain death.</p><p><strong>Powers:</strong> Enhanced Senses (Improved Hearing and Smell, Low-light Vision), Pestilence</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> Multiplier for asonwu movement is 4 (the stat line prints × 3).</p><p><em>Printed stats: B 2 · Q 4 × 3 · S 3 · C — · I 3/4 · W 2 · E 6 · R 6; Attacks 6L. Running multiplier ×3; Perception 4. Cyberpirates p.154.</em></p><p><em>On the sheet: Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 2 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 3,
-      "mod": 3,
-      "value": 6
+      "mod": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 6,
       "dice": 1,
-      "mod": 0,
-      "value": 6
+      "mod": 0
     },
     "threatRating": 2,
     "nuyen": 0,
-    "movement": {
-      "walk": 4,
-      "run": 12
-    },
     "dualNatured": false
   },
   "items": [

@@ -15,14 +15,20 @@ const SCHEMA = JSON.parse(readFileSync("tools/data/schema.json", "utf8"));
 const TYPE_OF = Object.fromEntries((MODULE.packs ?? []).map(p => [p.name, p.type]));
 const COLLECTION = { Item: "items", Actor: "actors", JournalEntry: "journal" };
 // Derived by the system every preparation: authoring them stores stale numbers.
-const DERIVED = { bioware: ["actualBodyCost"], npc: [], vehicle: [] };
+const DERIVED = { bioware: ["actualBodyCost"], npc: ["movement"], vehicle: [] };
+// Nested paths NPCData recomputes every preparation (authoring them only stores a stale number).
+const DERIVED_PATHS = { npc: ["reaction.base", "reaction.value", "initiative.base", "initiative.value"] };
 // Scalar field classes → the JS type a source value must have (Foundry would coerce it silently).
 const KIND = { NumberField: "number", StringField: "string", HTMLField: "string", BooleanField: "boolean" };
 let problems = 0;
 const note = (m) => { console.error("  ✗ " + m); problems++; };
 
-if (!existsSync(ROOT)) { console.log("no packs-src yet"); process.exit(0); }
-const packs = readdirSync(ROOT).filter((p) => statSync(join(ROOT, p)).isDirectory());
+// Every pack the manifest declares must have sources (a deleted pack must not pass silently).
+for (const name of Object.keys(TYPE_OF)) {
+  const dir = join(ROOT, name);
+  if (!existsSync(dir) || !readdirSync(dir).some(f => f.endsWith(".json"))) note(`${name}: declared in module.json but packs-src/${name} is missing or empty`);
+}
+const packs = existsSync(ROOT) ? readdirSync(ROOT).filter((p) => statSync(join(ROOT, p)).isDirectory()) : [];
 
 const checkSystem = (where, doc) => {
   const allowed = SCHEMA.keys[doc.type];
@@ -34,6 +40,7 @@ const checkSystem = (where, doc) => {
     if (want && v !== null && typeof v !== want) note(`${where}: system.${k} is a ${kind} — got ${typeof v} ${JSON.stringify(v)}`);
   }
   for (const k of DERIVED[doc.type] ?? []) if (k in (doc.system ?? {})) note(`${where}: system.${k} is derived — don't author it`);
+  for (const k of DERIVED_PATHS[doc.type] ?? []) if (k.split(".").reduce((o, p) => o?.[p], doc.system) !== undefined) note(`${where}: system.${k} is derived — don't author it`);
   const ess = doc.system?.essence;
   if (doc.type === "npc" && ess && [ess.value, ess.max].some(v => v != null && (v < 0 || v > 6))) note(`${where}: NPC Essence outside 0–6 (needs the system change, docs/NEEDS-SYSTEM.md)`);
 };
@@ -62,8 +69,28 @@ for (const pack of packs.sort()) {
       if (sub.has(child._id)) note(`${f}: duplicate embedded _id ${child._id}`); sub.add(child._id);
       if (child.type && child.system && type === "Actor") checkSystem(`${f} → ${child.name}`, child);
     }
-    const src = doc.flags?.["sr2e-cyberpirates"]?.source;
-    if (!src?.page || !src?.verified) note(`${f}: no verified transcription record (flags["sr2e-cyberpirates"].source {page, cell, verified})`);
+    const rec = (d, w) => {
+      const src = d.flags?.["sr2e-cyberpirates"]?.source;
+      if (!src?.page || !src?.cell || src?.verified !== "300dpi+visual") note(`${w}: no complete transcription record (flags["sr2e-cyberpirates"].source {page, cell, verified: "300dpi+visual"})`);
+    };
+    rec(doc, f);
+    for (const pg of doc.pages ?? []) rec(pg, `${f} → page ${pg.name}`);
+  }
+}
+
+// Inherited statistics (tools/data/inherited.mjs) against the sibling system's pack: a WARNING only,
+// so CI without the sibling checkout still passes (PLAN-content.md R1 #10).
+const SIB = "../sr2e-foundryvtt/packs-src/weapons";
+if (existsSync(SIB)) {
+  const { BASES } = await import("./data/inherited.mjs");
+  const files = readdirSync(SIB);
+  for (const [key, b] of Object.entries(BASES)) {
+    const f = files.find(x => x.endsWith(`_${b.id}.json`));
+    if (!f) { console.warn(`  ⚠ inherited ${key}: ${b.id} not in the system's weapons pack`); continue; }
+    const sys = JSON.parse(readFileSync(join(SIB, f), "utf8")).system;
+    for (const k of ["damageCode", "damageType", "concealability", "reach", "weight", "availability", "cost"]) {
+      if (sys[k] !== b[k]) console.warn(`  ⚠ inherited ${key}.${k}: snapshot ${JSON.stringify(b[k])}, system now ${JSON.stringify(sys[k])}`);
+    }
   }
 }
 

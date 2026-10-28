@@ -54,14 +54,29 @@ if (typeof Hooks !== "undefined") {
         it("every totem is in CONFIG.SR2E.totems", () => {
           for (const k of Object.keys(CYBERPIRATES_TOTEMS)) assert.ok(CONFIG.SR2E.totems[k], k);
         });
-        it("spell dice come through the system's lookup (Nau +2 combat, Osebo −1 health, Sase −1 combat)", () => {
-          assert.equal(shaman("nau")._totemSpellDice("combat"), 2);
-          assert.equal(shaman("nau")._totemSpellDice("health"), 0);
-          assert.equal(shaman("osebo")._totemSpellDice("health"), -1);
-          assert.equal(shaman("sase")._totemSpellDice("combat"), -1);
+        // An independent transcription of the book's Advantages/Disadvantages (p.152–154), typed
+        // separately from CYBERPIRATES_TOTEMS: spell dice per category, conjuring dice per domain.
+        const SKY1 = { wind: 1, mist: 1, storm: 1 };
+        const BOOK = {
+          agwengwere: [{ combat: 2, health: -1 }, {}], anansi: [{ illusion: 1, manipulation: 1 }, {}],
+          asenna: [{ detection: 2, manipulation: 2 }, SKY1], awoba: [{ combat: 2, health: 2 }, {}],
+          danwane: [{ health: 2, detection: 1 }, SKY1], nau: [{ combat: 2, illusion: 1 }, { sea: 2, river: 2 }],
+          onini: [{ health: 2, manipulation: 2 }, {}], osebo: [{ combat: 2, health: -1 }, { prairie: 2 }],
+          owoh: [{ combat: 2, illusion: 2 }, {}], sase: [{ detection: 2, illusion: 2, combat: -1 }, { prairie: 2 }],
+          wurega: [{ illusion: 2 }, {}]
+        };
+        it("every totem's spell dice match the book through the system's lookup", () => {
+          for (const [k, [spells]] of Object.entries(BOOK)) {
+            const a = shaman(k);
+            for (const c of ["combat", "detection", "health", "illusion", "manipulation"]) assert.equal(a._totemSpellDice(c), spells[c] ?? 0, `${k} ${c}`);
+          }
         });
-        it("Spirits of the Sky cover mist, storm and wind (Asenna +1)", () => {
-          for (const d of ["mist", "storm", "wind"]) assert.equal(CONFIG.SR2E.totems.asenna.conjuringBonus[d], 1, d);
+        it("every totem's conjuring dice match the book", () => {
+          for (const [k, [, conj]] of Object.entries(BOOK)) assert.deepEqual({ ...CONFIG.SR2E.totems[k].conjuringBonus }, conj, k);
+        });
+        it("core totems are untouched, and Grimoire's survive alongside (when it is active)", () => {
+          assert.equal(CONFIG.SR2E.totems.lion.spellBonus.combat, 2);
+          if (game.modules.get("sr2e-grimoire")?.active) for (const k of ["moon", "oak", "sea", "sun", "wildcat", "wyrm"]) assert.ok(CONFIG.SR2E.totems[k], `grimoire ${k}`);
         });
       });
     }, { displayName: "SR2E Cyberpirates: totems" });

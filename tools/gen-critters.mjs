@@ -3,10 +3,11 @@
 // 300 dpi render (OCR garbles these stat lines; it was used only to locate them).
 // Critter key (core p.232): Body "N/A" = rating / natural armor (B and I); Quickness "N x M" = rating /
 // running multiplier; Intelligence "N/P" = rating / Perception; Essence in parentheses = dual-natured;
-// Reaction "*" = 2D6 Initiative, "**" = 3D6. Charisma "—" is stored as 0.
+// Reaction "*" = 2D6 Initiative, "**" = 3D6. Charisma "—" is stored as 0; NPCData floors attributes at 1 (said in the biography).
 // NPC Reaction is DERIVED as (Q+I)/2 + mod, so `mod` is set to land on the printed value. Movement is
 // derived ×3, so the printed running multiplier is in the biography. Threat Rating = mean attribute
-// (the Paranormal Animals module's rule; the book prints none).
+// (the Paranormal Animals module's rule; the book prints none). Derived fields (Reaction/Initiative
+// base and value, movement) are not authored; the biography says where the sheet differs from the book.
 // Not generated (docs/NEEDS-SYSTEM.md): Chupacabras (Essence 2D6), the vampire templates (2D6), and
 // the shapeshifters (Essence 8) — NPC Essence is capped at 6.
 import { idFor, sourceFlag, STATS } from "./lib.mjs";
@@ -16,10 +17,10 @@ const V = "300dpi+visual";
 const ICON = "systems/sr2e/assets/item_icons/weapons/";
 const attr = (v) => ({ base: v, mod: 0, value: v, racial: 0 });
 
-function attack(owner, { name = "Natural Attack", code, type = "physical", reach = 0, notes = "", humanoid = false }) {
+function attack(owner, { name = "Natural Attack", code, type = "physical", reach = 0, notes = "", humanoid = false, skill = "" }) {
   return { _id: idFor(`critter-attack:${owner}`, name), name, type: "weapon",
     img: `${ICON}${humanoid ? "unarmed-strike" : "natural-attack"}.webp`,
-    system: { weaponType: "melee", skill: "", damageCode: code, damageType: type, concealability: 0, reach,
+    system: { weaponType: "melee", skill, damageCode: code, damageType: type, concealability: 0, reach,
       firingModes: { ss: false, sa: false, bf: false, fa: false }, ammo: { current: 0, max: 0, type: "" }, recoilComp: 0,
       ranges: { short: 0, medium: 0, long: 0, extreme: 0 }, strengthMin: 0, weight: 0, cost: 0, availability: "",
       legality: "", equipped: true, accessories: [], notes },
@@ -30,12 +31,18 @@ function critter(x) {
   const _id = idFor("critter", x.name);
   const rBase = Math.floor((x.q + x.i) / 2);
   const stats = `B ${x.b}${x.armor ? `/${x.armor}` : ""} · Q ${x.q} × ${x.mult} · S ${x.s} · C ${x.c || "—"} · I ${x.i}${x.per ? `/${x.per}` : ""} · W ${x.w} · E ${x.dual ? `(${x.e})` : x.e} · R ${x.r}${"*".repeat((x.dice ?? 1) - 1)}`;
+  const tr = Math.max(1, Math.round((x.b + x.q + x.s + x.c + x.i + x.w) / 6));
+  // What the sheet shows differently from the book (the system's NPC model), said where players read it.
+  const zero = [["Strength", x.s, "0"], ["Charisma", x.c, "—"]].filter(([, v]) => v === 0).map(([n, , shown]) => `${n} (printed ${shown})`);
+  const sheet = [x.mult !== 3 && `the sheet's running rate uses ×3 — use ×${x.mult} by hand`,
+    zero.length && `${zero.join(" and ")} ${zero.length > 1 ? "count" : "counts"} as 1 on the sheet (the system's floor)`,
+    `Threat Rating ${tr} is this module's estimate (the average attribute), not the book's`].filter(Boolean);
   const bio = `<p>${x.desc}</p>`
     + (x.powers ? `<p><strong>Powers:</strong> ${x.powers}</p>` : "")
     + `<p><strong>Weaknesses:</strong> ${x.weak ?? "None"}</p>`
     + (x.note ? `<p><strong>Note:</strong> ${x.note}</p>` : "")
-    + `<p><em>Printed stats: ${stats}; Attacks ${x.printedAttacks}. Running multiplier ×${x.mult}${x.per ? `; Perception ${x.per}` : ""}${x.dual ? "; dual-natured" : ""}. Cyberpirates p.${x.page}.</em></p>`;
-  const tr = Math.max(1, Math.round((x.b + x.q + x.s + x.c + x.i + x.w) / 6));
+    + `<p><em>Printed stats: ${stats}; Attacks ${x.printedAttacks}. Running multiplier ×${x.mult}${x.per ? `; Perception ${x.per}` : ""}${x.dual ? "; dual-natured" : ""}. Cyberpirates p.${x.page}.</em></p>`
+    + `<p><em>On the sheet: ${sheet.join("; ")}.</em></p>`;
   return {
     _id, name: x.name, type: "npc", img: "icons/svg/pawprint.svg",
     system: {
@@ -43,12 +50,12 @@ function critter(x) {
       body: attr(x.b), quickness: attr(x.q), strength: attr(x.s), charisma: attr(x.c), intelligence: attr(x.i), willpower: attr(x.w),
       essence: { value: x.e, max: x.e },
       magic: { value: 0, max: 0, tradition: "none", type: "none", totem: "" },
-      reaction: { base: rBase, mod: x.r - rBase, value: x.r },
+      reaction: { mod: x.r - rBase },
       conditionMonitor: { physical: { value: 0, max: 10, overflow: 0 }, stun: { value: 0, max: 10, overflow: 0 }, overflow: 0 },
       armor: { ballistic: x.armor ?? 0, impact: x.armor ?? 0 },
       dicePools: { combat: { value: 0, max: 0, bonus: 0 }, magic: { value: 0, max: 0, bonus: 0 } },
-      initiative: { base: x.r, dice: x.dice ?? 1, mod: 0, value: x.r },
-      threatRating: tr, nuyen: 0, movement: { walk: x.q, run: x.q * x.mult }, dualNatured: !!x.dual
+      initiative: { dice: x.dice ?? 1, mod: 0 },
+      threatRating: tr, nuyen: 0, dualNatured: !!x.dual
     },
     items: x.attacks.map(a => attack(x.name, a)), effects: [], folder: null, sort: 0,
     flags: sourceFlag({ page: x.page, cell: `${x.name.replace(/ \(.*/, "")} stat block`, verified: V }), _stats: STATS,
@@ -59,7 +66,7 @@ function critter(x) {
   };
 }
 
-const HUMANOID = [{ name: "Unarmed Strike", code: "(Str)M", type: "stun", humanoid: true, notes: "Humanoid: uses weapons and the normal combat rules." }];
+const HUMANOID = [{ name: "Unarmed Strike", code: "(Str)M", type: "stun", humanoid: true, skill: "unarmed_combat", notes: "Humanoid: uses weapons and the normal combat rules." }];
 const COBRA_P = "Enhanced Senses (Smell), Thermographic Vision";
 const COBRA_N = "A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.";
 const PY_N = "A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test.";

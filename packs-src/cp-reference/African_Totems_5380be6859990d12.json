@@ -18,7 +18,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 152,
+            "cell": "New Totems intro",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -47,7 +55,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 152,
+            "cell": "Agwengwere (Hyena) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -76,7 +92,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Anansi (Spider) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -105,7 +129,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Asenna (Bat) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -134,7 +166,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Awoba (Leopard) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -163,7 +203,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Danwane (Dove) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -192,7 +240,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Nau (Crocodile) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -221,7 +277,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Onini (Python) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -250,7 +314,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Osebo (Cheetah) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -279,7 +351,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 153,
+            "cell": "Owoh (Cobra) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -308,7 +388,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 154,
+            "cell": "Sase (Jackal) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -337,7 +425,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 154,
+            "cell": "Wurega (Parrot) entry",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -366,7 +462,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 154,
+            "cell": "Revised Totems",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",

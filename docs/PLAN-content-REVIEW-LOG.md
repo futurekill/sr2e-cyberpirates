@@ -40,3 +40,19 @@ Most earlier findings are addressed. Two concrete gaps remain:
 VERDICT: REVISE
 ### Claude's response
 Accepted both: the ancestor spirit waits for a system change (Strength-based attack power), reference-only until then; foundry-check compares authored fields recursively against packs-src, allowing inserted defaults and metadata.
+
+## Code review 1 — Codex (thread 01a18496-a140-7443-a06c-d464cc7b72e8): REVISE, 13 findings
+Fixed: (1) foundry-check now fetches every packs-src source and compares it recursively (embedded
+items/effects/pages) with the loaded document, and reports invalid/empty packs; (3) declared packs
+must have sources, the round trip fails without packs-src; (4) NPC derived fields no longer authored
+(validator rejects them), biographies say the sheet runs ×3; (5) the attribute floor is disclosed per
+critter and in NEEDS-SYSTEM; (6) Threat Rating labelled as the module's estimate; (7) humanoid
+Unarmed Strike uses unarmed_combat; (8) every journal page carries its own source record, the
+validator requires page+cell+"300dpi+visual"; the Edges & Flaws values were re-read at 300 dpi (all
+eight matched) and the comment corrected; (9) inherited-stat drift warning against the sibling pack;
+(10) Quench checks every totem's spell and conjuring dice against an independent book table, core
+totems untouched, Grimoire coexistence; (11) minimum sr2e 0.121.0; (13) release runs lint + validate.
+Partly: (2) the offline validator stays top-level plus a derived-path list; the nested/choices/bounds
+check is foundry-check's recursive comparison against the live models (authoritative, in Foundry).
+(8) transcription tables stay in the generators (documented in CLAUDE.md) instead of tools/data.
+(12) the versioned CHANGELOG section is written at release time, as in every module.

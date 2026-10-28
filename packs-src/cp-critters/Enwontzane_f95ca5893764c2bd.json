@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Nocturnal, arboreal predators like the sasquatch and bandersnatch: almost 3 m tall, over 400 kg, free of HMHVV. They feed on anything ork-sized or smaller and live in family groups of up to ten.</p><p><strong>Powers:</strong> Adaptive Coloration</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 8 · Q 3 × 4 · S 7 · C — · I 2/4 · W 4 · E (6) · R 4; Attacks 8S2, +1 Reach. Running multiplier ×4; Perception 4; dual-natured. Cyberpirates p.155.</em></p>",
+    "biography": "<p>Nocturnal, arboreal predators like the sasquatch and bandersnatch: almost 3 m tall, over 400 kg, free of HMHVV. They feed on anything ork-sized or smaller and live in family groups of up to ten.</p><p><strong>Powers:</strong> Adaptive Coloration</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 8 · Q 3 × 4 · S 7 · C — · I 2/4 · W 4 · E (6) · R 4; Attacks 8S2, +1 Reach. Running multiplier ×4; Perception 4; dual-natured. Cyberpirates p.155.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×4 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 2,
-      "mod": 2,
-      "value": 4
+      "mod": 2
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 4,
       "dice": 1,
-      "mod": 0,
-      "value": 4
+      "mod": 0
     },
     "threatRating": 4,
     "nuyen": 0,
-    "movement": {
-      "walk": 3,
-      "run": 12
-    },
     "dualNatured": true
   },
   "items": [

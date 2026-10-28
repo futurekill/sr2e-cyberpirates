@@ -19,3 +19,10 @@ Edges & Flaws use the system `quality` item exactly as the Shadowrun Companion m
 `tools/data/schema.json` is dumped from the LIVE data models (see tools/snapshot-schema.mjs), not from
 pack documents — system pack docs carry stale keys (ammo `availability`/`weight`), which once let
 invalid fields through. Cyberware/bioware `streetIndex` is a STRING field; everything else numeric.
+
+## Transcription data
+The transcription tables live in each `tools/gen-*.mjs` (one source of truth per pack) rather than
+separate `tools/data/*` files, except the inherited core statistics (`tools/data/inherited.mjs`).
+Every document — and every journal page — carries `flags["sr2e-cyberpirates"].source {page, cell,
+verified: "300dpi+visual"}`; the validator rejects anything less. NPC derived fields (Reaction and
+Initiative base/value, movement) are never authored.

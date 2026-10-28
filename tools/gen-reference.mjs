@@ -41,11 +41,11 @@ const fmt = (o, sign = "+") => Object.entries(o).map(([k, n]) => `${sign}${n} ${
 const auto = (k) => `<p class="sr2e-auto"><strong>In Foundry:</strong> pick <em>${T[k].label}</em> as the totem. Automated: spells ${fmt(T[k].spellBonus)}${Object.keys(T[k].spellPenalty).length ? `; ${fmt(T[k].spellPenalty, "−")}` : ""}; conjuring ${fmt(T[k].conjuringBonus)}.`;
 const totem = (k, chars, env, adv, dis, byHand, p) => [T[k].label, `<p>${chars}</p>
 <p><strong>Favored environment:</strong> ${env}</p><p><strong>Advantages:</strong> ${adv}</p><p><strong>Disadvantages:</strong> ${dis}</p>
-${auto(k)}${byHand ? ` <strong>By hand:</strong> ${byHand}` : ""}</p><p><em>Cyberpirates p.${p}.</em></p>`];
+${auto(k)}${byHand ? ` <strong>By hand:</strong> ${byHand}` : ""}</p><p><em>Cyberpirates p.${p}.</em></p>`, { page: p, cell: `${T[k].label} entry` }];
 
 const TOTEMS = entry("African Totems", { page: 153, cell: "New Totems; Revised Totems" }, [
   ["About these totems", `<p>The totems most common among Ghanaian and Ivory Coast shamans; Caribbean shamans of African descent may follow them too. Any of them may also conjure ancestor spirits (see <em>Ancestor Spirits</em>).</p>
-<p>Spell and conjuring dice are automated when the totem is chosen on the Magic tab. "Spirits of the Sky" means mist and storm spirits (the system's <em>wind</em> spirits too). The system has no <strong>jungle</strong> domain, so jungle-spirit bonuses, Banishing dice, conditional bonuses and every disadvantage are applied by hand. <em>Cyberpirates p.152.</em></p>`],
+<p>Spell and conjuring dice are automated when the totem is chosen on the Magic tab. "Spirits of the Sky" means mist and storm spirits (the system's <em>wind</em> spirits too). The system has no <strong>jungle</strong> domain, so jungle-spirit bonuses, Banishing dice, conditional bonuses and every disadvantage are applied by hand. <em>Cyberpirates p.152.</em></p>`, { page: 152, cell: "New Totems intro" }],
   totem("agwengwere", "Aggressive, capricious and cunning, Hyena serves herself first, angers fast and stands her ground against bigger rivals — even lions, over a kill.",
     "Savannah", "+2 dice for combat spells, +2 dice to Banishing.", "−1 die for health spells. A Willpower (4) Test to do anything that brings her no benefit.",
     "+2 Banishing; the Willpower test.", 152),
@@ -84,7 +84,7 @@ const TOTEMS = entry("African Totems", { page: 153, cell: "New Totems; Revised T
 <tr><td>Agona (Crow)</td><td>Raven</td></tr><tr><td>Anlo (Shark)</td><td>Shark</td></tr><tr><td>Gbwegen (Lion)</td><td>Lion</td></tr>
 <tr><td>Gwobeag (Dog)</td><td>Dog</td></tr><tr><td>Kpwire (Mouse)</td><td>Gecko</td></tr><tr><td>Oyoko (Falcon)</td><td>Eagle</td></tr>
 <tr><td>Weme (Deer/Antelope)</td><td>Horse</td></tr></table>
-<p>Raven, Shark, Lion, Dog and Eagle are in the core system's totem list. Gecko and Horse are not: until a module adds them, run them by hand. <em>Cyberpirates p.154.</em></p>`]
+<p>Raven, Shark, Lion, Dog and Eagle are in the core system's totem list. Gecko and Horse are not: until a module adds them, run them by hand. <em>Cyberpirates p.154.</em></p>`, { page: 154, cell: "Revised Totems" }]
 ]);
 
 writePack("cp-reference", [ANCESTOR, TOTEMS]);

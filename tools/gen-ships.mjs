@@ -7,7 +7,7 @@ import { journalEntry, writePack } from "./lib.mjs";
 
 const V = "300dpi+visual";
 const stats = (rows) => `<table>${rows.map(([k, v]) => `<tr><th>${k}</th><td>${v}</td></tr>`).join("")}</table>`;
-const vessel = (name, p, desc, rows, extra = "") => [name, `<p>${desc}</p>${stats(rows)}${extra}<p><em>Cyberpirates p.${p}.</em></p>`];
+const vessel = (name, p, desc, rows, extra = "") => [name, `<p>${desc}</p>${stats(rows)}${extra}<p><em>Cyberpirates p.${p}.</em></p>`, { page: p, cell: `${name} stat block` }];
 const ship = (h, spd, acc, hull, bul, sig, an, sen, son, cost) => [["Handling", h], ["Speed (Cavitation)", spd], ["Acceleration", acc],
   ["Hull", hull], ["Bulwark", bul], ["Signature / Sonar Signature", sig], ["Autonav", an], ["Sensor", sen], ["Sonar", son], ["Cost", cost]];
 
@@ -20,7 +20,7 @@ const KEY = ["Reading ship statistics", `<p>A <strong>ship</strong> is any vesse
 <li><strong>Depth</strong> (submarines and minisubs): the safe maximum depth in meters; deeper, the hull takes crush damage (p.168).</li>
 <li><strong>Accommodation</strong> replaces Seating: the crew and passengers the ship can house.</li>
 <li><strong>Load</strong> works as for vehicles (Rigger 2 p.24). Ship electronics add Hull × 5 to their Flux Rating, but surface-to-surface scanning, jamming and communication stops at the 35 km horizon line.</li></ul>
-<p>The ship rules themselves (crews, ship combat, ramming, damage control, sonar, thermoclines) are not automated: run them from the book. <em>Cyberpirates p.162–163.</em></p>`];
+<p>The ship rules themselves (crews, ship combat, ramming, damage control, sonar, thermoclines) are not automated: run them from the book. <em>Cyberpirates p.162–163.</em></p>`, { page: 162, cell: "Ship Attributes; Hull Rating Table (p.163)" }];
 
 const SHIPS = journalEntry("Ships and Submarines", { page: 176, cell: "Ships and Submarines stat blocks p.176–179", verified: V }, [
   KEY,
@@ -54,7 +54,7 @@ const missile = (h, spd, rng, body, sig, int, dmg, wt, cost) => [["Handling", h]
   ["Intelligence", int], ["Damage", dmg], ["Weight", wt], ["Cost", cost]];
 
 const WEAPONS = journalEntry("Ship Weapons and Accessories", { page: 179, cell: "Ship Weapons; Vehicle Accessories p.179–182", verified: V }, [
-  ["About ship weapons", `<p>Antiship missiles use Rigger 2's <strong>Extended Range Missile</strong> rules (Rigger 2 p.89). Besides Damage, Weight, Intelligence and Cost they carry vehicle ratings — Handling, a fixed Speed, Body (no Armor) and Signature — and a Range: the farthest the missile can fly. Ship weapons have no Availability or Street Index; the gamemaster sets them. <em>Cyberpirates p.179.</em></p>`],
+  ["About ship weapons", `<p>Antiship missiles use Rigger 2's <strong>Extended Range Missile</strong> rules (Rigger 2 p.89). Besides Damage, Weight, Intelligence and Cost they carry vehicle ratings — Handling, a fixed Speed, Body (no Armor) and Signature — and a Range: the farthest the missile can fly. Ship weapons have no Availability or Street Index; the gamemaster sets them. <em>Cyberpirates p.179.</em></p>`, { page: 179, cell: "Ship Weapons intro" }],
   vessel("SS-N-49 \"Sirocco\" Antiship Missile", 179, "A Russian antiship missile sold worldwide; the design is over fifteen years old but keeps up its Soviet ancestors' fearsome reputation.",
     missile(4, 800, "350 km", 3, 5, 3, "20SN", "750 kg", "600,000¥")),
   vessel("UGM-188 Sea Saber Antiship Missile", 180, "The North American counterpart of the Sirocco (UCAS, Confederate and Royal Navy): shorter range, but faster, smarter and harder-hitting.",
@@ -79,7 +79,7 @@ const WEAPONS = journalEntry("Ship Weapons and Accessories", { page: 179, cell: 
 <table><tr><th>Range</th><th>Short</th><th>Medium</th><th>Long</th><th>Extreme</th></tr>
 <tr><th>Light</th><td>100–2,500 m</td><td>2.5–6 km</td><td>6–12 km</td><td>12–18 km</td></tr>
 <tr><th>Medium</th><td>100–4,000 m</td><td>4–12 km</td><td>12–18 km</td><td>18–25 km</td></tr></table>
-<p><em>Cyberpirates p.180–181.</em></p>`],
+<p><em>Cyberpirates p.180–181.</em></p>`, { page: 180, cell: "Naval Guns stat block and range table (p.181)" }],
   vessel("Mk 197 MADCAP Torpedo", 181, "The most widely used torpedo of the era: up to 75 knots, an active sonar-seeker warhead as standard (passive sonar or thermal heads available). Launched by subs and surface ships, or dropped from anti-submarine helicopters.",
     missile(4, 115, "15 km", 4, "5/5", 2, "14DN", "750 kg", "350,000¥"),
     "<ul><li>It activates on splashdown; range is measured from the splash point. Sonar Rating 1 for active-sonar range.</li><li>Wire-guided: a rigger on the sub controls it until the cable is cut, then its own Intelligence takes over. Helicopter-dropped MADCAPs have no wire and can't be rigged.</li></ul>"),
@@ -95,7 +95,7 @@ const WEAPONS = journalEntry("Ship Weapons and Accessories", { page: 179, cell: 
     [["Handling", 4], ["Speed", 150], ["Range", "15 km (depth 750 meters)"], ["Body", 4], ["Signature", "5/3"], ["Intelligence", 2], ["Damage", "None"], ["Sonar", 4], ["Weight", "950 kg"], ["Cost", "150,000¥"]],
     "<p>Fixed speed 150 m per Combat Turn (about 100 knots); the cable limits it to 3 km (about 20 turns, a minute of recon). Steered from the sub by joystick, or by rigger link if the sub has a remote control deck.</p>"),
   ["Noisemaker", `<p>A meter-long perforated canister of chemicals that froths into a mass of bubbles, confusing sonar and torpedoes. When a sub releases one, other craft take <strong>+3 to all TNs</strong> to detect or target it for that Combat Turn and the next two (ten seconds).</p>
-${stats([["Weight", "75 kg"], ["Cost", "500¥"], ["Availability", "6/48 hours"], ["Street Index", "4.5"]])}<p><em>Cyberpirates p.182.</em></p>`],
+${stats([["Weight", "75 kg"], ["Cost", "500¥"], ["Availability", "6/48 hours"], ["Street Index", "4.5"]])}<p><em>Cyberpirates p.182.</em></p>`, { page: 182, cell: "Noisemaker table" }],
   vessel("Decoy", 182, "A torpedo body with a sound system that imitates a moving submarine.",
     [["Handling", 4], ["Speed", 150], ["Range", "15 km (depth 750 meters)"], ["Body", 4], ["Signature", "5/3"], ["Intelligence", 2], ["Damage", "NA"], ["Sonar", 4], ["Weight", "950 kg"], ["Cost", "150,000¥"]],
     "<p>When it deploys, every torpedo fired at the sub makes an <strong>Intelligence (6) Test</strong>: success, it stays locked on the sub; failure, it strikes the decoy.</p>")

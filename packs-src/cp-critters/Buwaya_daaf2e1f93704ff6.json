@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>A small, fat, mostly green Philippine crocodile with a brown patch on its back. It Searches for food and magically Compels the prey to come within biting distance. Lazy: it always takes offered meat rather than attacking.</p><p><strong>Powers:</strong> Compulsion, Enhanced Physical Attributes (Strength, three times per day for [Essence]D6 turns), Enhanced Senses (Low-Light Vision, Smell), Search</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 10/4 · Q 4 × 4 · S 8 · C — · I 1 · W 4 · E 6 · R 3; Attacks 10S. Running multiplier ×4. Cyberpirates p.149.</em></p>",
+    "biography": "<p>A small, fat, mostly green Philippine crocodile with a brown patch on its back. It Searches for food and magically Compels the prey to come within biting distance. Lazy: it always takes offered meat rather than attacking.</p><p><strong>Powers:</strong> Compulsion, Enhanced Physical Attributes (Strength, three times per day for [Essence]D6 turns), Enhanced Senses (Low-Light Vision, Smell), Search</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 10/4 · Q 4 × 4 · S 8 · C — · I 1 · W 4 · E 6 · R 3; Attacks 10S. Running multiplier ×4. Cyberpirates p.149.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×4 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 5 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 2,
-      "mod": 1,
-      "value": 3
+      "mod": 1
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 3,
       "dice": 1,
-      "mod": 0,
-      "value": 3
+      "mod": 0
     },
     "threatRating": 5,
     "nuyen": 0,
-    "movement": {
-      "walk": 4,
-      "run": 16
-    },
     "dualNatured": false
   },
   "items": [

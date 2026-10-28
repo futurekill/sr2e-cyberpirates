@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>West African mermaids domesticated by Ewe pirates, bred slightly faster and smarter; up to 1.5 m long.</p><p><strong>Powers:</strong> Enhanced Physical Attributes (Quickness, once per day, for [Essence × 2]D6 turns), Enhanced Senses (Improved Hearing)</p><p><strong>Weaknesses:</strong> Dietary Requirement (Alcohol)</p><p><em>Printed stats: B 4 · Q 6 × 4 · S 6 · C — · I 3/5 · W 3 · E 6 · R 5; Attacks 6S. Running multiplier ×4; Perception 5. Cyberpirates p.155.</em></p>",
+    "biography": "<p>West African mermaids domesticated by Ewe pirates, bred slightly faster and smarter; up to 1.5 m long.</p><p><strong>Powers:</strong> Enhanced Physical Attributes (Quickness, once per day, for [Essence × 2]D6 turns), Enhanced Senses (Improved Hearing)</p><p><strong>Weaknesses:</strong> Dietary Requirement (Alcohol)</p><p><em>Printed stats: B 4 · Q 6 × 4 · S 6 · C — · I 3/5 · W 3 · E 6 · R 5; Attacks 6S. Running multiplier ×4; Perception 5. Cyberpirates p.155.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×4 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 4,
-      "mod": 1,
-      "value": 5
+      "mod": 1
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 5,
       "dice": 1,
-      "mod": 0,
-      "value": 5
+      "mod": 0
     },
     "threatRating": 4,
     "nuyen": 0,
-    "movement": {
-      "walk": 6,
-      "run": 24
-    },
     "dualNatured": false
   },
   "items": [

@@ -1,6 +1,6 @@
 // Edges & Flaws (book p.142–144) into packs-src/cp-qualities — the system `quality` item exactly as
-// the Shadowrun Companion module uses it. Values verified: visual read at 120 dpi agreed with a
-// 300 dpi OCR of each page (2026-10-28). Variable values store the base and explain the rest in notes.
+// the Shadowrun Companion module uses it. Values verified: a 300 dpi visual read of each name/Value line
+// agreed with 300 dpi OCR (2026-10-28). Variable values store the base and explain the rest in notes.
 import { itemDoc, writePack } from "./lib.mjs";
 
 const E = "edge", F = "flaw", V = "300dpi+visual";

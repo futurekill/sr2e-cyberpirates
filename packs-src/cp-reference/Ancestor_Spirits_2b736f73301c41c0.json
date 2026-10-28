@@ -18,7 +18,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 152,
+            "cell": "Ancestor shamans",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -47,7 +55,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 152,
+            "cell": "Ancestor spirit",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",
@@ -76,7 +92,15 @@
       "ownership": {
         "default": -1
       },
-      "flags": {},
+      "flags": {
+        "sr2e-cyberpirates": {
+          "source": {
+            "page": 152,
+            "cell": "Divination (spirit power)",
+            "verified": "300dpi+visual"
+          }
+        }
+      },
       "_stats": {
         "coreVersion": "13.351",
         "systemId": "sr2e",

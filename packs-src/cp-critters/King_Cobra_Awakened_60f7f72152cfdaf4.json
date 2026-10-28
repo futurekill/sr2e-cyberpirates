@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Awakened king cobra, up to 8 m long.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision, Immunity to Poisons, Hypnotic Stare (treat as Hypnotic Song with eye contact as range), Silence</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.</p><p><em>Printed stats: B 8 · Q 6 × 1 · S 8 · C — · I 1/4 · W 4 · E 6 · R 6**; Attacks 6M. Running multiplier ×1; Perception 4. Cyberpirates p.149.</em></p>",
+    "biography": "<p>Awakened king cobra, up to 8 m long.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision, Immunity to Poisons, Hypnotic Stare (treat as Hypnotic Song with eye contact as range), Silence</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.</p><p><em>Printed stats: B 8 · Q 6 × 1 · S 8 · C — · I 1/4 · W 4 · E 6 · R 6**; Attacks 6M. Running multiplier ×1; Perception 4. Cyberpirates p.149.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×1 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 5 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 3,
-      "mod": 3,
-      "value": 6
+      "mod": 3
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 6,
       "dice": 3,
-      "mod": 0,
-      "value": 6
+      "mod": 0
     },
     "threatRating": 5,
     "nuyen": 0,
-    "movement": {
-      "walk": 6,
-      "run": 6
-    },
     "dualNatured": false
   },
   "items": [

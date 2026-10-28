@@ -4,7 +4,7 @@
   "type": "npc",
   "img": "icons/svg/pawprint.svg",
   "system": {
-    "biography": "<p>Awakened fish-eating bats of coastal West Africa, like North American birdmen. They sometimes follow groups of people for days; the Nzima feed them as an omen of good luck.</p><p><strong>Powers:</strong> Enhanced Senses (Low-light Vision), Sonic Projection (High Frequency)</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Mild)</p><p><em>Printed stats: B 1 · Q 4 × 4 · S 0 · C — · I 1/4 · W 1 · E 6 · R 4; Attacks 1L1. Running multiplier ×4; Perception 4. Cyberpirates p.154.</em></p>",
+    "biography": "<p>Awakened fish-eating bats of coastal West Africa, like North American birdmen. They sometimes follow groups of people for days; the Nzima feed them as an omen of good luck.</p><p><strong>Powers:</strong> Enhanced Senses (Low-light Vision), Sonic Projection (High Frequency)</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Mild)</p><p><em>Printed stats: B 1 · Q 4 × 4 · S 0 · C — · I 1/4 · W 1 · E 6 · R 4; Attacks 1L1. Running multiplier ×4; Perception 4. Cyberpirates p.154.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×4 by hand; Strength (printed 0) and Charisma (printed —) count as 1 on the sheet (the system's floor); Threat Rating 1 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
     "professionalRating": 0,
     "body": {
@@ -55,9 +55,7 @@
       "totem": ""
     },
     "reaction": {
-      "base": 2,
-      "mod": 2,
-      "value": 4
+      "mod": 2
     },
     "conditionMonitor": {
       "physical": {
@@ -89,17 +87,11 @@
       }
     },
     "initiative": {
-      "base": 4,
       "dice": 1,
-      "mod": 0,
-      "value": 4
+      "mod": 0
     },
     "threatRating": 1,
     "nuyen": 0,
-    "movement": {
-      "walk": 4,
-      "run": 16
-    },
     "dualNatured": false
   },
   "items": [
