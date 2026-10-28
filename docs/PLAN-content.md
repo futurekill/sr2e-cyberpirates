@@ -57,6 +57,14 @@ exceptions applied, so they can't drift from the core data.
 - In Foundry: every pack opens; a weapon, cyberware, critter and vehicle drop onto a character/
   scene and roll (QA-PLAN).
 
+## Open question for review
+Ship weapons (missiles, naval guns, ANDREWS) are printed in Rigger 2's Extended Range Missile terms
+(Damage, Weight, Intelligence, Cost, Handling, Speed, Body, Signature, Range Rating). If the
+Rigger 2 module's vehicle-weapon item model holds those fields, they could be real
+`cp-vehicle-weapons` items instead of journal text — to decide during review by reading
+`sr2e-rigger-2/packs-src/r2-vehicle-weapons`. Small submarines (Vulkan Electronaut, Saeder-Krupp
+D.J. Locker, Vulkan Delphin RQ7 + patrol variant) ARE printed with standard vehicle stats → `cp-vehicles`.
+
 ## Out of scope
 Underwater rules, ship rules (user ruling), fiction NPC stat blocks inside the setting chapters,
 GitHub repo creation until the user okays it.
