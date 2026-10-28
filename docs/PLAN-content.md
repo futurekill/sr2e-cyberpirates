@@ -1,5 +1,5 @@
 # Plan: Cyberpirates! content module (`sr2e-cyberpirates`)
-_Round 0 — Claude, 2026-10-28 (revised after reading the equipment chapter). User ruling: content only (no underwater or ship rules); Edges &
+_Round 1 — revised after Codex R1 (see PLAN-content-REVIEW-LOG.md)._ User ruling: content only (no underwater or ship rules); Edges &
 Flaws follow the Shadowrun Companion module's model._
 
 ## Goal
@@ -18,20 +18,26 @@ summaries, never pasted text. `_work/` (renders, OCR) stays out of git.
 | Pack | Type | Content (PDF pages) |
 |---|---|---|
 | `cp-qualities` | Item `quality` | Edges & Flaws (book p.142–144): Braggart −1, Connected 3 or 5, Liar −2, Natural Immunity 3, Pirate Family 3, Sea Legs −2, Sea Madness −4, Water Sprite 1 per improvement — exactly the Companion's `QualityData` use: kind, category, pointValue, source "Cyberpirates", notes. Cyberpirates' **Natural Immunity** (3 points, drugs/poisons) differs from the Companion's (1 point): its own item, named "Natural Immunity (Cyberpirates)". Variable values (Connected 3/5, Water Sprite per point) carry the base value with the options in notes, as the Companion does for variable edges |
-| `cp-skills` | Item `skill` | the new Active Skill **Diving** (defaults to Intelligence, +12) and Vehicle Skill **Ship** (defaults to Motorboat, +2), with their concentrations as notes; new concentrations of existing skills (Armed/Unarmed Combat (Underwater), Etiquette (Maritime)) as notes on those two items only — the system's own skill items are never edited p.144–145 |
+| `cp-skills` | Item `skill` | the new Active Skill **Diving** and the Vehicle Skill **Ship**, both `category: "active"` (SkillData has no `vehicle` category and no default fields, R1 #7); their defaults (Diving → Intelligence +12; Ship → Motorboat +2) and concentrations written in the notes as MANUAL defaults; new concentrations of existing skills (Armed/Unarmed Combat (Underwater), Etiquette (Maritime)) as notes on those two items only — the system's own skill items are never edited p.144–145 |
 | `cp-weapons` | Item `weapon` | melee, projectile (harpoon gun, speargun, sling launcher), firearms (FN-AAL gyrojet …), explosives p.179–181 |
 | `cp-gear` | Item `gear`/`armor` | diving gear (standard diving gear table, OXSYS artificial gill, dual tank manifold, full mask, breathing helmet, LBA) and diving armor p.181–183 |
 | `cp-cyberware` | Item `cyberware` | OXSYS cybergill, cyberfins, nitrogen monitor, peg legs and hook hands p.183 (essence, cost, availability, street index; rating rows where printed) |
 | `cp-critters` | Actor `npc` (as PAE) | Caribbean, Philippine and West African critters p.156–163: attributes, attacks, powers, weaknesses, Awakened variants as separate entries where the book gives separate stats |
 | `cp-vehicles` | Actor `vehicle` | craft printed with the STANDARD vehicle stats (Handling, Speed, Accel, Body, Armor, Signature, Autonav, Sensor…): bancas (non-powered / outboard / sail), Mitsuhama Anago (and its Fugu variant), Hughes WK-2S Sea Stallion, and any submarine printed that way — book p.175–179 |
+| `cp-reference` | JournalEntry | the totem pages (above), the ancestor spirit and Divination, the revised-totem names |
 | `cp-ships` | JournalEntry (reference) | ships and submarines printed in SHIP-RULE terms (Hull, Bulwark, Sonar, Accommodation, Depth): Cunard Princess Victoria, Maersk Jorgensen, CSS Stuart, Shiawase Aohana, MF Akihito, the larger submarines; ship weapons (missiles, naval guns, ANDREWS) and accessories (torpedo probe, noisemaker, decoy) p.176–182 — one page each with the printed stats, because without ship rules a vehicle actor for them would be half-working (user ruling: content only) |
 
-| (script) totems | `CONFIG.SR2E.totems` via `scripts/register-cyberpirates.mjs` (the Grimoire module's pattern: an esmodule extending the config in place at setup) | the African totems with full entries (Agwengwere/Hyena, Anansi/Spider, Asenna/Bat, Awoba/Leopard, Danwane/Dove, Nau/Crocodile, Onini/Python, Osebo/Cheetah, Owoh/Cobra, Sase/Jackal, Wurega/Parrot) book p.152–154, plus Python and Cobra for the Philippines (p.149 points to p.153); spell and conjuring bonuses/penalties in the core totem shape, disadvantages in comments/notes as the Grimoire does. The "revised totems" (Agona = Raven, Anlo = Shark, …) are local NAMES for existing totems: a journal page, not new totems |
-| (script) ancestor spirits | `CONFIG.SR2E.spiritDomains` + `spiritProfiles` + `spiritDomainProfile` + `spiritPowers`/`spiritDomainPowers` via the same script | the Ancestor Spirit (book p.152): B F+2, Q F×3, S F+1, C/I/W F, E F(A), R F, attack (Strength)M Stun; powers Accident, Confusion, Divination (new power: label + rules summary), Guard, Manifestation, Search. Ancestor-shaman conjuring limits, fetishes and conjuring time are noted for the GM, not enforced (content only) |
+| (script) totems | `CONFIG.SR2E.totems` via `scripts/register-cyberpirates.mjs` (the Grimoire module's pattern: an esmodule extending the config in place at setup) | the African totems with full entries (Agwengwere/Hyena, Anansi/Spider, Asenna/Bat, Awoba/Leopard, Danwane/Dove, Nau/Crocodile, Onini/Python, Osebo/Cheetah, Owoh/Cobra, Sase/Jackal, Wurega/Parrot) book p.152–154 — Python and Cobra are the same entries the Philippines text points to (p.149 → p.153); spell and conjuring bonuses/penalties in the core totem shape. **Player-readable (R1 #6):** every totem also gets a page in a `cp-reference` journal pack with its characteristics, environment, advantages, disadvantages and anything conditional the config can't express (e.g. "+2 conjuring nature spirits during hours of darkness"), marked "adjudicate by hand". The "revised totems" (Agona = Raven, Anlo = Shark, …) are local NAMES for existing totems: a page there, not new totems |
+| (script) ancestor spirits | `CONFIG.SR2E.spiritDomains` + `spiritProfiles` + `spiritDomainProfile` + `spiritPowers`/`spiritDomainPowers` via the same script | the Ancestor Spirit (book p.152): printed B F+2, Q F x 3, S F+1, C/I/W F, E F(A), R F, attack (Strength)M Stun. "F x 3" is the standard critter notation — Quickness F with movement multiplier 3 — so the profile is `{ b: +2, q: 0, mult: 3, s: +1, r: 0 }` (R1 #4; the page's own note confirms "Quickness 'x3' is the Running multiplier"). Its attack is verified against the system's attack shape before it's encoded; if the shape can't express (Strength)M Stun, `attack: null` and the attack goes in the reference page. Powers Accident, Confusion, Divination, Guard, Manifestation, Search — Divination registered as a LABEL only (`spiritPowers` holds labels, R1 #5); its rules (the Divination TN table) live on the reference page. Ancestor-shaman conjuring limits, fetishes and conjuring time are on the reference page for the GM, not enforced |
 
-**Template critters** (vampire and shapeshifter variants printed as "C", "C×5", "C+E", "A+2"): follow
-the Paranormal Animals precedent (its Nosferatu): an example actor with typical values and the
-book's formulas spelled out in the biography. **Named NPCs** in the setting (Masaru, the dragon)
+**Template critters** (vampire and shapeshifter variants printed as "C", "C×5", "C+E", "A+2"): an
+example actor with typical values and the book's formulas spelled out in the biography, like the
+Paranormal Animals precedent — but every value checked against the CURRENT `NPCData` schema
+(R1 #3; Nosferatu's stored Essence 7 is outside NPCData's 0–6 bounds and is NOT a precedent).
+**Critter values the schema can't hold** (Essence 8 for the shapeshifters, 2D6 random Essence): a
+separate, separately-reviewed SYSTEM change (raise NPC Essence's maximum for critters) is a
+prerequisite; until it ships, those critters are listed in `docs/NEEDS-SYSTEM.md` and not generated —
+never clamped silently. **Named NPCs** in the setting (Masaru, the dragon)
 stay out, as fiction NPCs.
 
 Each pack: one generator `tools/gen-<pack>.mjs` from a transcription table in `tools/data/`
@@ -48,21 +54,39 @@ pass (Codex imagegen) is a later step, as with the other modules.
 Draft tables come from reading pages (`_work/transcription-draft.md`, started); the generator data
 files (`tools/data/*.mjs`) are filled from 300 dpi crops, each row carrying its book page, and
 `docs/NEEDS-CAPTURE.md` lists anything unreadable (ask the user for a photo, the source-captures rule).
-"Use the statistics of X" items (Harpoon = pole-arm, Spear = staff, Rattan sticks = club, core p.254)
-take X's numbers from the system's own compendium entry at generation time, with the book's
-exceptions applied, so they can't drift from the core data.
+"Use the statistics of X" items (Harpoon = pole-arm, Spear = staff, Rattan sticks = club, core p.254):
+X's numbers are SNAPSHOTTED into `tools/data/inherited.mjs` with the system's source id and the
+system version they were copied from (R1 #10) — generation never reads a sibling checkout, so CI and
+re-runs are reproducible; the validator re-checks the snapshot against the system pack only when
+the sibling checkout is present (a warning, not a CI failure).
+**Verification record (R1 #11):** every data row carries `{ page: <book folio>, cell: "<row/column>",
+verified: "300dpi" }`; the validator REJECTS any row without `verified`, so nothing unread ships.
+
+## Build tooling (R1 #1, #2)
+- `build-packs` and `extract-packs` handle JournalEntry pages (split into `!journal.pages!` records
+  and back); a round-trip check (build → extract → compare) runs in `npm run validate`.
+- The validator takes each pack's document type from `module.json` (not a hard-coded list), checks
+  per type: required keys, `_key` form, unique ids (embedded too), the `quality`/`skill`/`weapon`/
+  `gear`/`armor`/`cyberware` and `npc`/`vehicle` field names and choice values the system defines (a
+  checked-in list taken from the pinned system version), numeric bounds (e.g. Essence 0–6), and the
+  forbidden derived fields (`actualBodyCost`, `value` on attributes where the system derives them).
+- In Foundry, `tools/foundry-check.js` (run from a macro, QA §1) loads every pack and reports
+  `invalidDocumentIds` and any document whose `toObject()` differs from its source (schema
+  clamping) — the authoritative schema check.
 
 ## Checks
-- `npm run validate` + `npm run lint` in CI; Quench not needed (no code).
+- `npm run validate` + `npm run lint` in CI.
+- **Quench (R1 #9):** the registration script adds a Quench batch `cyberpirates.*` (when Quench is
+  active): the totems exist with their bonuses; the ancestor domain, profile and Divination label are
+  registered; a fresh ancestor spirit summoned at Force 4 gets B6 S5 Q4 (mult 3) and its powers; a
+  saved ancestor actor survives a reload; coexists with the Grimoire module enabled (no key clash).
 - In Foundry: every pack opens; a weapon, cyberware, critter and vehicle drop onto a character/
   scene and roll (QA-PLAN).
 
-## Open question for review
-Ship weapons (missiles, naval guns, ANDREWS) are printed in Rigger 2's Extended Range Missile terms
-(Damage, Weight, Intelligence, Cost, Handling, Speed, Body, Signature, Range Rating). If the
-Rigger 2 module's vehicle-weapon item model holds those fields, they could be real
-`cp-vehicle-weapons` items instead of journal text — to decide during review by reading
-`sr2e-rigger-2/packs-src/r2-vehicle-weapons`. Small submarines (Vulkan Electronaut, Saeder-Krupp
+## Ship weapons (resolved, R1 #8)
+WeaponData has no missile Handling/Speed/Body/Signature/Range Rating fields (Rigger 2's AIM-11R is a
+plain weapon with the rest in prose), so ship weapons and accessories stay journal references in
+`cp-ships`; there is no `cp-vehicle-weapons`/`cp-vehicle-mods` pack. Small submarines (Vulkan Electronaut, Saeder-Krupp
 D.J. Locker, Vulkan Delphin RQ7 + patrol variant) ARE printed with standard vehicle stats → `cp-vehicles`.
 
 ## Out of scope
