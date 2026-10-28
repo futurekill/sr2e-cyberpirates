@@ -1,0 +1,68 @@
+{
+  "_id": "42f51e029855c200",
+  "name": "FN-AAL Gyrojet Pistol",
+  "type": "weapon",
+  "img": "systems/sr2e/assets/item_icons/weapons/heavy-pistols.webp",
+  "system": {
+    "weaponType": "firearm",
+    "skill": "firearms",
+    "damageType": "physical",
+    "concealability": 5,
+    "reach": 0,
+    "firingModes": {
+      "ss": false,
+      "sa": true,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 10,
+      "max": 10,
+      "type": "gyrojet"
+    },
+    "recoilComp": 0,
+    "ranges": {
+      "short": 5,
+      "medium": 20,
+      "long": 40,
+      "extreme": 60
+    },
+    "strengthMin": 0,
+    "legality": "Legal",
+    "equipped": false,
+    "accessories": [],
+    "damageCode": "10M",
+    "weight": 2,
+    "cost": 600,
+    "availability": "4/48 hrs",
+    "streetIndex": 1.5,
+    "notes": "Heavy pistol of the British Special Boat Squadron, firing 6 mm rockets whose alkaline fuel burns on contact with water. Load the gyrojet ammunition (ball, APDS, explosive). Hydrostatic shock: explosive gyrojets add +2 Power instead of +1 (built into the Explosive Gyrojets item). Cyberpirates p.172."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 172,
+        "cell": "FN-AAL stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!42f51e029855c200"
+}

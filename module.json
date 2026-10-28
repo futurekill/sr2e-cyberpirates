@@ -45,6 +45,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-weapons",
+      "label": "Cyberpirates Weapons",
+      "path": "packs/cp-weapons",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -53,7 +64,8 @@
       "sorting": "m",
       "packs": [
         "cp-qualities",
-        "cp-skills"
+        "cp-skills",
+        "cp-weapons"
       ]
     }
   ],

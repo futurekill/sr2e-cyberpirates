@@ -1,0 +1,70 @@
+{
+  "_id": "ba7117e8aa7095da",
+  "name": "Ink Grenade",
+  "type": "weapon",
+  "img": "systems/sr2e/assets/item_icons/weapons/smoke-grenade.webp",
+  "system": {
+    "weaponType": "grenade",
+    "skill": "throwing_weapons",
+    "damageType": "physical",
+    "concealability": 6,
+    "reach": 0,
+    "firingModes": {
+      "ss": false,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 0,
+      "max": 0,
+      "type": ""
+    },
+    "recoilComp": 0,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "legality": "Legal",
+    "equipped": false,
+    "accessories": [],
+    "damageCode": "0M",
+    "weight": 0.25,
+    "cost": 40,
+    "availability": "4/4 days",
+    "streetIndex": 2,
+    "blastType": "smoke",
+    "quantity": 1,
+    "notes": "Underwater: spews a black ink cloud of about 5 m radius. Everyone inside takes +4 to all visual tests, cumulative with the underwater vision modifiers. No damage. Cyberpirates p.172."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 172,
+        "cell": "Ink Grenade stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ba7117e8aa7095da"
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "bc0c38f46b0eac7b",
+  "name": "APDS Gyrojets",
+  "type": "ammo",
+  "img": "systems/sr2e/assets/item_icons/ammo/apds.webp",
+  "system": {
+    "ammoType": "gyrojet",
+    "quantity": 10,
+    "damageModifier": 0,
+    "armorModifier": 0,
+    "damageType": "",
+    "armorCalc": "half_ballistic",
+    "concealability": 8,
+    "weight": 1.75,
+    "cost": 100,
+    "availability": "14/14 days",
+    "streetIndex": 5,
+    "notes": "FN-AAL gyrojet clip of 10. APDS rules: Street Samurai Catalog p.63 (halves Ballistic armor). Cyberpirates p.172."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 172,
+        "cell": "FN-AAL Gyrojet Ammunition: APDS",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!bc0c38f46b0eac7b"
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "3bb3af08458208fe",
+  "name": "Sling Launcher",
+  "type": "weapon",
+  "img": "systems/sr2e/assets/item_icons/weapons/projectile.webp",
+  "system": {
+    "weaponType": "projectile",
+    "skill": "projectile_weapons",
+    "damageType": "physical",
+    "concealability": 99,
+    "reach": 0,
+    "firingModes": {
+      "ss": true,
+      "sa": false,
+      "bf": false,
+      "fa": false
+    },
+    "ammo": {
+      "current": 1,
+      "max": 1,
+      "type": ""
+    },
+    "recoilComp": 0,
+    "ranges": {
+      "short": 0,
+      "medium": 0,
+      "long": 0,
+      "extreme": 0
+    },
+    "strengthMin": 0,
+    "legality": "Legal",
+    "equipped": false,
+    "accessories": [],
+    "damageCode": "",
+    "weight": 7,
+    "cost": 40,
+    "availability": "1/14 hrs",
+    "streetIndex": 1,
+    "notes": "An overgrown slingshot strung between two anchor points on a vessel, with at least a two-meter draw; the pouch holds anything under a kilogram (rocks, grenades, water balloons). Damage is the hurled item's. Range is an aerodynamic grenade's (Grenade Range Table, core p.96) and it scatters the same way (core p.97) — resolve by hand. Projectile Weapons. Cyberpirates p.171."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 171,
+        "cell": "Sling Launcher stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!3bb3af08458208fe"
+}

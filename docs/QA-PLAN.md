@@ -8,6 +8,9 @@
 - [ ] An Edge and a Flaw drop onto a character and count build points like the Companion's.
 - [ ] Diving and Ship skills drop and roll.
 - [ ] Speargun, harpoon gun, gyrojet pistol attack; gyrojet ammo loads.
+- [ ] Harpoon gun and speargun damage cards resist with Impact armor (also after reloading a harpoon item).
+- [ ] Explosive gyrojets add +2 Power; APDS gyrojets halve Ballistic armor.
+- [ ] Ink grenade drops a smoke-style cloud; Rattan Sticks swing as (Str+1)M Stun, Spear as (Str+2)M Physical.
 - [ ] Diving armor equips (4/2); cybergill, cyberfins, peg leg and hook hand install with their Essence.
 - [ ] A critter drags onto a scene and rolls an attack.
 - [ ] A banca, the Anago and the Sea Stallion drag onto a scene; the ship reference pages open.

@@ -1,0 +1,68 @@
+{
+  "_id": "4ba20211d9e06f3e",
+  "name": "Colt M24A3 Water Carbine",
+  "type": "weapon",
+  "img": "systems/sr2e/assets/item_icons/weapons/submachine-guns.webp",
+  "system": {
+    "weaponType": "firearm",
+    "skill": "firearms",
+    "damageType": "physical",
+    "concealability": 5,
+    "reach": 0,
+    "firingModes": {
+      "ss": false,
+      "sa": true,
+      "bf": true,
+      "fa": false
+    },
+    "ammo": {
+      "current": 30,
+      "max": 30,
+      "type": "smg"
+    },
+    "recoilComp": 0,
+    "ranges": {
+      "short": 10,
+      "medium": 40,
+      "long": 80,
+      "extreme": 150
+    },
+    "strengthMin": 0,
+    "legality": "Legal",
+    "equipped": false,
+    "accessories": [],
+    "damageCode": "6M",
+    "weight": 3.5,
+    "cost": 1000,
+    "availability": "5/48 hrs",
+    "streetIndex": 2.5,
+    "notes": "SMG designed for the UCAS Navy SEALs: a sealed firing chamber fed by the diver's scuba tank lets it fire regular ammunition underwater, and a purge valve clears water when changing clips. Caseless ammunition: 1.5 × the brass-cased price, Availability +1. Cyberpirates p.171–172."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 171,
+        "cell": "Colt M24A3 stat block (cont. p.172)",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!4ba20211d9e06f3e"
+}

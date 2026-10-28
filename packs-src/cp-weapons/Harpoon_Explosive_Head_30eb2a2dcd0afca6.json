@@ -1,0 +1,47 @@
+{
+  "_id": "30eb2a2dcd0afca6",
+  "name": "Harpoon (Explosive Head)",
+  "type": "ammo",
+  "img": "systems/sr2e/assets/item_icons/ammo/explosive-rounds.webp",
+  "system": {
+    "ammoType": "harpoon",
+    "quantity": 1,
+    "damageModifier": 4,
+    "armorModifier": 0,
+    "damageType": "",
+    "armorCalc": "impact",
+    "concealability": 99,
+    "weight": 0,
+    "cost": 200,
+    "availability": "3/12 hrs",
+    "streetIndex": 2,
+    "notes": "Harpoon Gun bolt with an explosive head: 16D (+4 Power over the standard 12D). Legal only in known megalodon territory. Resist with Impact armor. Price per harpoon. Cyberpirates p.171."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 171,
+        "cell": "Harpoon Gun: Ammo rows",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!30eb2a2dcd0afca6"
+}
