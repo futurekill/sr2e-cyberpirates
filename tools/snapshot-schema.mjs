@@ -1,25 +1,14 @@
-// Snapshot the system's document field names per type from its own pack sources, with the
-// system version, into tools/data/schema.json — the validator's offline reference (the
-// authoritative check is tools/foundry-check.js in Foundry). Run when the pinned system changes.
-import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
-import { join } from "node:path";
+// Snapshot the system's LIVE data-model fields (name → field class) into tools/data/schema.json, the
+// validator's offline reference. Pack documents are not a schema (some carry stale keys), so the dump
+// comes from Foundry itself. In the console of a world running the pinned sr2e version, run:
+//   const t = (m) => Object.fromEntries(Object.entries(m).map(([k, d]) => [k, Object.fromEntries(Object.entries(d.schema.fields).map(([f, v]) => [f, v.constructor.name]))]));
+//   copy(JSON.stringify({ systemVersion: game.system.version, coreVersion: game.version, Item: t(CONFIG.Item.dataModels), Actor: t(CONFIG.Actor.dataModels) }));
+// then: pbpaste | npm run snapshot-schema -- <sr2e version>
+// (the version argument overrides a server that hasn't re-read system.json since the last bump).
+import { readFileSync, writeFileSync } from "node:fs";
 
-const SYS = "../sr2e-foundryvtt";
-if (!existsSync(SYS)) { console.error("needs ../sr2e-foundryvtt"); process.exit(1); }
-const version = JSON.parse(readFileSync(join(SYS, "system.json"), "utf8")).version;
-const keys = {};
-const walk = (dir) => {
-  for (const f of readdirSync(dir, { withFileTypes: true })) {
-    if (f.isDirectory()) { walk(join(dir, f.name)); continue; }
-    if (!f.name.endsWith(".json")) continue;
-    const d = JSON.parse(readFileSync(join(dir, f.name), "utf8"));
-    const add = (doc) => { if (doc?.type && doc.system) for (const k of Object.keys(doc.system)) (keys[doc.type] ??= new Set()).add(k); };
-    add(d); for (const i of d.items ?? []) add(i);
-  }
-};
-walk(join(SYS, "packs-src"));
-// Quality items live in the Shadowrun Companion module (the model this module follows).
-if (existsSync("../sr2e-shadowrun-companion/packs-src")) walk("../sr2e-shadowrun-companion/packs-src");
-const out = { systemVersion: version, keys: Object.fromEntries(Object.entries(keys).map(([t, s]) => [t, [...s].sort()])) };
+const dump = JSON.parse(readFileSync(0, "utf8"));
+const systemVersion = process.argv[2] ?? dump.systemVersion;
+const out = { systemVersion, coreVersion: dump.coreVersion, keys: { ...dump.Item, ...dump.Actor } };
 writeFileSync("tools/data/schema.json", JSON.stringify(out, null, 1) + "\n");
-console.log(`schema snapshot from sr2e ${version}: ${Object.keys(out.keys).join(", ")}`);
+console.log(`schema snapshot from sr2e ${systemVersion}: ${Object.keys(out.keys).join(", ")}`);

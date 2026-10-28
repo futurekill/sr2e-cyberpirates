@@ -1,7 +1,8 @@
 # QA plan — Cyberpirates!
 
 ## 0. Offline
-- [ ] `npm run validate` passes; `npm run lint` is clean.
+- [ ] `npm run validate` passes (field names AND scalar types against the live-schema snapshot); `npm run lint` is clean.
+- [ ] In Foundry, `tools/foundry-check.js` reports every document valid.
 
 ## 1. In Foundry
 - [ ] The "Cyberpirates!" folder shows every pack; each opens.

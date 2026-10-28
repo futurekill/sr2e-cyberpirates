@@ -23,7 +23,7 @@
     "essenceCost": 0.3,
     "cost": 10500,
     "availability": "5/48 hours",
-    "streetIndex": 1.25,
+    "streetIndex": "1.25",
     "isWeapon": true,
     "weaponType": "melee",
     "skill": "armed combat",

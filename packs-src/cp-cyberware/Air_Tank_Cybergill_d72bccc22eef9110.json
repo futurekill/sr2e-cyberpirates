@@ -23,7 +23,7 @@
     "essenceCost": 0.25,
     "cost": 1200,
     "availability": "4/5 days",
-    "streetIndex": 1.5,
+    "streetIndex": "1.5",
     "notes": "Internal tank of pure helium installed with a cybergill to flush residual nitrogen from the lungs. Cyberpirates p.174."
   },
   "effects": [],

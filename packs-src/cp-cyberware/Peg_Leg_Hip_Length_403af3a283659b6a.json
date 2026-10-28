@@ -23,8 +23,8 @@
     "essenceCost": 0.4,
     "cost": 120,
     "availability": "1/6 hours",
-    "streetIndex": 1,
-    "notes": "Attached at the hip. Walking −2, running multiplier −2 (apply by hand). Not a cyberleg: no nerve link, no Strength modifier, and no modifications or other cyberware can be added (it can be hollowed out to hide something no wider than a fist and no longer than a forearm). Quickness counts lower for movement; the wearer can't walk normally — a Perception (3) Test notices the peg. Removable from its attachment plate. Sharpened, it fights as a hand spur, (Str+2)M (gamemaster decides whether the wearer keeps balance). Standard grade only. Replacing it with a real cyberleg follows the replacement rules (Street Samurai Catalog p.97). Street Index: always available. Cyberpirates p.174–175."
+    "streetIndex": "Always available",
+    "notes": "Attached at the hip. Walking −2, running multiplier −2 (apply by hand). Not a cyberleg: no nerve link, no Strength modifier, and no modifications or other cyberware can be added (it can be hollowed out to hide something no wider than a fist and no longer than a forearm). Quickness counts lower for movement; the wearer can't walk normally — a Perception (3) Test notices the peg. Removable from its attachment plate. Sharpened, it fights as a hand spur, (Str+2)M (gamemaster decides whether the wearer keeps balance). Standard grade only. Replacing it with a real cyberleg follows the replacement rules (Street Samurai Catalog p.97). Cyberpirates p.174–175."
   },
   "effects": [],
   "flags": {

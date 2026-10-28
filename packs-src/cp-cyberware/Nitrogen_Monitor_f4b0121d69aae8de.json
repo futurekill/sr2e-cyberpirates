@@ -23,7 +23,7 @@
     "essenceCost": 0.5,
     "cost": 8500,
     "availability": "4/24 hours",
-    "streetIndex": 1.25,
+    "streetIndex": "1.25",
     "notes": "Lung bari-spectrometer and pulmonary-vein electrolytic analyzer. When the character is on the verge of nitrogen narcosis or the bends, roll 2D6: on 8 or less it warns them (a shriek and red letters on a display link). It can't warn of oxygen toxicity, helium chills or HPNS. Cyberpirates p.174."
   },
   "effects": [],

@@ -14,3 +14,8 @@ Descriptions are original summaries. `_work/` (renders, OCR, drafts) is never co
 workflow rebuilds it). Generators `tools/gen-*.mjs` from `tools/data/*`. Run `npm run validate` and
 `npm run lint` before committing. Close Foundry before building (LevelDB locks).
 Edges & Flaws use the system `quality` item exactly as the Shadowrun Companion module does.
+
+## Schema snapshot
+`tools/data/schema.json` is dumped from the LIVE data models (see tools/snapshot-schema.mjs), not from
+pack documents — system pack docs carry stale keys (ammo `availability`/`weight`), which once let
+invalid fields through. Cyberware/bioware `streetIndex` is a STRING field; everything else numeric.

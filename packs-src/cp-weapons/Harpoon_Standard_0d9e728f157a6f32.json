@@ -10,12 +10,9 @@
     "armorModifier": 0,
     "damageType": "",
     "armorCalc": "impact",
-    "concealability": 99,
-    "weight": 0,
     "cost": 25,
-    "availability": "1/6 hrs",
     "streetIndex": 1,
-    "notes": "Harpoon Gun bolt, 12D. Resist with Impact armor. Price per harpoon. Cyberpirates p.171."
+    "notes": "Harpoon Gun bolt, 12D. Resist with Impact armor. Price per harpoon. Cyberpirates p.171. Availability 1/6 hrs."
   },
   "effects": [],
   "flags": {

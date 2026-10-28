@@ -23,14 +23,14 @@
     "essenceCost": 0.1,
     "cost": 30,
     "availability": "1/6 hours",
-    "streetIndex": 1,
+    "streetIndex": "Always available",
     "isWeapon": true,
     "weaponType": "melee",
     "skill": "armed combat",
     "damageType": "physical",
     "reach": 0,
     "damageCode": "(Str+1)M",
-    "notes": "Replacement hand on a wrist plate; attachments may weigh up to Strength ÷ 10 kg (Strength 5: 0.5 kg). A hook does (Str+1)M; a knife or spur attachment uses that weapon's damage code instead. Removable (voluntarily or otherwise). No cyber-enhancements. Standard grade only. Replacing it with a real cyberhand follows the replacement rules (Street Samurai Catalog p.97). Street Index: always available. Cyberpirates p.174–175."
+    "notes": "Replacement hand on a wrist plate; attachments may weigh up to Strength ÷ 10 kg (Strength 5: 0.5 kg). A hook does (Str+1)M; a knife or spur attachment uses that weapon's damage code instead. Removable (voluntarily or otherwise). No cyber-enhancements. Standard grade only. Replacing it with a real cyberhand follows the replacement rules (Street Samurai Catalog p.97). Cyberpirates p.174–175."
   },
   "effects": [],
   "flags": {

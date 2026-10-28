@@ -10,12 +10,9 @@
     "armorModifier": 0,
     "damageType": "",
     "armorCalc": "impact",
-    "concealability": 99,
-    "weight": 0,
     "cost": 200,
-    "availability": "3/12 hrs",
     "streetIndex": 2,
-    "notes": "Harpoon Gun bolt with an explosive head: 16D (+4 Power over the standard 12D). Legal only in known megalodon territory. Resist with Impact armor. Price per harpoon. Cyberpirates p.171."
+    "notes": "Harpoon Gun bolt with an explosive head: 16D (+4 Power over the standard 12D). Legal only in known megalodon territory. Resist with Impact armor. Price per harpoon. Cyberpirates p.171. Availability 3/12 hrs."
   },
   "effects": [],
   "flags": {

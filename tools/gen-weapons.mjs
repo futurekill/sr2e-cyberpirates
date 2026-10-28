@@ -67,24 +67,26 @@ const W = [
       notes: "Underwater: spews a black ink cloud of about 5 m radius. Everyone inside takes +4 to all visual tests, cumulative with the underwater vision modifiers. No damage. Cyberpirates p.172." }) }
 ];
 
-const ammo = (s) => ({ ammoType: "regular", quantity: 10, damageModifier: 0, armorModifier: 0, damageType: "",
-  armorCalc: "standard", concealability: 8, weight: 0, ...s });
+// Ammo items have no Availability / Weight / Concealability fields: those printed values go in the notes.
+const ammo = ({ availability, weight, concealability, notes, ...s }) => ({ ammoType: "regular", quantity: 10, damageModifier: 0,
+  armorModifier: 0, damageType: "", armorCalc: "standard", ...s,
+  notes: `${notes} Availability ${availability}${weight ? `, weight ${weight} kg` : ""}${concealability ? `, Concealability ${concealability}` : ""}.` });
 const A = [
   { name: "Harpoon (Standard)", img: `${ICON}ammo/regular-ammo.webp`, src: { page: 171, cell: "Harpoon Gun: Ammo rows" },
-    system: ammo({ ammoType: "harpoon", quantity: 1, armorCalc: "impact", concealability: 99, cost: 25,
+    system: ammo({ ammoType: "harpoon", quantity: 1, armorCalc: "impact", cost: 25,
       availability: "1/6 hrs", streetIndex: 1, notes: "Harpoon Gun bolt, 12D. Resist with Impact armor. Price per harpoon. Cyberpirates p.171." }) },
   { name: "Harpoon (Explosive Head)", img: `${ICON}ammo/explosive-rounds.webp`, src: { page: 171, cell: "Harpoon Gun: Ammo rows" },
-    system: ammo({ ammoType: "harpoon", quantity: 1, damageModifier: 4, armorCalc: "impact", concealability: 99,
+    system: ammo({ ammoType: "harpoon", quantity: 1, damageModifier: 4, armorCalc: "impact",
       cost: 200, availability: "3/12 hrs", streetIndex: 2,
       notes: "Harpoon Gun bolt with an explosive head: 16D (+4 Power over the standard 12D). Legal only in known megalodon territory. Resist with Impact armor. Price per harpoon. Cyberpirates p.171." }) },
   { name: "Ball Gyrojets", img: `${ICON}ammo/regular-ammo.webp`, src: { page: 172, cell: "FN-AAL Gyrojet Ammunition: Ball" },
-    system: ammo({ ammoType: "gyrojet", weight: 1.75, cost: 50, availability: "3/36 hrs", streetIndex: 2,
+    system: ammo({ ammoType: "gyrojet", concealability: 8, weight: 1.75, cost: 50, availability: "3/36 hrs", streetIndex: 2,
       notes: "FN-AAL gyrojet clip of 10, 10M. Cyberpirates p.172." }) },
   { name: "APDS Gyrojets", img: `${ICON}ammo/apds.webp`, src: { page: 172, cell: "FN-AAL Gyrojet Ammunition: APDS" },
-    system: ammo({ ammoType: "gyrojet", armorCalc: "half_ballistic", weight: 1.75, cost: 100, availability: "14/14 days",
+    system: ammo({ ammoType: "gyrojet", armorCalc: "half_ballistic", concealability: 8, weight: 1.75, cost: 100, availability: "14/14 days",
       streetIndex: 5, notes: "FN-AAL gyrojet clip of 10. APDS rules: Street Samurai Catalog p.63 (halves Ballistic armor). Cyberpirates p.172." }) },
   { name: "Explosive Gyrojets", img: `${ICON}ammo/explosive-rounds.webp`, src: { page: 172, cell: "FN-AAL Gyrojet Ammunition: Explosive" },
-    system: ammo({ ammoType: "gyrojet", damageModifier: 2, weight: 1.75, cost: 80, availability: "4/48 hrs", streetIndex: 2.5,
+    system: ammo({ ammoType: "gyrojet", damageModifier: 2, concealability: 8, weight: 1.75, cost: 80, availability: "4/48 hrs", streetIndex: 2.5,
       notes: "FN-AAL gyrojet clip of 10, 12M: hydrostatic shock makes it +2 Power instead of explosive ammo's usual +1. Cyberpirates p.172." }) }
 ];
 

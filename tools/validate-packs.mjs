@@ -2,7 +2,7 @@
 // Foundry; the authoritative schema check is tools/foundry-check.js inside Foundry.
 //  - every pack's document type comes from module.json;
 //  - required keys, `_key` form, unique ids (embedded ids unique per parent);
-//  - `system` field names must exist in the system's schema snapshot (tools/data/schema.json);
+//  - `system` field names and scalar types must match the system's live schema snapshot (tools/data/schema.json);
 //  - numeric bounds the system enforces (NPC Essence 0–6) and no derived fields;
 //  - every generated document carries its transcription record with `verified` set.
 // Run: `npm run validate` (also runs the build → extract round trip).
@@ -16,6 +16,8 @@ const TYPE_OF = Object.fromEntries((MODULE.packs ?? []).map(p => [p.name, p.type
 const COLLECTION = { Item: "items", Actor: "actors", JournalEntry: "journal" };
 // Derived by the system every preparation: authoring them stores stale numbers.
 const DERIVED = { bioware: ["actualBodyCost"], npc: [], vehicle: [] };
+// Scalar field classes → the JS type a source value must have (Foundry would coerce it silently).
+const KIND = { NumberField: "number", StringField: "string", HTMLField: "string", BooleanField: "boolean" };
 let problems = 0;
 const note = (m) => { console.error("  ✗ " + m); problems++; };
 
@@ -25,7 +27,12 @@ const packs = readdirSync(ROOT).filter((p) => statSync(join(ROOT, p)).isDirector
 const checkSystem = (where, doc) => {
   const allowed = SCHEMA.keys[doc.type];
   if (!allowed) return note(`${where}: type "${doc.type}" not in the schema snapshot (sr2e ${SCHEMA.systemVersion})`);
-  for (const k of Object.keys(doc.system ?? {})) if (!allowed.includes(k)) note(`${where}: system.${k} is not a ${doc.type} field`);
+  for (const [k, v] of Object.entries(doc.system ?? {})) {
+    const kind = allowed[k];
+    if (!kind) { note(`${where}: system.${k} is not a ${doc.type} field`); continue; }
+    const want = KIND[kind];
+    if (want && v !== null && typeof v !== want) note(`${where}: system.${k} is a ${kind} — got ${typeof v} ${JSON.stringify(v)}`);
+  }
   for (const k of DERIVED[doc.type] ?? []) if (k in (doc.system ?? {})) note(`${where}: system.${k} is derived — don't author it`);
   const ess = doc.system?.essence;
   if (doc.type === "npc" && ess && [ess.value, ess.max].some(v => v != null && (v < 0 || v > 6))) note(`${where}: NPC Essence outside 0–6 (needs the system change, docs/NEEDS-SYSTEM.md)`);
