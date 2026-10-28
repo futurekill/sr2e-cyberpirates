@@ -1,0 +1,40 @@
+{
+  "_id": "fd79c4cdec8ca715",
+  "name": "Liar",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "social",
+    "pointValue": -2,
+    "source": "Cyberpirates",
+    "notes": "Sounds insincere even when truthful. Each time the character addresses someone, the GM rolls 1D6: on a 1 they assume a lie. With that person afterwards the chance grows by 1 each meeting; once caught on a 1–6, they stop dealing with the character (a contact is lost for good, perhaps as an Enemy)."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 143,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fd79c4cdec8ca715"
+}

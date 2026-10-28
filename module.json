@@ -23,12 +23,26 @@
       "name": "James Candalino"
     }
   ],
-  "packs": [],
+  "packs": [
+    {
+      "name": "cp-qualities",
+      "label": "Cyberpirates Edges & Flaws",
+      "path": "packs/cp-qualities",
+      "type": "Item",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
   "packFolders": [
     {
       "name": "Cyberpirates!",
       "sorting": "m",
-      "packs": []
+      "packs": [
+        "cp-qualities"
+      ]
     }
   ],
   "flags": {}

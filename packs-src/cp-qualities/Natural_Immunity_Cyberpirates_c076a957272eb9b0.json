@@ -1,0 +1,40 @@
+{
+  "_id": "c076a957272eb9b0",
+  "name": "Natural Immunity (Cyberpirates)",
+  "type": "quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "kind": "edge",
+    "category": "physical",
+    "pointValue": 3,
+    "source": "Cyberpirates",
+    "notes": "Immune to one drug or poison the character would plausibly meet (agreed with the GM): one dose every (Body ÷ 2) days has no effect. More than one dose in that time does normal damage, recovering after (Body ÷ 2) days. Not the Shadowrun Companion's 1-point Natural Immunity."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 143,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!c076a957272eb9b0"
+}

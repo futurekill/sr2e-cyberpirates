@@ -1,0 +1,40 @@
+{
+  "_id": "8ab46ae201e4ab6f",
+  "name": "Water Sprite",
+  "type": "quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "kind": "edge",
+    "category": "physical",
+    "pointValue": 1,
+    "source": "Cyberpirates",
+    "notes": "1 point per improvement: hold breath underwater +20 seconds; swimming distance +0.1 to the multiplier; swimming fatigue +1 (normally Body ÷ 2); treading water +1 minute between tests and −1 to its Damage Resistance TN; floating −1 to Buoyancy and Treading Water tests (not damage resistance) and +1 Body for how long the character can float."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 144,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!8ab46ae201e4ab6f"
+}

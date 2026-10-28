@@ -1,0 +1,40 @@
+{
+  "_id": "f95c736b9cf5d90f",
+  "name": "Sea Legs",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "mental",
+    "pointValue": -2,
+    "source": "Cyberpirates",
+    "notes": "After 24 hours on land: Willpower (4) Test needing 2 successes, or the character seeks a way back to sea; failed tests add +1 to all TNs. Repeat every Intelligence hours (+1 TN after a success, +2 after a failure, cumulative failures tracked). Ends after hours at sea equal to the failures; past 24 failures, days at sea."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 143,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!f95c736b9cf5d90f"
+}

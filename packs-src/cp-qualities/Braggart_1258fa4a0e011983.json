@@ -1,0 +1,40 @@
+{
+  "_id": "1258fa4a0e011983",
+  "name": "Braggart",
+  "type": "quality",
+  "img": "icons/svg/downgrade.svg",
+  "system": {
+    "kind": "flaw",
+    "category": "social",
+    "pointValue": -1,
+    "source": "Cyberpirates",
+    "notes": "Can't resist topping everyone else's story, and will lie to do it. Backing down from a boast takes an Intelligence (4) Test with at least 2 successes. Starts fights in bars."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 142,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!1258fa4a0e011983"
+}

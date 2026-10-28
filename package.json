@@ -7,8 +7,9 @@
   "scripts": {
     "build-packs": "node tools/build-packs.mjs",
     "extract-packs": "node tools/extract-packs.mjs",
-    "validate": "node tools/validate-packs.mjs",
-    "lint": "eslint ."
+    "validate": "node tools/validate-packs.mjs && node tools/roundtrip.mjs",
+    "lint": "eslint .",
+    "snapshot-schema": "node tools/snapshot-schema.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

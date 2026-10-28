@@ -1,0 +1,40 @@
+{
+  "_id": "fa299c77e7806f1f",
+  "name": "Pirate Family",
+  "type": "quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "kind": "edge",
+    "category": "social",
+    "pointValue": 3,
+    "source": "Cyberpirates",
+    "notes": "Born into the pirate life: an extended family across ports worldwide who turn up to help or hinder. They aren't contacts but Friends of Friends. The GM may make this a Flaw or cut its cost to 1 to reflect troublesome relatives (debts, feuds, an arranged marriage)."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 143,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!fa299c77e7806f1f"
+}

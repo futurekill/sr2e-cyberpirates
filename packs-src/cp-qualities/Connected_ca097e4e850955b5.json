@@ -1,0 +1,40 @@
+{
+  "_id": "ca097e4e850955b5",
+  "name": "Connected",
+  "type": "quality",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "kind": "edge",
+    "category": "social",
+    "pointValue": 3,
+    "source": "Cyberpirates",
+    "notes": "Choose one contact and one kind of merchandise at creation. 3 points: that contact always deals in it one way (always buys, or always sells) at the best price. 5 points: both ways. The GM sets buying at Street Value and selling without the Street Index markup."
+  },
+  "effects": [],
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 142,
+        "cell": "Value line",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!items!ca097e4e850955b5"
+}

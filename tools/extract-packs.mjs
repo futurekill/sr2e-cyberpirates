@@ -25,12 +25,13 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
-const PACKS_DIR  = path.join(__dirname, "..", "packs");
-const SRC_DIR    = path.join(__dirname, "..", "packs-src");
+const PACKS_DIR  = process.env.PACKS_IN ?? path.join(__dirname, "..", "packs");
+const SRC_DIR    = process.env.SRC_OUT ?? path.join(__dirname, "..", "packs-src");
 
 const EMBEDDED = {
   actors: ["items", "effects"],
-  items:  ["effects"]
+  items:  ["effects"],
+  journal: ["pages"]
 };
 
 /** Make a filesystem-safe filename fragment from a document name. */
