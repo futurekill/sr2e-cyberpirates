@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+
+## 0.1.0 — 2026-10-28
 - Module scaffold (build / extract / validate, lint, release workflow).
 - Edges & Flaws (8) and skills (Diving, Ship).
 - Weapons: Harpoon, Spear, Rattan Sticks (core Pole Arm / Staff / Club statistics), Harpoon Gun,

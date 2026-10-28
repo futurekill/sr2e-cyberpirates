@@ -67,7 +67,7 @@ jobs:
           mkdir -p staging/${{ env.MODULE_ID }}
           rsync -avm \
             --exclude='.git' --exclude='.github' --exclude='staging' \
-            --exclude='.DS_Store' \
+            --exclude='.DS_Store' --exclude='eslint.config.mjs' \
             --exclude='node_modules' --exclude='.gitignore' --exclude='*.md' \
             --exclude='docs' --exclude='package.json' --exclude='package-lock.json' \
             --exclude='packs-src' --exclude='tools' --exclude='_work' \
