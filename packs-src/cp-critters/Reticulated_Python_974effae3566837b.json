@@ -1,0 +1,211 @@
+{
+  "_id": "974effae3566837b",
+  "name": "Reticulated Python",
+  "type": "npc",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "biography": "<p>Constrictor of Malaysian and Philippine jungles, 6–10 m long; eats most mammals.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test.</p><p><em>Printed stats: B 8 · Q 4 × 1 · S 10 · C — · I 1/5 · W 2 · E 6 · R 5; Attacks 8M. Running multiplier ×1; Perception 5. Cyberpirates p.150.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 8,
+      "mod": 0,
+      "value": 8,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "strength": {
+      "base": 10,
+      "mod": 0,
+      "value": 10,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 2,
+      "mod": 3,
+      "value": 5
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 5,
+      "dice": 1,
+      "mod": 0,
+      "value": 5
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "movement": {
+      "walk": 4,
+      "run": 4
+    },
+    "dualNatured": false
+  },
+  "items": [
+    {
+      "_id": "55f70988781c0965",
+      "name": "Natural Attack",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "8M",
+        "damageType": "physical",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Bite; then constriction (Str)L Stun each Combat Turn (see biography)."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 150,
+        "cell": "Reticulated Python stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Reticulated Python",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/pawprint.svg",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!974effae3566837b"
+}

@@ -1,0 +1,152 @@
+{
+  "_id": "1ed6135ddac8ba15",
+  "name": "Alufye",
+  "type": "npc",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "biography": "<p>Awakened cockroaches 30–40 cm long from West African rainforests. They trill when threatened, lulling a would-be predator into pleasant lethargy. Harmless, popular pets.</p><p><strong>Powers:</strong> Empathy, Enhanced Senses (Smell, Taste)</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 2 · Q 3 × 2 · S 1 · C — · I 1/4 · W 1 · E 6 · R 3; Attacks none. Running multiplier ×2; Perception 4. Cyberpirates p.154.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "strength": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 2,
+      "mod": 1,
+      "value": 3
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 3,
+      "dice": 1,
+      "mod": 0,
+      "value": 3
+    },
+    "threatRating": 1,
+    "nuyen": 0,
+    "movement": {
+      "walk": 3,
+      "run": 6
+    },
+    "dualNatured": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 154,
+        "cell": "Alufye stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Alufye",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/pawprint.svg",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!1ed6135ddac8ba15"
+}

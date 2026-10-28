@@ -1,0 +1,211 @@
+{
+  "_id": "6c2c6b7777e03182",
+  "name": "King Cobra",
+  "type": "npc",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "biography": "<p>Mundane king cobra of the Philippine forests, 4–6 m long; preys on small to medium mammals and reptiles, including snakes.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.</p><p><em>Printed stats: B 5 · Q 6 × 1 · S 5 · C — · I 1/4 · W 2 · E 6 · R 6*; Attacks 6M. Running multiplier ×1; Perception 4. Cyberpirates p.149.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "strength": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 3,
+      "mod": 3,
+      "value": 6
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 6,
+      "dice": 2,
+      "mod": 0,
+      "value": 6
+    },
+    "threatRating": 3,
+    "nuyen": 0,
+    "movement": {
+      "walk": 6,
+      "run": 6
+    },
+    "dualNatured": false
+  },
+  "items": [
+    {
+      "_id": "a64552c2176e2573",
+      "name": "Natural Attack",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "6M",
+        "damageType": "physical",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Venom on a Light wound or worse (see biography)."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 149,
+        "cell": "King Cobra stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "King Cobra",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/pawprint.svg",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!6c2c6b7777e03182"
+}

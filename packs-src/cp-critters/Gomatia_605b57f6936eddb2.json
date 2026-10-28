@@ -1,0 +1,269 @@
+{
+  "_id": "605b57f6936eddb2",
+  "name": "Gomatia",
+  "type": "npc",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "biography": "<p>Doberman-sized Awakened chameleons with rotating eyes, prehensile tails and a sticky tongue three times their body length. Diurnal ambushers of birds and Awakened insects; stupid enough to attack insect spirits that smell like prey. Sold as pets and increasingly as security paranimals.</p><p><strong>Powers:</strong> Adaptive Coloration, Enhanced Senses (Smell, 360° vision), Immunity to Poisons</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 6 · Q 3 × 1 · S 6 · C — · I 2/6 · W 3 · E (6) · R 3**; Attacks Tongue 6L Stun, Bite 6M. Running multiplier ×1; Perception 6; dual-natured. Cyberpirates p.155.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "strength": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 2,
+      "mod": 0,
+      "value": 2,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 3,
+      "mod": 0,
+      "value": 3,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 2,
+      "mod": 1,
+      "value": 3
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 3,
+      "dice": 3,
+      "mod": 0,
+      "value": 3
+    },
+    "threatRating": 3,
+    "nuyen": 0,
+    "movement": {
+      "walk": 3,
+      "run": 3
+    },
+    "dualNatured": true
+  },
+  "items": [
+    {
+      "_id": "609c82667ee86ef8",
+      "name": "Tongue",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "6L",
+        "damageType": "stun",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Opposed Strength Test to get something out of its grasp; 1 Free Action to drag something to its mouth."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "436298cfb512d05f",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "6M",
+        "damageType": "physical",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 155,
+        "cell": "Gomatia stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Gomatia",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/pawprint.svg",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!605b57f6936eddb2"
+}

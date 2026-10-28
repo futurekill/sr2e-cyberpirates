@@ -1,0 +1,211 @@
+{
+  "_id": "ec93162105d01d8b",
+  "name": "Ekyelebenle",
+  "type": "npc",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "biography": "<p>Awakened green mambas up to 6 m long from the savannahs of sub-Saharan Africa. Extremely aggressive: they chase anything dwarf-sized or smaller, spit poison for defense and hunting, and bite many times.</p><p><strong>Powers:</strong> Enhanced Senses (Smell, Thermographic Vision), Immunity to Poisons, Immunity to Pathogens, Magical Resistance, Venom</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A snake that inflicts a Light wound or worse has injected venom: 5S at 5-, 10- and 20-minute intervals (mundane or Awakened). It can spit the poison up to 5 m: if it wins an opposed Reaction Test, the target is blinded for 2D6 hours ÷ the successes of a Body Test against the poison's Damage Code; no successes, and the blinding is permanent.</p><p><em>Printed stats: B 5 · Q 6 × 2 · S 6 · C — · I 1/5 · W 4 · E (6) · R 6**; Attacks 6M biting. Running multiplier ×2; Perception 5; dual-natured. Cyberpirates p.154.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 5,
+      "mod": 0,
+      "value": 5,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "strength": {
+      "base": 6,
+      "mod": 0,
+      "value": 6,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "value": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 1,
+      "mod": 0,
+      "value": 1,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 4,
+      "mod": 0,
+      "value": 4,
+      "racial": 0
+    },
+    "essence": {
+      "value": 6,
+      "max": 6
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "base": 3,
+      "mod": 3,
+      "value": 6
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "base": 6,
+      "dice": 3,
+      "mod": 0,
+      "value": 6
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "movement": {
+      "walk": 6,
+      "run": 12
+    },
+    "dualNatured": true
+  },
+  "items": [
+    {
+      "_id": "3d727302d0d5bc85",
+      "name": "Natural Attack",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "6M",
+        "damageType": "physical",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Bite (multiple). Venom on a Light wound or worse; can spit it (see biography)."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 154,
+        "cell": "Ekyelebenle stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Ekyelebenle",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "icons/svg/pawprint.svg",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!ec93162105d01d8b"
+}

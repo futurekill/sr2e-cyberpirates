@@ -12,3 +12,7 @@
   Exoskeleton (6/6; Strength upgrades and penalties in its notes).
 - Cyberware: OXSYS Cybergill and its helium Air Tank, Cyberfins (attack as hand razors), Nitrogen
   Monitor, Peg Leg (knee / hip), Hook Hand ((Str+1)M). Peg legs and hooks are not cyberlimbs.
+- Critters (16): Busaw, Buwaya, King Cobra and its Awakened variant, Kiwigs, Reticulated Python and
+  its Awakened variant, Alufye, Anwuma Bavole, Asonwu, Ekyelebenle, Green Mamba, Enwontzane, Gomatia,
+  Mami Wata, Sasabonsam. The vampire templates, shapeshifters and Chupacabras wait on a system change
+  (Essence above 6 — docs/NEEDS-SYSTEM.md).

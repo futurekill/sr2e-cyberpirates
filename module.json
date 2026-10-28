@@ -78,6 +78,17 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "cp-critters",
+      "label": "Cyberpirates Critters",
+      "path": "packs/cp-critters",
+      "type": "Actor",
+      "system": "sr2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -89,7 +100,8 @@
         "cp-skills",
         "cp-weapons",
         "cp-gear",
-        "cp-cyberware"
+        "cp-cyberware",
+        "cp-critters"
       ]
     }
   ],
