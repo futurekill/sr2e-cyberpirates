@@ -7,12 +7,10 @@ diving gear, cyberware, critters, small craft, the African totems (selectable on
 with their spell and conjuring dice), and reference journals: ancestor spirits and Divination, a
 page per totem, and the ships, submarines and ship weapons.
 
-Content only: the book's underwater and ship-combat rules are not automated. What the system can't
-hold yet (the ancestor spirit's attack) is listed in
-`docs/NEEDS-SYSTEM.md`.
+Content only: the book's underwater and ship-combat rules are not automated.
 
 ## Install
-Requires the sr2e system 0.122.0 or later. In Foundry: **Add-on Modules → Install Module**, paste
+Requires the sr2e system 0.123.0 or later. In Foundry: **Add-on Modules → Install Module**, paste
 this manifest URL, then enable the module in your world:
 
     https://github.com/futurekill/sr2e-cyberpirates/releases/latest/download/module.json

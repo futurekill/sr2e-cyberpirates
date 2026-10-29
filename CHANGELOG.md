@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.4.0 — 2026-10-29
+- **The ancestor spirit is summonable** (needs sr2e 0.123.0): Conjuring → a nature spirit →
+  Ancestor. Printed statistics (B F+2, Q F×3, S F+1, R F), the six powers (Accident, Confusion,
+  Divination, Guard, Manifestation, Search) and its attack: Force dice for (Strength)M Stun — the
+  book names no attack skill, so Force follows the core water elemental's unarmed Stun attack.
+  Every totem bonus for Spirits of Man carries over (Cat, Dog, Gator, Raccoon, Rat: +2). Three
+  portraits. The Reference page lists what stays by hand (fetishes, conjuring time, Divination's roll).
+- The totems and the ancestor spirit now register at Foundry's `init`, so saved spirits load with
+  the right statistics.
+
 ## 0.3.0 — 2026-10-29
 - **Seven more critters** (needs sr2e 0.122.0, which lets NPC Essence go above 6): Chupacabras;
   the vampires Sukuyan, Amalanhig and Abat/Boroka/Mangalok; the shapeshifters Malakat, Pugot and
