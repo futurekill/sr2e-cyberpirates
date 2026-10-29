@@ -3,7 +3,7 @@
 //  - every pack's document type comes from module.json;
 //  - required keys, `_key` form, unique ids (embedded ids unique per parent);
 //  - `system` field names and scalar types must match the system's live schema snapshot (tools/data/schema.json);
-//  - numeric bounds the system enforces (NPC Essence 0–6) and no derived fields;
+//  - numeric bounds the system enforces (NPC Essence ≥ 0; no upper bound since sr2e 0.122.0) and no derived fields;
 //  - every generated document carries its transcription record with `verified` set.
 // Run: `npm run validate` (also runs the build → extract round trip).
 import { readdirSync, readFileSync, statSync, existsSync } from "node:fs";
@@ -43,7 +43,7 @@ const checkSystem = (where, doc) => {
   for (const k of DERIVED[doc.type] ?? []) if (k in (doc.system ?? {})) note(`${where}: system.${k} is derived — don't author it`);
   for (const k of DERIVED_PATHS[doc.type] ?? []) if (k.split(".").reduce((o, p) => o?.[p], doc.system) !== undefined) note(`${where}: system.${k} is derived — don't author it`);
   const ess = doc.system?.essence;
-  if (doc.type === "npc" && ess && [ess.value, ess.max].some(v => v != null && (v < 0 || v > 6))) note(`${where}: NPC Essence outside 0–6 (needs the system change, docs/NEEDS-SYSTEM.md)`);
+  if (doc.type === "npc" && ess && [ess.value, ess.max].some(v => v != null && v < 0)) note(`${where}: NPC Essence below 0`);
 };
 
 for (const pack of packs.sort()) {

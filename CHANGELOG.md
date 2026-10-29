@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+## 0.3.0 — 2026-10-29
+- **Seven more critters** (needs sr2e 0.122.0, which lets NPC Essence go above 6): Chupacabras;
+  the vampires Sukuyan, Amalanhig and Abat/Boroka/Mangalok; the shapeshifters Malakat, Pugot and
+  Warek, with portraits. The vampires are templates over the original character — each sheet is a
+  typical vampire (an average human, Essence 7 for the 2D6) and its biography shows how to build a
+  particular one. The shapeshifter sheets are the human form; the animal-form rules are in the
+  biography.
+
 ## 0.2.0 — 2026-10-28
 - Custom art for every document: 46 item icons, 16 critter portraits, and top-down vehicle tokens
   (transparent, bow pointing south so they face the way they move; rotation unlocked). Vehicle token

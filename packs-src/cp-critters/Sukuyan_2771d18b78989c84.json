@@ -1,0 +1,197 @@
+{
+  "_id": "2771d18b78989c84",
+  "name": "Sukuyan",
+  "type": "npc",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/sukuyan.webp",
+  "system": {
+    "biography": "<p>The Caribbean variant of the European and North American vampire.</p><p><strong>Powers:</strong> Enhanced Physical Characteristics, Enhanced Senses (Hearing and Smell), Essence Drain, Immunity (Age, Poison and Pathogens), Infection, Mist Form, Regeneration, Thermographic Vision</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Severe), Dietary Requirement (Salt), Induced Dormancy (lack of air), Essence Loss, Vulnerability (Wood), in some a psychologically based Allergy (Holy Objects, Severe)</p><p><strong>Note:</strong> Every vampire was a character first and keeps most of that character's attributes (the book's \"C\"): Body, Charisma, Intelligence, Willpower and Reaction are the character's; Quickness is the character's with a running multiplier of 5; Strength is the character's Strength plus the vampire's Essence; Essence is 2D6. This sheet is a typical vampire built from an average human (every attribute 3) with Essence 7, so Strength 10. To make a particular vampire, use the original character's attributes, roll 2D6 for Essence and set Strength to Strength + Essence. Essence Drain raises Essence up to twice its type's maximum — 12 for a humanoid (core p.217).</p><p><em>Printed stats: B C · Q C × 5 · S C + E · C C · I C · W C · E 2D6 · R C; Attacks Humanoid. Running multiplier ×5. Cyberpirates p.147.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×5 by hand; Essence 7 and Strength 10 are a typical vampire's — roll 2D6 for Essence and use the original character's attributes; Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "strength": {
+      "base": 10,
+      "mod": 0,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "essence": {
+      "value": 7,
+      "max": 7
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "mod": 0
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "dice": 1,
+      "mod": 0
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "dualNatured": false
+  },
+  "items": [
+    {
+      "_id": "438d8818c894f5ca",
+      "name": "Unarmed Strike",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/unarmed-strike.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "unarmed_combat",
+        "damageCode": "(Str)M",
+        "damageType": "stun",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Humanoid: uses weapons and the normal combat rules."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 147,
+        "cell": "Sukuyan stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Sukuyan",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/sukuyan.webp",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!2771d18b78989c84"
+}

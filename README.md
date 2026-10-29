@@ -8,11 +8,11 @@ with their spell and conjuring dice), and reference journals: ancestor spirits a
 page per totem, and the ships, submarines and ship weapons.
 
 Content only: the book's underwater and ship-combat rules are not automated. What the system can't
-hold yet (critters with Essence above 6, the ancestor spirit's attack) is listed in
+hold yet (the ancestor spirit's attack) is listed in
 `docs/NEEDS-SYSTEM.md`.
 
 ## Install
-Requires the sr2e system 0.121.0 or later. In Foundry: **Add-on Modules → Install Module**, paste
+Requires the sr2e system 0.122.0 or later. In Foundry: **Add-on Modules → Install Module**, paste
 this manifest URL, then enable the module in your world:
 
     https://github.com/futurekill/sr2e-cyberpirates/releases/latest/download/module.json

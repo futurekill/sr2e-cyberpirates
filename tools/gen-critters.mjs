@@ -8,8 +8,10 @@
 // derived ×3, so the printed running multiplier is in the biography. Threat Rating = mean attribute
 // (the Paranormal Animals module's rule; the book prints none). Derived fields (Reaction/Initiative
 // base and value, movement) are not authored; the biography says where the sheet differs from the book.
-// Not generated (docs/NEEDS-SYSTEM.md): Chupacabras (Essence 2D6), the vampire templates (2D6), and
-// the shapeshifters (Essence 8) — NPC Essence is capped at 6.
+// Essence above 6 (2D6, 8) needs sr2e 0.122.0 (no NPC Essence cap). Vampires are TEMPLATES over the
+// original character ("C"): the actor is a typical vampire made from an average human (every
+// attribute 3) with Essence 7 (the 2D6 average) — the biography gives the formulas to rebuild one.
+// Shapeshifters print a real human form (the actor); the animal form is a formula in the biography.
 import { idFor, sourceFlag, STATS, artFor } from "./lib.mjs";
 import { writePack } from "./lib.mjs";
 
@@ -31,12 +33,13 @@ function critter(x) {
   const _id = idFor("critter", x.name);
   const art = artFor("creature_portraits", x.name, "icons/svg/pawprint.svg");
   const rBase = Math.floor((x.q + x.i) / 2);
-  const stats = `B ${x.b}${x.armor ? `/${x.armor}` : ""} · Q ${x.q} × ${x.mult} · S ${x.s} · C ${x.c || "—"} · I ${x.i}${x.per ? `/${x.per}` : ""} · W ${x.w} · E ${x.dual ? `(${x.e})` : x.e} · R ${x.r}${"*".repeat((x.dice ?? 1) - 1)}`;
+  const stats = x.printed ?? `B ${x.b}${x.armor ? `/${x.armor}` : ""} · Q ${x.q} × ${x.mult} · S ${x.s} · C ${x.c || "—"} · I ${x.i}${x.per ? `/${x.per}` : ""} · W ${x.w} · E ${x.dual ? `(${x.e})` : x.e} · R ${x.r}${"*".repeat((x.dice ?? 1) - 1)}`;
   const tr = Math.max(1, Math.round((x.b + x.q + x.s + x.c + x.i + x.w) / 6));
   // What the sheet shows differently from the book (the system's NPC model), said where players read it.
   const zero = [["Strength", x.s, "0"], ["Charisma", x.c, "—"]].filter(([, v]) => v === 0).map(([n, , shown]) => `${n} (printed ${shown})`);
   const sheet = [x.mult !== 3 && `the sheet's running rate uses ×3 — use ×${x.mult} by hand`,
     zero.length && `${zero.join(" and ")} ${zero.length > 1 ? "count" : "counts"} as 1 on the sheet (the system's floor)`,
+    ...(x.sheetNotes ?? []),
     `Threat Rating ${tr} is this module's estimate (the average attribute), not the book's`].filter(Boolean);
   const bio = `<p>${x.desc}</p>`
     + (x.powers ? `<p><strong>Powers:</strong> ${x.powers}</p>` : "")
@@ -72,6 +75,18 @@ const COBRA_P = "Enhanced Senses (Smell), Thermographic Vision";
 const COBRA_N = "A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.";
 const PY_N = "A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test.";
 const MAMBA_N = "A snake that inflicts a Light wound or worse has injected venom: 5S at 5-, 10- and 20-minute intervals (mundane or Awakened). It can spit the poison up to 5 m: if it wins an opposed Reaction Test, the target is blinded for 2D6 hours ÷ the successes of a Body Test against the poison's Damage Code; no successes, and the blinding is permanent.";
+
+const VAMP_P = "Enhanced Physical Characteristics, Enhanced Senses (Hearing and Smell), Essence Drain, Immunity (Age, Poison and Pathogens), Infection, Mist Form, Regeneration, Thermographic Vision";
+const VAMP_N = "Every vampire was a character first and keeps most of that character's attributes (the book's \"C\"): Body, Charisma, Intelligence, Willpower and Reaction are the character's; Quickness is the character's with a running multiplier of 5; Strength is the character's Strength plus the vampire's Essence; Essence is 2D6. This sheet is a typical vampire built from an average human (every attribute 3) with Essence 7, so Strength 10. To make a particular vampire, use the original character's attributes, roll 2D6 for Essence and set Strength to Strength + Essence. Essence Drain raises Essence up to twice its type's maximum — 12 for a humanoid (core p.217).";
+const VAMP = (name, page, weak, desc) => ({ name, page, b: 3, q: 3, mult: 5, s: 10, c: 3, i: 3, w: 3, e: 7, r: 3,
+  printedAttacks: "Humanoid", attacks: HUMANOID, powers: VAMP_P, weak, note: VAMP_N, desc,
+  printed: "B C · Q C × 5 · S C + E · C C · I C · W C · E 2D6 · R C",
+  sheetNotes: ["Essence 7 and Strength 10 are a typical vampire's — roll 2D6 for Essence and use the original character's attributes"] });
+const SHIFT_P = "Enhanced Physical Characteristics (in animal form), Regeneration";
+const SHIFT = (name, page, animal, weak, mods, desc) => ({ name, page, b: 5, q: 4, mult: 5, s: 5, c: 5, i: 3, w: 3, e: 8, dual: true, r: 5,
+  printedAttacks: "Humanoid (human form); (A + 1)(A) (animal form)", attacks: HUMANOID, powers: SHIFT_P, weak, desc,
+  note: `This sheet is the HUMAN form. In ${animal} form use the ${animal}'s attributes (A, from the core critter tables): Body A + 2, Quickness (A + 1) with running multiplier (A + 1), Strength A + 2, Charisma 5, Intelligence 3, Willpower 3, Essence (8), Reaction 5, attack (A + 1)(A) as printed, from the animal's Attack code. ${mods}`,
+  sheetNotes: ["the animal form isn't modelled — switch by hand"] });
 
 const C = [
   // Philippines (* in the book: native to the Philippines)
@@ -137,5 +152,27 @@ const C = [
     powers: "Enhanced Senses (Hearing, Smell)", weak: "Allergy (Sunlight, Moderate), Reduced Senses (blind or nearly so)",
     desc: "West African ghouls of the Krieger-Laluah HMHVV strain, with extremely long legs and arms; they run on all fours as easily as on two legs." }
 ];
+
+C.push(
+  { name: "Chupacabras", page: 147, b: 5, q: 4, mult: 4, s: 3, c: 0, i: 3, per: 5, w: 6, e: 7, r: 5, printedAttacks: "3L, claw or teeth",
+    attacks: [{ code: "3L", notes: "Claw or teeth." }],
+    powers: "Concealment (Personal), Essence Drain, Immunity to Pathogens, Immunity to Poisons, Paralyzing Touch",
+    weak: "Allergy (Sunlight, Mild), Essence Loss, Vulnerability (Fire)",
+    printed: "B 5 · Q 4 × 4 · S 3 · C — · I 3/5 · W 6 · E 2D6 · R 5",
+    sheetNotes: ["Essence 7 is a typical roll — roll 2D6 for each chupacabras"],
+    desc: "A 1.2-meter bipedal reptile like a cross between an iguana and a monkey: green scales with coarse hair, a spiky iguana crest, large red eyes, a short tail and opposable thumbs. It lives in Caribbean tropical forests (and is rumored on Madagascar), drinks blood — goats and cattle by preference (\"goatsucker\"), isolated metahumans now and then. Its tissues look like HMHVV's, but it doesn't carry the virus." },
+  VAMP("Sukuyan", 147, "Allergy (Sunlight, Severe), Dietary Requirement (Salt), Induced Dormancy (lack of air), Essence Loss, Vulnerability (Wood), in some a psychologically based Allergy (Holy Objects, Severe)",
+    "The Caribbean variant of the European and North American vampire."),
+  VAMP("Amalanhig", 149, "Allergy (Sunlight, Severe), Induced Dormancy (lack of air), Essence Loss, Vulnerability (Wood), in some a psychologically based Allergy (Holy Objects, Severe)",
+    "The Philippine variant of the North American vampire (an aswang)."),
+  VAMP("Abat, Boroka, Mangalok", 149, "Allergy (Sunlight, Severe), Induced Dormancy (lack of air), Essence Loss, Vulnerability (Salt, Wood), in some a psychologically based Allergy (Holy Objects, Severe)",
+    "Philippine vampires (aswang) that eat internal organs instead of drinking blood."),
+  SHIFT("Malakat", 149, "dog", "Allergy (Silver, Severe), Vulnerability (Silver)", "Malakat also add +1 Body, +1 Quickness and +1D6 Initiative in animal form.",
+    "A Philippine dog shapeshifter (aswang); in human form it has enlarged canine teeth."),
+  SHIFT("Pugot", 149, "hog", "Allergy (Silver, Severe), Vulnerability (Silver)", "Pugot also add +1 Body, +1 Strength and +2D6 Initiative in animal form.",
+    "A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails."),
+  SHIFT("Warek", 155, "leopard", "Allergy (Gold, Severe), Vulnerability (Gold)", "Add +2D6 Initiative in animal form.",
+    "The West African leopard shapeshifter, the most common shapeshifter on the continent.")
+);
 
 writePack("cp-critters", C.map(critter));

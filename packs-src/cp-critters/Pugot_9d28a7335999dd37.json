@@ -1,0 +1,197 @@
+{
+  "_id": "9d28a7335999dd37",
+  "name": "Pugot",
+  "type": "npc",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/pugot.webp",
+  "system": {
+    "biography": "<p>A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails.</p><p><strong>Powers:</strong> Enhanced Physical Characteristics (in animal form), Regeneration</p><p><strong>Weaknesses:</strong> Allergy (Silver, Severe), Vulnerability (Silver)</p><p><strong>Note:</strong> This sheet is the HUMAN form. In hog form use the hog's attributes (A, from the core critter tables): Body A + 2, Quickness (A + 1) with running multiplier (A + 1), Strength A + 2, Charisma 5, Intelligence 3, Willpower 3, Essence (8), Reaction 5, attack (A + 1)(A) as printed, from the animal's Attack code. Pugot also add +1 Body, +1 Strength and +2D6 Initiative in animal form.</p><p><em>Printed stats: B 5 · Q 4 × 5 · S 5 · C 5 · I 3 · W 3 · E (8) · R 5; Attacks Humanoid (human form); (A + 1)(A) (animal form). Running multiplier ×5; dual-natured. Cyberpirates p.149.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×5 by hand; the animal form isn't modelled — switch by hand; Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 5,
+      "mod": 0,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 4,
+      "mod": 0,
+      "racial": 0
+    },
+    "strength": {
+      "base": 5,
+      "mod": 0,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 5,
+      "mod": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "essence": {
+      "value": 8,
+      "max": 8
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "mod": 2
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "dice": 1,
+      "mod": 0
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "dualNatured": true
+  },
+  "items": [
+    {
+      "_id": "2792d1812223c717",
+      "name": "Unarmed Strike",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/unarmed-strike.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "unarmed_combat",
+        "damageCode": "(Str)M",
+        "damageType": "stun",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Humanoid: uses weapons and the normal combat rules."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 149,
+        "cell": "Pugot stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Pugot",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/pugot.webp",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!9d28a7335999dd37"
+}

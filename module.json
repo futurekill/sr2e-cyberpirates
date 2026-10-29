@@ -2,7 +2,7 @@
   "id": "sr2e-cyberpirates",
   "title": "Shadowrun 2E: Cyberpirates!",
   "description": "Edges & Flaws, skills, weapons, diving gear, cyberware, critters, small craft and ship references from Cyberpirates! (FASA 7124) as compendia for the Shadowrun 2nd Edition system.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -13,7 +13,7 @@
         "id": "sr2e",
         "type": "system",
         "compatibility": {
-          "minimum": "0.121.0"
+          "minimum": "0.122.0"
         }
       }
     ]

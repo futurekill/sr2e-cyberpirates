@@ -1,0 +1,197 @@
+{
+  "_id": "82146eb2de8c6ea5",
+  "name": "Chupacabras",
+  "type": "npc",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/chupacabras.webp",
+  "system": {
+    "biography": "<p>A 1.2-meter bipedal reptile like a cross between an iguana and a monkey: green scales with coarse hair, a spiky iguana crest, large red eyes, a short tail and opposable thumbs. It lives in Caribbean tropical forests (and is rumored on Madagascar), drinks blood — goats and cattle by preference (\"goatsucker\"), isolated metahumans now and then. Its tissues look like HMHVV's, but it doesn't carry the virus.</p><p><strong>Powers:</strong> Concealment (Personal), Essence Drain, Immunity to Pathogens, Immunity to Poisons, Paralyzing Touch</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Mild), Essence Loss, Vulnerability (Fire)</p><p><em>Printed stats: B 5 · Q 4 × 4 · S 3 · C — · I 3/5 · W 6 · E 2D6 · R 5; Attacks 3L, claw or teeth. Running multiplier ×4; Perception 5. Cyberpirates p.147.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×4 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Essence 7 is a typical roll — roll 2D6 for each chupacabras; Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
+    "race": "critter",
+    "professionalRating": 0,
+    "body": {
+      "base": 5,
+      "mod": 0,
+      "racial": 0
+    },
+    "quickness": {
+      "base": 4,
+      "mod": 0,
+      "racial": 0
+    },
+    "strength": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "charisma": {
+      "base": 0,
+      "mod": 0,
+      "racial": 0
+    },
+    "intelligence": {
+      "base": 3,
+      "mod": 0,
+      "racial": 0
+    },
+    "willpower": {
+      "base": 6,
+      "mod": 0,
+      "racial": 0
+    },
+    "essence": {
+      "value": 7,
+      "max": 7
+    },
+    "magic": {
+      "value": 0,
+      "max": 0,
+      "tradition": "none",
+      "type": "none",
+      "totem": ""
+    },
+    "reaction": {
+      "mod": 2
+    },
+    "conditionMonitor": {
+      "physical": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "stun": {
+        "value": 0,
+        "max": 10,
+        "overflow": 0
+      },
+      "overflow": 0
+    },
+    "armor": {
+      "ballistic": 0,
+      "impact": 0
+    },
+    "dicePools": {
+      "combat": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      },
+      "magic": {
+        "value": 0,
+        "max": 0,
+        "bonus": 0
+      }
+    },
+    "initiative": {
+      "dice": 1,
+      "mod": 0
+    },
+    "threatRating": 4,
+    "nuyen": 0,
+    "dualNatured": false
+  },
+  "items": [
+    {
+      "_id": "3e1942b27de83d39",
+      "name": "Natural Attack",
+      "type": "weapon",
+      "img": "systems/sr2e/assets/item_icons/weapons/natural-attack.webp",
+      "system": {
+        "weaponType": "melee",
+        "skill": "",
+        "damageCode": "3L",
+        "damageType": "physical",
+        "concealability": 0,
+        "reach": 0,
+        "firingModes": {
+          "ss": false,
+          "sa": false,
+          "bf": false,
+          "fa": false
+        },
+        "ammo": {
+          "current": 0,
+          "max": 0,
+          "type": ""
+        },
+        "recoilComp": 0,
+        "ranges": {
+          "short": 0,
+          "medium": 0,
+          "long": 0,
+          "extreme": 0
+        },
+        "strengthMin": 0,
+        "weight": 0,
+        "cost": 0,
+        "availability": "",
+        "legality": "",
+        "equipped": true,
+        "accessories": [],
+        "notes": "Claw or teeth."
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "coreVersion": "13.351",
+        "systemId": "sr2e",
+        "systemVersion": "0.121.0",
+        "createdTime": 1793000000000,
+        "modifiedTime": 1793000000000,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {
+    "sr2e-cyberpirates": {
+      "source": {
+        "page": 147,
+        "cell": "Chupacabras stat block",
+        "verified": "300dpi+visual"
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.121.0",
+    "createdTime": 1793000000000,
+    "modifiedTime": 1793000000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "prototypeToken": {
+    "name": "Chupacabras",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": true,
+    "texture": {
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/chupacabras.webp",
+      "fit": "contain"
+    },
+    "disposition": -1,
+    "bar1": {
+      "attribute": "conditionMonitor.physical"
+    },
+    "bar2": {
+      "attribute": "conditionMonitor.stun"
+    }
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!82146eb2de8c6ea5"
+}
