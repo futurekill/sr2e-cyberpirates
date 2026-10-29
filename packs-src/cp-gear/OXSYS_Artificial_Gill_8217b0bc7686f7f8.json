@@ -2,7 +2,7 @@
   "_id": "8217b0bc7686f7f8",
   "name": "OXSYS Artificial Gill",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/oxsys-artificial-gill.webp",
   "system": {
     "category": "survival",
     "rating": 0,

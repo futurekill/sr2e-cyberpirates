@@ -2,7 +2,7 @@
   "_id": "4ba20211d9e06f3e",
   "name": "Colt M24A3 Water Carbine",
   "type": "weapon",
-  "img": "systems/sr2e/assets/item_icons/weapons/submachine-guns.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/weapon/colt-m24a3-water-carbine.webp",
   "system": {
     "weaponType": "firearm",
     "skill": "firearms",

@@ -2,7 +2,7 @@
   "_id": "4f602377ddaceaf7",
   "name": "Dual Tank Manifold Assembly",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/dual-tank-manifold-assembly.webp",
   "system": {
     "category": "survival",
     "rating": 0,

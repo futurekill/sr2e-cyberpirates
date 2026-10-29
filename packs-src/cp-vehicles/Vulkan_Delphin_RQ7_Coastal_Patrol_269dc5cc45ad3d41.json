@@ -2,7 +2,7 @@
   "_id": "269dc5cc45ad3d41",
   "name": "Vulkan Delphin RQ7 (Coastal Patrol)",
   "type": "vehicle",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/vehicle_portraits/vulkan-delphin-rq7-coastal-patrol.webp",
   "system": {
     "vehicleType": "boat",
     "skill": "",
@@ -54,11 +54,11 @@
     "name": "Vulkan Delphin RQ7 (Coastal Patrol)",
     "displayName": 0,
     "actorLink": false,
-    "width": 3,
-    "height": 12,
-    "lockRotation": true,
+    "width": 4,
+    "height": 9,
+    "lockRotation": false,
     "texture": {
-      "src": "icons/svg/anchor.svg",
+      "src": "modules/sr2e-cyberpirates/assets/vehicle_portraits/vulkan-delphin-rq7-coastal-patrol.webp",
       "fit": "contain"
     },
     "disposition": 0

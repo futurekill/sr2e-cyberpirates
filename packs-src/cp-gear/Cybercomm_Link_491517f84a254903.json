@@ -2,7 +2,7 @@
   "_id": "491517f84a254903",
   "name": "Cybercomm Link",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/cybercomm-link.webp",
   "system": {
     "category": "electronics",
     "rating": 0,

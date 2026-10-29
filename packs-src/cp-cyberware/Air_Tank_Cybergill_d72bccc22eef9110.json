@@ -2,7 +2,7 @@
   "_id": "d72bccc22eef9110",
   "name": "Air Tank (Cybergill)",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-air.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/air-tank-cybergill.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

@@ -2,7 +2,7 @@
   "_id": "901b0e33a342c5a4",
   "name": "Sasabonsam",
   "type": "npc",
-  "img": "icons/svg/pawprint.svg",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/sasabonsam.webp",
   "system": {
     "biography": "<p>West African ghouls of the Krieger-Laluah HMHVV strain, with extremely long legs and arms; they run on all fours as easily as on two legs.</p><p><strong>Powers:</strong> Enhanced Senses (Hearing, Smell)</p><p><strong>Weaknesses:</strong> Allergy (Sunlight, Moderate), Reduced Senses (blind or nearly so)</p><p><em>Printed stats: B 7 · Q 5 × 5 · S 6 · C 1 · I 4 · W 5 · E (5) · R 4; Attacks Humanoid. Running multiplier ×5; dual-natured. Cyberpirates p.155.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×5 by hand; Threat Rating 5 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
@@ -179,7 +179,7 @@
     "height": 1,
     "lockRotation": true,
     "texture": {
-      "src": "icons/svg/pawprint.svg",
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/sasabonsam.webp",
       "fit": "contain"
     },
     "disposition": -1,

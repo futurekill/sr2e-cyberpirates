@@ -2,7 +2,7 @@
   "_id": "3bb3af08458208fe",
   "name": "Sling Launcher",
   "type": "weapon",
-  "img": "systems/sr2e/assets/item_icons/weapons/projectile.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/weapon/sling-launcher.webp",
   "system": {
     "weaponType": "projectile",
     "skill": "projectile_weapons",

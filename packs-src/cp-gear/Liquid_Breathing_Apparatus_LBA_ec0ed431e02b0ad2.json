@@ -2,7 +2,7 @@
   "_id": "ec0ed431e02b0ad2",
   "name": "Liquid Breathing Apparatus (LBA)",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/liquid-breathing-apparatus-lba.webp",
   "system": {
     "category": "survival",
     "rating": 0,

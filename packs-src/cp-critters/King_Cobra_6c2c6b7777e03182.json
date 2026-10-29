@@ -2,7 +2,7 @@
   "_id": "6c2c6b7777e03182",
   "name": "King Cobra",
   "type": "npc",
-  "img": "icons/svg/pawprint.svg",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/king-cobra.webp",
   "system": {
     "biography": "<p>Mundane king cobra of the Philippine forests, 4–6 m long; preys on small to medium mammals and reptiles, including snakes.</p><p><strong>Powers:</strong> Enhanced Senses (Smell), Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A cobra that inflicts a Light wound or worse has injected a nonmagical venom that does 6S damage at 10-minute intervals.</p><p><em>Printed stats: B 5 · Q 6 × 1 · S 5 · C — · I 1/4 · W 2 · E 6 · R 6*; Attacks 6M. Running multiplier ×1; Perception 4. Cyberpirates p.149.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×1 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 3 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
@@ -179,7 +179,7 @@
     "height": 1,
     "lockRotation": true,
     "texture": {
-      "src": "icons/svg/pawprint.svg",
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/king-cobra.webp",
       "fit": "contain"
     },
     "disposition": -1,

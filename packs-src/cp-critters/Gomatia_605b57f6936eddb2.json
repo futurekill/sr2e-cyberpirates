@@ -2,7 +2,7 @@
   "_id": "605b57f6936eddb2",
   "name": "Gomatia",
   "type": "npc",
-  "img": "icons/svg/pawprint.svg",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/gomatia.webp",
   "system": {
     "biography": "<p>Doberman-sized Awakened chameleons with rotating eyes, prehensile tails and a sticky tongue three times their body length. Diurnal ambushers of birds and Awakened insects; stupid enough to attack insect spirits that smell like prey. Sold as pets and increasingly as security paranimals.</p><p><strong>Powers:</strong> Adaptive Coloration, Enhanced Senses (Smell, 360° vision), Immunity to Poisons</p><p><strong>Weaknesses:</strong> None</p><p><em>Printed stats: B 6 · Q 3 × 1 · S 6 · C — · I 2/6 · W 3 · E (6) · R 3**; Attacks Tongue 6L Stun, Bite 6M. Running multiplier ×1; Perception 6; dual-natured. Cyberpirates p.155.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×1 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 3 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
@@ -237,7 +237,7 @@
     "height": 1,
     "lockRotation": true,
     "texture": {
-      "src": "icons/svg/pawprint.svg",
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/gomatia.webp",
       "fit": "contain"
     },
     "disposition": -1,

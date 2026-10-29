@@ -2,7 +2,7 @@
   "_id": "3d1ff676cd85e621",
   "name": "Wet Suit",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/wet-suit.webp",
   "system": {
     "category": "survival",
     "rating": 0,

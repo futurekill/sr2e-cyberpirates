@@ -27,3 +27,12 @@ Every document — and every journal page — carries `flags["sr2e-cyberpirates"
 verified: "300dpi+visual"}`; the validator rejects anything less. NPC derived fields (attribute values,
 Reaction and Initiative base/value, movement) are never authored. Generators keep
 `tools/data/inventory.json` (commit it with packs-src); foundry-check compares Foundry's packs with it.
+
+## Art
+`node tools/art-todo.mjs` lists what still needs art, keyed `<assets dir>/<slug>` from the compendium.
+Prompts: `tools/art-prompts.tsv` (items, vehicles) and `tools/critter-prompts.tsv`. `tools/gen-art.sh
+items|critters|vehicles` runs Codex image generation (style refs in `_work/ref/style`) into
+`_work/out/<key>.png`; `python3 tools/fit-art.py` fits them into `assets/` (icons 256², portraits
+1024², vehicles transparent and trimmed — nose SOUTH, Foundry's rotation 0). The generators derive
+`img` from `assets/` by file (`artFor` in tools/lib.mjs), so re-running one never wipes art; vehicle
+token length follows the art's proportions and real art unlocks rotation.

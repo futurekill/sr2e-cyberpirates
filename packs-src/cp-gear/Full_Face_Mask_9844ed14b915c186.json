@@ -2,7 +2,7 @@
   "_id": "9844ed14b915c186",
   "name": "Full Face Mask",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/full-face-mask.webp",
   "system": {
     "category": "survival",
     "rating": 0,

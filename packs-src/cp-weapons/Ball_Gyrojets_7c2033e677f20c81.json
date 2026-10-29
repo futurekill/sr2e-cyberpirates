@@ -2,7 +2,7 @@
   "_id": "7c2033e677f20c81",
   "name": "Ball Gyrojets",
   "type": "ammo",
-  "img": "systems/sr2e/assets/item_icons/ammo/regular-ammo.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/ammo/ball-gyrojets.webp",
   "system": {
     "ammoType": "gyrojet",
     "quantity": 10,

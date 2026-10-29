@@ -2,7 +2,7 @@
   "_id": "12b4feec49aefe68",
   "name": "Diving",
   "type": "skill",
-  "img": "icons/svg/waterfall.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/skill/diving.webp",
   "system": {
     "category": "active",
     "linkedAttribute": "intelligence",

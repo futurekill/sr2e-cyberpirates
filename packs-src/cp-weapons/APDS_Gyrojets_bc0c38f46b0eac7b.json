@@ -2,7 +2,7 @@
   "_id": "bc0c38f46b0eac7b",
   "name": "APDS Gyrojets",
   "type": "ammo",
-  "img": "systems/sr2e/assets/item_icons/ammo/apds.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/ammo/apds-gyrojets.webp",
   "system": {
     "ammoType": "gyrojet",
     "quantity": 10,

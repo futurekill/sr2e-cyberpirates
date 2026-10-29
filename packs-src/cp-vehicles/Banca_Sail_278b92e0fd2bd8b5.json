@@ -2,7 +2,7 @@
   "_id": "278b92e0fd2bd8b5",
   "name": "Banca (Sail)",
   "type": "vehicle",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/vehicle_portraits/banca-sail.webp",
   "system": {
     "vehicleType": "boat",
     "skill": "",
@@ -54,11 +54,11 @@
     "name": "Banca (Sail)",
     "displayName": 0,
     "actorLink": false,
-    "width": 2,
-    "height": 6,
-    "lockRotation": true,
+    "width": 4,
+    "height": 7,
+    "lockRotation": false,
     "texture": {
-      "src": "icons/svg/anchor.svg",
+      "src": "modules/sr2e-cyberpirates/assets/vehicle_portraits/banca-sail.webp",
       "fit": "contain"
     },
     "disposition": 0

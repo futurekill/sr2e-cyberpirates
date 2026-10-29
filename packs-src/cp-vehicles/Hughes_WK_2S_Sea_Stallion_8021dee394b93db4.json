@@ -2,7 +2,7 @@
   "_id": "8021dee394b93db4",
   "name": "Hughes WK-2S Sea Stallion",
   "type": "vehicle",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/vehicle_portraits/hughes-wk-2s-sea-stallion.webp",
   "system": {
     "vehicleType": "rotor",
     "skill": "",
@@ -55,10 +55,10 @@
     "displayName": 0,
     "actorLink": false,
     "width": 12,
-    "height": 12,
-    "lockRotation": true,
+    "height": 18,
+    "lockRotation": false,
     "texture": {
-      "src": "icons/svg/anchor.svg",
+      "src": "modules/sr2e-cyberpirates/assets/vehicle_portraits/hughes-wk-2s-sea-stallion.webp",
       "fit": "contain"
     },
     "disposition": 0

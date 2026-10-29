@@ -2,7 +2,7 @@
   "_id": "39f4baa1ca3174cd",
   "name": "Vulkan Electronaut",
   "type": "vehicle",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/vehicle_portraits/vulkan-electronaut.webp",
   "system": {
     "vehicleType": "boat",
     "skill": "",
@@ -55,10 +55,10 @@
     "displayName": 0,
     "actorLink": false,
     "width": 2,
-    "height": 5,
-    "lockRotation": true,
+    "height": 3,
+    "lockRotation": false,
     "texture": {
-      "src": "icons/svg/anchor.svg",
+      "src": "modules/sr2e-cyberpirates/assets/vehicle_portraits/vulkan-electronaut.webp",
       "fit": "contain"
     },
     "disposition": 0

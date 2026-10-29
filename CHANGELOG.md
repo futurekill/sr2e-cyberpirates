@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## 0.2.0 — 2026-10-28
+- Custom art for every document: 46 item icons, 16 critter portraits, and top-down vehicle tokens
+  (transparent, bow pointing south so they face the way they move; rotation unlocked). Vehicle token
+  length now follows the art's proportions; the bancas are 4 squares wide (outriggers), the Delphins 4.
+- Generators derive art from `assets/` by file, so re-running one never wipes it
+  (`tools/art-todo.mjs`, `tools/gen-art.sh`, `tools/fit-art.py`).
+
 ## 0.1.0 — 2026-10-28
 - Module scaffold (build / extract / validate, lint, release workflow).
 - Edges & Flaws (8) and skills (Diving, Ship).

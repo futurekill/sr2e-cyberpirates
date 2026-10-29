@@ -2,7 +2,7 @@
   "_id": "f95c736b9cf5d90f",
   "name": "Sea Legs",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/quality/sea-legs.webp",
   "system": {
     "kind": "flaw",
     "category": "mental",

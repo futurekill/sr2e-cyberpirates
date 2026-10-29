@@ -2,7 +2,7 @@
   "_id": "cb0b41167b2ca8e0",
   "name": "Ship",
   "type": "skill",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/skill/ship.webp",
   "system": {
     "category": "active",
     "linkedAttribute": "quickness",

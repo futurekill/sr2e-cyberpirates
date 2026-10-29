@@ -2,7 +2,7 @@
   "_id": "84015e4d75585f1b",
   "name": "Harpoon",
   "type": "weapon",
-  "img": "systems/sr2e/assets/item_icons/weapons/pole-arm.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/weapon/harpoon.webp",
   "system": {
     "weaponType": "melee",
     "skill": "armed_combat",

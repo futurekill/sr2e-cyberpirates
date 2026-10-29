@@ -2,7 +2,7 @@
   "_id": "3677e88cf8a08211",
   "name": "Explosive Gyrojets",
   "type": "ammo",
-  "img": "systems/sr2e/assets/item_icons/ammo/explosive-rounds.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/ammo/explosive-gyrojets.webp",
   "system": {
     "ammoType": "gyrojet",
     "quantity": 10,

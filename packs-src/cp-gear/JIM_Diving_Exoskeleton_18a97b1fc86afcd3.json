@@ -2,7 +2,7 @@
   "_id": "18a97b1fc86afcd3",
   "name": "JIM Diving Exoskeleton",
   "type": "armor",
-  "img": "systems/sr2e/assets/item_icons/armor/full-heavy-armor.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/armor/jim-diving-exoskeleton.webp",
   "system": {
     "legality": "Legal",
     "equipped": false,

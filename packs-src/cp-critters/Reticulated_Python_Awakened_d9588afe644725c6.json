@@ -2,7 +2,7 @@
   "_id": "d9588afe644725c6",
   "name": "Reticulated Python (Awakened)",
   "type": "npc",
-  "img": "icons/svg/pawprint.svg",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/reticulated-python-awakened.webp",
   "system": {
     "biography": "<p>Awakened reticulated python, up to 14 m and 350 kg, with a head the size of a big shoe box.</p><p><strong>Powers:</strong> Adaptive Coloration, Enhanced Senses (Smell), Immunity to Pathogens and Poisons, Search, Thermographic Vision</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A successful predatory bite lets the python start constricting, damage or not: (Str)L Stun every Combat Turn. Heavy armor resists it normally; lighter Impact armor has no effect. It waits until the prey's heart stops before eating. Escaping the coils takes a Complex Action and a successful opposed Strength Test. Awakened pythons can attack and hold astral forms; escaping works the same physically or astrally.</p><p><em>Printed stats: B 10 · Q 4 × 1 · S 16 · C — · I 1/5 · W 4 · E 6 · R 5; Attacks 8M. Running multiplier ×1; Perception 5. Cyberpirates p.150.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×1 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 6 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
@@ -179,7 +179,7 @@
     "height": 1,
     "lockRotation": true,
     "texture": {
-      "src": "icons/svg/pawprint.svg",
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/reticulated-python-awakened.webp",
       "fit": "contain"
     },
     "disposition": -1,

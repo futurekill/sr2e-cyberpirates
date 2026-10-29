@@ -2,7 +2,7 @@
   "_id": "014ea2f8c8ff9e0d",
   "name": "Peg Leg (Knee Length)",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/simple-replacement-limb.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/peg-leg-knee-length.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

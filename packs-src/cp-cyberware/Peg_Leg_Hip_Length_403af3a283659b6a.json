@@ -2,7 +2,7 @@
   "_id": "403af3a283659b6a",
   "name": "Peg Leg (Hip Length)",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/simple-replacement-limb.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/peg-leg-hip-length.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

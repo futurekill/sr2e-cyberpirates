@@ -10,7 +10,7 @@
 // base and value, movement) are not authored; the biography says where the sheet differs from the book.
 // Not generated (docs/NEEDS-SYSTEM.md): Chupacabras (Essence 2D6), the vampire templates (2D6), and
 // the shapeshifters (Essence 8) — NPC Essence is capped at 6.
-import { idFor, sourceFlag, STATS } from "./lib.mjs";
+import { idFor, sourceFlag, STATS, artFor } from "./lib.mjs";
 import { writePack } from "./lib.mjs";
 
 const V = "300dpi+visual";
@@ -29,6 +29,7 @@ function attack(owner, { name = "Natural Attack", code, type = "physical", reach
 
 function critter(x) {
   const _id = idFor("critter", x.name);
+  const art = artFor("creature_portraits", x.name, "icons/svg/pawprint.svg");
   const rBase = Math.floor((x.q + x.i) / 2);
   const stats = `B ${x.b}${x.armor ? `/${x.armor}` : ""} · Q ${x.q} × ${x.mult} · S ${x.s} · C ${x.c || "—"} · I ${x.i}${x.per ? `/${x.per}` : ""} · W ${x.w} · E ${x.dual ? `(${x.e})` : x.e} · R ${x.r}${"*".repeat((x.dice ?? 1) - 1)}`;
   const tr = Math.max(1, Math.round((x.b + x.q + x.s + x.c + x.i + x.w) / 6));
@@ -44,7 +45,7 @@ function critter(x) {
     + `<p><em>Printed stats: ${stats}; Attacks ${x.printedAttacks}. Running multiplier ×${x.mult}${x.per ? `; Perception ${x.per}` : ""}${x.dual ? "; dual-natured" : ""}. Cyberpirates p.${x.page}.</em></p>`
     + `<p><em>On the sheet: ${sheet.join("; ")}.</em></p>`;
   return {
-    _id, name: x.name, type: "npc", img: "icons/svg/pawprint.svg",
+    _id, name: x.name, type: "npc", img: art,
     system: {
       biography: bio, race: "critter", professionalRating: 0,
       body: attr(x.b), quickness: attr(x.q), strength: attr(x.s), charisma: attr(x.c), intelligence: attr(x.i), willpower: attr(x.w),
@@ -60,7 +61,7 @@ function critter(x) {
     items: x.attacks.map(a => attack(x.name, a)), effects: [], folder: null, sort: 0,
     flags: sourceFlag({ page: x.page, cell: `${x.name.replace(/ \(.*/, "")} stat block`, verified: V }), _stats: STATS,
     prototypeToken: { name: x.name, displayName: 0, actorLink: false, width: 1, height: 1, lockRotation: true,
-      texture: { src: "icons/svg/pawprint.svg", fit: "contain" }, disposition: -1,
+      texture: { src: art, fit: "contain" }, disposition: -1,
       bar1: { attribute: "conditionMonitor.physical" }, bar2: { attribute: "conditionMonitor.stun" } },
     ownership: { default: 0 }, _key: `!actors!${_id}`
   };

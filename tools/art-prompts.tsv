@@ -1,0 +1,55 @@
+item_icons/ammo/apds-gyrojets	a clip of ten slim 6 mm gyrojet micro-rockets with dense dark tungsten armour-piercing sabot tips, small exhaust ports at the base, matte gunmetal
+item_icons/ammo/ball-gyrojets	a clip of ten slim 6 mm gyrojet micro-rockets with rounded copper ball tips and tiny angled exhaust ports at the base
+item_icons/ammo/explosive-gyrojets	a clip of ten slim 6 mm gyrojet micro-rockets with red-banded explosive tips, faint wet sheen as if just out of the sea
+item_icons/ammo/harpoon-standard	a single heavy steel whaling harpoon bolt with a barbed toggle head and a ring for a line, weathered and salt-stained
+item_icons/ammo/harpoon-explosive-head	a single heavy whaling harpoon bolt tipped with a bulbous black-and-yellow explosive grenade head, hazard striping, salt-stained
+item_icons/armor/diving-armor	a streamlined sleeveless dive armour vest of smooth dark-teal composite plates over a neoprene base, low-profile and hydrodynamic
+item_icons/armor/jim-diving-exoskeleton	a hulking yellow-and-steel atmospheric diving suit (JIM suit): round plasteel joints, a domed viewport helmet, pincer manipulators, like a small submarine shaped like a man, no person visible inside
+item_icons/cyberware/air-tank-cybergill	a small implantable cylindrical helium tank, medical-grade titanium with tubing ports, laid on a surgical tray
+item_icons/cyberware/cyberfins	a cybernetic hand with retractable webbed fins and blade spurs extended between the fingers, chrome and translucent membrane, isolated on its own (no body)
+item_icons/cyberware/hook-hand	a pirate's steel hook hand mounted on a modern cybernetic wrist plate, brushed steel, a little brass, isolated on its own
+item_icons/cyberware/nitrogen-monitor	a tiny implantable spectrometer and sensor chip with fine leads and a small amber warning LED, medical cyberware on a sterile tray
+item_icons/cyberware/oxsys-cybergill	a pair of implantable artificial gill units: curved slatted filter plates with fine tubing, surgical titanium and translucent membrane, on a sterile tray
+item_icons/cyberware/peg-leg-hip-length	a long cybernetic peg leg from hip to floor: a carbon-fibre and brass shaft with a hip attachment plate and a rubber-shod tip
+item_icons/cyberware/peg-leg-knee-length	a short knee-length cybernetic peg leg: a turned hardwood and brass shaft with a modern knee attachment plate and a rubber-shod tip
+item_icons/gear/breathing-regulator	a scuba breathing regulator: mouthpiece, octopus backup, hoses and a round depth-and-pressure gauge console
+item_icons/gear/buoyancy-compensator-weight-belt	an inflatable scuba buoyancy compensator vest beside a nylon weight belt with lead weights
+item_icons/gear/cybercomm-link	a small sleek cranial radio transducer implant with a thin antenna filament, glowing faint green, on a dark surface
+item_icons/gear/drysuit	a folded heavy-duty diving drysuit with sealed wrist and neck gaskets and a chest valve, dark orange and black
+item_icons/gear/dual-tank-manifold-assembly	a chrome dual-tank scuba manifold: a cross-bar with two valves and knobs joining two cylinder necks
+item_icons/gear/enclosed-breathing-helmet	a commercial diving helmet with a wide faceplate, a halogen head lamp on top, external speaker grilles at the mouth and hose fittings at the back
+item_icons/gear/face-mask-snorkel	a diving face mask with a tempered glass lens and a curved snorkel attached
+item_icons/gear/fins	a pair of long split-blade diving fins
+item_icons/gear/full-face-mask	a full-face diving mask covering eyes, nose and mouth, with a regulator port in front and side plugs for comms
+item_icons/gear/liquid-breathing-apparatus-lba	a liquid breathing rig: an enclosed helmet linked by hoses to a backpack tank of glowing pale-blue oxygenated fluid
+item_icons/gear/oxsys-artificial-gill	a wraparound diving face-piece with rows of gill-like filter slats along both sides of the jaw, sleek recreational design
+item_icons/gear/scuba-tank	a single aluminium-titanium scuba tank with a valve and a pressure gauge, dented and well-used
+item_icons/gear/wet-suit	a folded neoprene wet suit, black with turquoise panels
+item_icons/quality/braggart	symbolic emblem: a loud brass megaphone over a pile of gold doubloons, pirate swagger
+item_icons/quality/connected	symbolic emblem: a web of glowing lines linking small portrait silhouettes around a ship's compass
+item_icons/quality/liar	symbolic emblem: a carnival mask with a forked tongue curling from its mouth
+item_icons/quality/natural-immunity-cyberpirates	symbolic emblem: a glowing shield over a stylised drop of tropical venom and a syringe
+item_icons/quality/pirate-family	symbolic emblem: a family crest with crossed cutlasses, a ship and a rope knot
+item_icons/quality/sea-legs	symbolic emblem: a ship's deck tilting in heavy seas with a sailor's boots planted firmly
+item_icons/quality/sea-madness	symbolic emblem: a swirling dark maelstrom with a cracked compass at its centre
+item_icons/quality/water-sprite	symbolic emblem: a sleek shimmering figure of water leaping out of a wave
+item_icons/skill/diving	symbolic emblem: a diver's helmet with rising bubbles in deep blue-green water
+item_icons/skill/ship	symbolic emblem: a large ship's wheel over a radar screen
+item_icons/weapon/colt-m24a3-water-carbine	a compact military submachine-gun carbine with a sealed firing chamber and air tubes running along the butt stock to a snap valve, matte olive drab
+item_icons/weapon/fn-aal-gyrojet-pistol	a sleek heavy pistol that fires micro-rockets: a slim barrel with vent ports, a ten-round clip, dark composite with brass details
+item_icons/weapon/harpoon	a long boarding harpoon: a wooden shaft with a barbed steel point and a rope lashed to it
+item_icons/weapon/harpoon-gun	a heavy deck-mounted harpoon cannon on a pintle mount, steel and rust, a barbed harpoon loaded with coiled line
+item_icons/weapon/ink-grenade	a small sphere grenade spilling a cloud of black ink into water
+item_icons/weapon/rattan-sticks	a crossed pair of light rattan fighting sticks (arnis), wrapped grips, polished cane
+item_icons/weapon/sling-launcher	a big rubber-band sling launcher stretched between two bolted anchor posts on a boat rail, with a grenade in its pouch
+item_icons/weapon/spear	a simple fishing spear: a long wooden shaft with a sharp barbed iron point
+item_icons/weapon/speargun	a CO2 speargun with a long steel spear loaded, pistol grip and gas cylinder, diving-gear colours
+vehicle_portraits/banca	a narrow wooden Philippine outrigger canoe (banca) with bamboo outriggers on both sides, painted hull, paddles inside, no engine, no sail
+vehicle_portraits/banca-outboard-motor	a narrow wooden Philippine outrigger canoe (banca) with bamboo outriggers on both sides and an outboard motor at the stern
+vehicle_portraits/banca-sail	a narrow wooden Philippine outrigger canoe (banca) with bamboo outriggers on both sides and a mast with a single colourful sail
+vehicle_portraits/hughes-wk-2s-sea-stallion	a naval anti-submarine helicopter: large utility helicopter, grey naval paint, two torpedoes slung on the fuselage sides, main rotor and tail rotor
+vehicle_portraits/mitsuhama-anago	a diver propulsion scooter: a sleek torpedo-shaped craft with a ducted propeller at the rear, two shallow seats and grab handles along the sides, white and red
+vehicle_portraits/saeder-krupp-d-j-locker	a small two-person exploration submarine: compact hull, front acrylic viewing dome, swivel lamps and a folded mechanical claw arm underneath, dark red and black
+vehicle_portraits/vulkan-delphin-rq7	a mid-size civilian submarine for eight people: sleek white and teal hull, a small conning tower, viewing ports
+vehicle_portraits/vulkan-delphin-rq7-coastal-patrol	a mid-size police patrol submarine: sleek hull in dark blue-grey with police markings stripes (no text), a small conning tower with a remote machine-gun turret, torpedo tube doors at the bow
+vehicle_portraits/vulkan-electronaut	a tiny two-person minisub: a rounded yellow hull with a bubble canopy, small thrusters and utility rails

@@ -2,7 +2,7 @@
   "_id": "30eb2a2dcd0afca6",
   "name": "Harpoon (Explosive Head)",
   "type": "ammo",
-  "img": "systems/sr2e/assets/item_icons/ammo/explosive-rounds.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/ammo/harpoon-explosive-head.webp",
   "system": {
     "ammoType": "harpoon",
     "quantity": 1,

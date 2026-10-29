@@ -2,7 +2,7 @@
   "_id": "04d05c5e22a4aef4",
   "name": "Buoyancy Compensator + Weight Belt",
   "type": "gear",
-  "img": "systems/sr2e/assets/item_icons/gear/general.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/gear/buoyancy-compensator-weight-belt.webp",
   "system": {
     "category": "survival",
     "rating": 0,

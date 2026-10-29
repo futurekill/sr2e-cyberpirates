@@ -2,7 +2,7 @@
   "_id": "ec93162105d01d8b",
   "name": "Ekyelebenle",
   "type": "npc",
-  "img": "icons/svg/pawprint.svg",
+  "img": "modules/sr2e-cyberpirates/assets/creature_portraits/ekyelebenle.webp",
   "system": {
     "biography": "<p>Awakened green mambas up to 6 m long from the savannahs of sub-Saharan Africa. Extremely aggressive: they chase anything dwarf-sized or smaller, spit poison for defense and hunting, and bite many times.</p><p><strong>Powers:</strong> Enhanced Senses (Smell, Thermographic Vision), Immunity to Poisons, Immunity to Pathogens, Magical Resistance, Venom</p><p><strong>Weaknesses:</strong> None</p><p><strong>Note:</strong> A snake that inflicts a Light wound or worse has injected venom: 5S at 5-, 10- and 20-minute intervals (mundane or Awakened). It can spit the poison up to 5 m: if it wins an opposed Reaction Test, the target is blinded for 2D6 hours ÷ the successes of a Body Test against the poison's Damage Code; no successes, and the blinding is permanent.</p><p><em>Printed stats: B 5 · Q 6 × 2 · S 6 · C — · I 1/5 · W 4 · E (6) · R 6**; Attacks 6M biting. Running multiplier ×2; Perception 5; dual-natured. Cyberpirates p.154.</em></p><p><em>On the sheet: the sheet's running rate uses ×3 — use ×2 by hand; Charisma (printed —) counts as 1 on the sheet (the system's floor); Threat Rating 4 is this module's estimate (the average attribute), not the book's.</em></p>",
     "race": "critter",
@@ -179,7 +179,7 @@
     "height": 1,
     "lockRotation": true,
     "texture": {
-      "src": "icons/svg/pawprint.svg",
+      "src": "modules/sr2e-cyberpirates/assets/creature_portraits/ekyelebenle.webp",
       "fit": "contain"
     },
     "disposition": -1,

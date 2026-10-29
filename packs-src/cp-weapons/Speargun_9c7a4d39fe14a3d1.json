@@ -2,7 +2,7 @@
   "_id": "9c7a4d39fe14a3d1",
   "name": "Speargun",
   "type": "weapon",
-  "img": "systems/sr2e/assets/item_icons/weapons/heavy-crossbow.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/weapon/speargun.webp",
   "system": {
     "weaponType": "projectile",
     "skill": "projectile_weapons",

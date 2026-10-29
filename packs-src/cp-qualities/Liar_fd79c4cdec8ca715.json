@@ -2,7 +2,7 @@
   "_id": "fd79c4cdec8ca715",
   "name": "Liar",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/quality/liar.webp",
   "system": {
     "kind": "flaw",
     "category": "social",

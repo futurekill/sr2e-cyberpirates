@@ -2,7 +2,7 @@
   "_id": "61a6a085b6e0cec1",
   "name": "Sea Madness",
   "type": "quality",
-  "img": "icons/svg/downgrade.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/quality/sea-madness.webp",
   "system": {
     "kind": "flaw",
     "category": "mental",

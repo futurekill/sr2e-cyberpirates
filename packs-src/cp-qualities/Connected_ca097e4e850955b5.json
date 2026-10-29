@@ -2,7 +2,7 @@
   "_id": "ca097e4e850955b5",
   "name": "Connected",
   "type": "quality",
-  "img": "icons/svg/upgrade.svg",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/quality/connected.webp",
   "system": {
     "kind": "edge",
     "category": "social",

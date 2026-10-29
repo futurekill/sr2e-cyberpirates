@@ -2,7 +2,7 @@
   "_id": "3255af48ac3d9a8a",
   "name": "Diving Armor",
   "type": "armor",
-  "img": "systems/sr2e/assets/item_icons/armor/armor-jacket.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/armor/diving-armor.webp",
   "system": {
     "legality": "Legal",
     "equipped": false,

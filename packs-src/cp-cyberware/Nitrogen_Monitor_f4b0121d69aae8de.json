@@ -2,7 +2,7 @@
   "_id": "f4b0121d69aae8de",
   "name": "Nitrogen Monitor",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-blood.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/nitrogen-monitor.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

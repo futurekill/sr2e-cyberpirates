@@ -2,7 +2,7 @@
   "_id": "fd72b13e6dbd35a9",
   "name": "Cyberfins",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/hand-razors.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/cyberfins.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

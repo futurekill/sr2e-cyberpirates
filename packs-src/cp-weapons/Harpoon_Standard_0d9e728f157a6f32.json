@@ -2,7 +2,7 @@
   "_id": "0d9e728f157a6f32",
   "name": "Harpoon (Standard)",
   "type": "ammo",
-  "img": "systems/sr2e/assets/item_icons/ammo/regular-ammo.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/ammo/harpoon-standard.webp",
   "system": {
     "ammoType": "harpoon",
     "quantity": 1,

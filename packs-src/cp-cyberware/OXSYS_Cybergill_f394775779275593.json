@@ -2,7 +2,7 @@
   "_id": "f394775779275593",
   "name": "OXSYS Cybergill",
   "type": "cyberware",
-  "img": "systems/sr2e/assets/item_icons/cyberware/filtration-system-air.webp",
+  "img": "modules/sr2e-cyberpirates/assets/item_icons/cyberware/oxsys-cybergill.webp",
   "system": {
     "location": "bodyware",
     "grade": "standard",

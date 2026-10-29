@@ -3,23 +3,33 @@
 // The vehicle model has no Sonar, Depth, Fuel or Economy fields, and one Signature: the printed
 // "N/M" Signature is normal / Sonar Signature (p.163), so the field takes N and the rest goes in the
 // notes. Submarines are `boat` vehicles (the system has no submarine type).
-// shortcut: token sizes are estimates (the book prints no dimensions); adjust per scene.
-import { idFor, sourceFlag, STATS, writePack } from "./lib.mjs";
+// Token width is an estimate (the book prints no dimensions); once the vehicle has art (top-down, nose
+// SOUTH, trimmed to the vehicle — tools/fit-art.py), the length follows the art's proportions.
+// shortcut: widths are estimates; adjust per scene.
+import { execFileSync } from "node:child_process";
+import { idFor, sourceFlag, STATS, writePack, artFor } from "./lib.mjs";
 
 const V = "300dpi+visual";
 const notes = (desc, rows) => `<p>${desc}</p><ul>${rows.filter(Boolean).map(r => `<li>${r}</li>`).join("")}</ul>`;
 
 function vehicle(x) {
   const _id = idFor("vehicle", x.name);
+  const img = artFor("vehicle_portraits", x.name, "icons/svg/anchor.svg");
+  let [w, h] = x.size;
+  if (!img.startsWith("icons/")) {
+    const [pw, ph] = execFileSync("magick", ["identify", "-format", "%w %h", img.replace("modules/sr2e-cyberpirates/", "")], { encoding: "utf8" }).split(" ").map(Number);
+    h = Math.max(1, Math.round(w * ph / pw));
+  }
   return {
-    _id, name: x.name, type: "vehicle", img: "icons/svg/anchor.svg",
+    _id, name: x.name, type: "vehicle", img,
     system: { vehicleType: x.type, skill: "", handling: x.h, speed: x.spd, acceleration: x.acc, body: x.body, armor: x.armor,
       signature: x.sig, pilot: 0, sensor: x.sensor, cargo: x.cargo, load: x.load, seating: x.seating, cost: x.cost,
       availability: "", conditionMonitor: { value: 0, max: 10 }, autonav: x.autonav, notes: notes(x.desc, x.rows) },
     items: [], effects: [], folder: null, sort: 0,
     flags: sourceFlag({ page: x.page, cell: x.cell, verified: V }), _stats: STATS,
-    prototypeToken: { name: x.name, displayName: 0, actorLink: false, width: x.size[0], height: x.size[1], lockRotation: true,
-      texture: { src: "icons/svg/anchor.svg", fit: "contain" }, disposition: 0 },
+    prototypeToken: { name: x.name, displayName: 0, actorLink: false, width: w, height: h,
+      lockRotation: img.startsWith("icons/"),   // real art faces travel (nose south = rotation 0)
+      texture: { src: img, fit: "contain" }, disposition: 0 },
     ownership: { default: 0 }, _key: `!actors!${_id}`
   };
 }
@@ -27,7 +37,7 @@ function vehicle(x) {
 const BANCA = "A non-powered Philippine river boat; the statistics apply to any similar small river boat anywhere. It can be fitted with sails or an outboard motor.";
 const ROW = "Rowed: Speed = the rowers' combined Strength ÷ 2, Acceleration always 1; rowing is a Complex Action.";
 const banca = (variant, o) => ({ name: variant ? `Banca (${variant})` : "Banca", type: "boat", page: 175, cell: `Banca table: ${variant || "Non-powered Banca"}`,
-  h: 3, body: 2, armor: 0, sensor: 0, autonav: 0, cargo: 4, load: 40, seating: "8, front to back", size: [2, 6], ...o });
+  h: 3, body: 2, armor: 0, sensor: 0, autonav: 0, cargo: 4, load: 40, seating: "8, front to back", size: [4, 8], ...o });
 
 const C = [
   banca("", { spd: 0, acc: 1, sig: 10, cost: 150, desc: BANCA,
@@ -57,13 +67,13 @@ const C = [
       "Other: enviroseal (water and engine), life support (10 man-hours), mechanical claw arm (Strength 16).",
       "The claw follows the mechanical arm rules (Rigger 2 p.34), but the operator takes +3 on all Success Tests for its clumsy design."] },
   { name: "Vulkan Delphin RQ7", type: "boat", page: 178, cell: "Delphin RQ7 table: Standard", h: 4, spd: 50, acc: 4, body: 4, armor: 0, sig: 6,
-    autonav: 2, sensor: 1, cost: 150000, seating: "2 bucket + 2 bucket", cargo: 160, load: 1500, size: [3, 12],
+    autonav: 2, sensor: 1, cost: 150000, seating: "2 bucket + 2 bucket", cargo: 160, load: 1500, size: [4, 12],
     desc: "The Electronaut's \"big brother\": room for up to eight people with long-range accommodations, yet still nimble in flooded tunnels.",
     rows: ["Signature 6/6: Sonar Signature 6. Sonar 1. Depth: 150 meters.", "Entry: 1 hatch. Fuel: diesel/electric (300 liters/300 PF). Economy: 1 km/liter; 1 km/PF.",
       "Diesel engine while surfaced, electric batteries while submerged; running the diesel recharges the batteries at 1 PF per hour.",
       "Other: enviroseal (water and engine), life support (80 man-hours), living amenities (Basic)."] },
   { name: "Vulkan Delphin RQ7 (Coastal Patrol)", type: "boat", page: 178, cell: "Delphin RQ7 table: Coastal Patrol Variant", h: 4, spd: 50, acc: 4, body: 4, armor: 9, sig: 5,
-    autonav: 2, sensor: 5, cost: 34000000, seating: "2 bucket + 2 bucket", cargo: 152, load: 680, size: [3, 12],
+    autonav: 2, sensor: 5, cost: 34000000, seating: "2 bucket + 2 bucket", cargo: 152, load: 680, size: [4, 12],
     desc: "The Wasserschutzpolizei coastal-patrol Delphin: four mini-torpedo tubes, a remote-controlled heavy machine gun turret and a plethora of electronic toys.",
     rows: ["Signature 5/5: Sonar Signature 5. Sonar 3. Depth: 150 meters.", "Entry: 1 hatch. Fuel: diesel/electric (300 liters/300 PF). Economy: 1 km/liter; 1 km/PF.",
       "Diesel engine while surfaced, electric batteries while submerged; running the diesel recharges the batteries at 1 PF per hour.",

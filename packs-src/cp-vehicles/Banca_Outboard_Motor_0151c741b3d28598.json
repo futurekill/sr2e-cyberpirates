@@ -2,7 +2,7 @@
   "_id": "0151c741b3d28598",
   "name": "Banca (Outboard Motor)",
   "type": "vehicle",
-  "img": "icons/svg/anchor.svg",
+  "img": "modules/sr2e-cyberpirates/assets/vehicle_portraits/banca-outboard-motor.webp",
   "system": {
     "vehicleType": "boat",
     "skill": "",
@@ -54,11 +54,11 @@
     "name": "Banca (Outboard Motor)",
     "displayName": 0,
     "actorLink": false,
-    "width": 2,
-    "height": 6,
-    "lockRotation": true,
+    "width": 4,
+    "height": 7,
+    "lockRotation": false,
     "texture": {
-      "src": "icons/svg/anchor.svg",
+      "src": "modules/sr2e-cyberpirates/assets/vehicle_portraits/banca-outboard-motor.webp",
       "fit": "contain"
     },
     "disposition": 0

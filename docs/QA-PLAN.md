@@ -19,3 +19,4 @@
 - [ ] Diving armor equips (4/2); cybergill, cyberfins, peg leg and hook hand install with their Essence.
 - [ ] A critter drags onto a scene and rolls an attack; Reaction, Initiative dice, Essence, armor and dual nature match the printed line in its biography (Gomatia: Tongue 6L Stun and Bite 6M).
 - [ ] A banca, the Anago, the Sea Stallion and a Delphin drag onto a scene and open their sheets (notes list Sonar/Depth/fuel); the ship reference pages open.
+- [ ] Every compendium entry shows its art; vehicle tokens are transparent, sized to the art, and turn to face movement (nose leading).
