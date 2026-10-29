@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fit generated art (_work/out/<key>.png, from tools/gen-art.sh) into assets/<key>.webp:
   item_icons/*          256x256, centre square crop, opaque
-  creature_portraits/*  1024x1024, square crop from the TOP (keeps heads), opaque
+  creature_portraits/*, spirit_portraits/*  1024x1024, square crop from the TOP (keeps heads), opaque
   vehicle_portraits/*   transparent, trimmed to the vehicle + a 12 px margin, longest side <= 1024.
                         Refused (left out) when the art has no real transparency: a vehicle token
                         drawn on an opaque square renders as a box on the map.
@@ -29,9 +29,10 @@ for src in sorted(glob.glob("_work/out/**/*.png", recursive=True)):
         im.save(dst, quality=86, method=6)
     else:
         im = im.convert("RGB"); w, h = im.size; m = min(w, h)
-        top = 0 if key.startswith("creature_portraits/") else (h - m) // 2
+        portrait = key.startswith(("creature_portraits/", "spirit_portraits/"))
+        top = 0 if portrait else (h - m) // 2
         im = im.crop(((w - m) // 2, top, (w - m) // 2 + m, top + m))
-        size = 1024 if key.startswith("creature_portraits/") else 256
+        size = 1024 if portrait else 256
         im.resize((size, size), Image.LANCZOS).save(dst, quality=82 if size == 1024 else 86, method=6)
     made += 1
 print(f"{made} image(s) written")

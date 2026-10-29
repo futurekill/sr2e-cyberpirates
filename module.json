@@ -13,7 +13,7 @@
         "id": "sr2e",
         "type": "system",
         "compatibility": {
-          "minimum": "0.122.0"
+          "minimum": "0.123.0"
         }
       }
     ]

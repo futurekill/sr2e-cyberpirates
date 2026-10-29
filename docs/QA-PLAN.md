@@ -8,7 +8,9 @@
 - [ ] The "Cyberpirates!" folder shows every pack; each opens.
 - [ ] An Edge and a Flaw drop onto a character and count build points like the Companion's.
 - [ ] Diving and Ship skills drop and roll.
-- [ ] Quench batch `sr2e-cyberpirates.totems` passes (keep the Quench window open while it runs).
+- [ ] Quench batches `sr2e-cyberpirates.totems` and `sr2e-cyberpirates.ancestor` pass (keep the Quench window open while they run).
+- [ ] Startup: save a Force-4 ancestor spirit, reload, read it before any update → B6 Q4 S5 R4, ×3, (Strength)M Stun — not the fire profile (2026-10-29: passed).
+- [ ] Conjure an ancestor spirit as a Cat shaman: +2 on Conjuring and Drain; its portrait shows.
 - [ ] A shaman can pick each African totem on the Magic tab; a Nau shaman's combat spell shows +2 totem dice.
 - [ ] The Reference journal opens: Ancestor Spirits (3 pages), African Totems (13 pages).
 - [ ] The Ships journal opens: Ships and Submarines (9 pages), Ship Weapons and Accessories (12 pages); stat tables render.

@@ -22,7 +22,16 @@ const ANCESTOR = entry("Ancestor Spirits", { page: 152, cell: "Ancestral Spirits
 <tr><td>F + 2</td><td>F × 3</td><td>F + 1</td><td>F</td><td>F</td><td>F</td><td>F(A)</td><td>F</td><td>(Strength)M Stun</td></tr></table>
 <p><strong>Powers:</strong> Accident, Confusion, Divination, Guard, Manifestation, Search.</p>
 <p>"× 3" is the running multiplier when manifested. Ancestor spirits have <strong>no domain</strong>: their powers reach 5 km per point of Force.</p>
-<p><em>Not yet summonable in Foundry: its (Strength)M Stun attack needs a system change (the system's spirit attacks take their Power from Force). Until then, run it from this page. Cyberpirates p.152.</em></p>`],
+<p><strong>In Foundry</strong> (sr2e 0.123.0+): Conjuring → a nature spirit → <em>Ancestor</em>. The spirit gets these
+statistics, its six powers and its attack: <strong>Force dice for (Strength)M Stun</strong> (the book names no attack skill;
+Force is this module's ruling, like the core water elemental's unarmed Stun attack). Every totem bonus for
+conjuring Spirits of Man applies (Cat, Dog, Gator, Raccoon, Rat: +2), to the Conjuring and Drain pools.</p>
+<p><strong>By hand:</strong> the three fetishes (−1 service for each one missing); conjuring time (Force hours ÷ relatives
+present); an ancestor shaman summons no other Spirits of Man; any other shaman who conjures ancestor spirits swaps one of
+the totem's conjuring bonuses for one to ancestor spirits (gamemaster and player agree which); the 5 km-per-Force reach (no domain boundary);
+Divination (the power button spends the service; roll it from the next page). Manifesting works like any spirit:
+the token's astral-only toggle (the Manifestation power button only records the service).</p>
+<p><em>Cyberpirates p.152.</em></p>`],
   ["Divination (spirit power)", `<p>Asked to prophesy, the spirit reads the emotions and drives of everyone within its powers' area and guesses what they will do next. The gamemaster rolls <strong>dice equal to the spirit's Force</strong> against a TN set by the question:</p>
 <table><tr><th>The question is</th><th>TN</th></tr>
 <tr><td>Very vague ("What does next month hold for me?")</td><td>4</td></tr>
