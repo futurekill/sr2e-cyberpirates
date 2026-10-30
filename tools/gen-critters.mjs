@@ -96,7 +96,7 @@ const SHIFT = (name, page, animal, bane, mods, desc, f) => {
     attacks: [...HUMANOID, ...(f ? [{ name: `Natural Attack (${animal[0].toUpperCase()}${animal.slice(1)})`, code: f.code, form: f.key,
       notes: `${form.name} only (the ${f.a}'s ${f.printed} with Power + 1).` }] : [])],
     note: `This sheet is the HUMAN form. In ${animal} form use the ${animal}'s attributes (A, from the core critter tables): Body A + 2, Quickness (A + 1) with running multiplier (A + 1), Strength A + 2, Charisma 5, Intelligence 3, Willpower 3, Essence (8), Reaction 5, attack (A + 1)(A) as printed, from the animal's Attack code. ${mods}`
-      + (f ? ` A = the core book's ${f.a} (${f.aStats}, core p.233); the ${form.name.toLowerCase()} is under Forms on the sheet. Only its natural attack works in animal form.` : ""),
+      + (f ? ` A = the core book's ${f.a} (${f.aStats}, core p.233)${f.why ? ` ${f.why}` : ""}; the ${form.name.toLowerCase()} is under Forms on the sheet. Only its natural attack works in animal form.` : ""),
     sheetNotes: [f ? `animal-form running multiplier ×${f.mult} by hand` : "the animal form isn't modelled: no book prints hog stats"] };
 };
 
@@ -184,7 +184,10 @@ C.push(
     "A Philippine dog shapeshifter (aswang); in human form it has enlarged canine teeth.",
     { key: "dog", a: "Dog, Large", aStats: "B 3 · Q 4 × 4 · S 3 · 6M", printed: "6M", b: 6, q: 6, s: 5, mult: 5, dice: 2, code: "7M" }),
   SHIFT("Pugot", 149, "hog", "silver", "Pugot also add +1 Body, +1 Strength and +2D6 Initiative in animal form.",
-    "A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails.", null),
+    "A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails.",
+    // No book prints mundane hog stats; the user chose Dog, Large as the stand-in A (2026-10-29). + pugot +1B +1S +2D6.
+    { key: "hog", a: "Dog, Large", aStats: "B 3 · Q 4 × 4 · S 3 · 6M", printed: "6M", b: 6, q: 5, s: 6, mult: 5, dice: 3, code: "7M",
+      why: "as a stand-in, since no book prints hog statistics" }),
   // Leopard (core p.233) 5 5×4 5 9S, + warek +2D6.
   SHIFT("Warek", 155, "leopard", "gold", "Add +2D6 Initiative in animal form.",
     "The West African leopard shapeshifter, the most common shapeshifter on the continent.",

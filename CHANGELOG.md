@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.5.1 — 2026-10-29
+- **The pugot has its hog form.** No book prints mundane hog stats, so it uses the core book's
+  Large dog (p.233) as the animal's base, by GM choice. With the pugot's +1 Body, +1 Strength and
+  +2D6 Initiative: B6 Q5 S6, 3D6, 7M. Its biography says the base is a stand-in.
+
 ## 0.5.0 — 2026-10-29
 - **The malakat and warek have their animal forms** (needs sr2e 0.125.1). Each sheet is the human
   form, and the animal form is under *Forms* with its own Natural Attack (the animal's Power + 1).
