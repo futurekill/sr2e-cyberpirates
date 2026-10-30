@@ -19,13 +19,13 @@ const V = "300dpi+visual";
 const ICON = "systems/sr2e/assets/item_icons/weapons/";
 const attr = (v) => ({ base: v, mod: 0, racial: 0 });   // value is derived (base + mod, floored at 1)
 
-function attack(owner, { name = "Natural Attack", code, type = "physical", reach = 0, notes = "", humanoid = false, skill = "" }) {
+function attack(owner, { name = "Natural Attack", code, type = "physical", reach = 0, notes = "", humanoid = false, skill = "", form = "" }) {
   return { _id: idFor(`critter-attack:${owner}`, name), name, type: "weapon",
     img: `${ICON}${humanoid ? "unarmed-strike" : "natural-attack"}.webp`,
     system: { weaponType: "melee", skill, damageCode: code, damageType: type, concealability: 0, reach,
       firingModes: { ss: false, sa: false, bf: false, fa: false }, ammo: { current: 0, max: 0, type: "" }, recoilComp: 0,
       ranges: { short: 0, medium: 0, long: 0, extreme: 0 }, strengthMin: 0, weight: 0, cost: 0, availability: "",
-      legality: "", equipped: true, accessories: [], notes },
+      legality: "", equipped: true, accessories: [], notes, ...(form ? { form } : {}) },
     effects: [], folder: null, sort: 0, ownership: { default: 0 }, flags: {}, _stats: STATS };
 }
 
@@ -59,7 +59,9 @@ function critter(x) {
       armor: { ballistic: x.armor ?? 0, impact: x.armor ?? 0 },
       dicePools: { combat: { value: 0, max: 0, bonus: 0 }, magic: { value: 0, max: 0, bonus: 0 } },
       initiative: { dice: x.dice ?? 1, mod: 0 },
-      threatRating: tr, nuyen: 0, dualNatured: !!x.dual
+      threatRating: tr, nuyen: 0, dualNatured: !!x.dual,
+      // Shapeshifters (sr2e 0.125.1): Regeneration + bane, and the animal form as an alternate stat block.
+      ...(x.bane ? { shapeshifter: { enabled: true, bane: x.bane }, forms: x.forms ?? [], activeForm: "" } : {})
     },
     items: x.attacks.map(a => attack(x.name, a)), effects: [], folder: null, sort: 0,
     flags: sourceFlag({ page: x.page, cell: `${x.name.replace(/ \(.*/, "")} stat block`, verified: V }), _stats: STATS,
@@ -83,10 +85,20 @@ const VAMP = (name, page, weak, desc) => ({ name, page, b: 3, q: 3, mult: 5, s: 
   printed: "B C · Q C × 5 · S C + E · C C · I C · W C · E 2D6 · R C",
   sheetNotes: ["Essence 7 and Strength 10 are a typical vampire's — roll 2D6 for Essence and use the original character's attributes"] });
 const SHIFT_P = "Enhanced Physical Characteristics (in animal form), Regeneration";
-const SHIFT = (name, page, animal, weak, mods, desc) => ({ name, page, b: 5, q: 4, mult: 5, s: 5, c: 5, i: 3, w: 3, e: 8, dual: true, r: 5,
-  printedAttacks: "Humanoid (human form); (A + 1)(A) (animal form)", attacks: HUMANOID, powers: SHIFT_P, weak, desc,
-  note: `This sheet is the HUMAN form. In ${animal} form use the ${animal}'s attributes (A, from the core critter tables): Body A + 2, Quickness (A + 1) with running multiplier (A + 1), Strength A + 2, Charisma 5, Intelligence 3, Willpower 3, Essence (8), Reaction 5, attack (A + 1)(A) as printed, from the animal's Attack code. ${mods}`,
-  sheetNotes: ["the animal form isn't modelled — switch by hand"] });
+// The animal form (A = the core p.233 animal; the shapeshifter row adds B + 2, Q + 1, S + 2, attack Power + 1;
+// C 5, I 3, W 3, R 5) as an NPC form block, its attack tagged to it. `f` is null when A isn't published.
+const SHIFT = (name, page, animal, bane, mods, desc, f) => {
+  const weak = `Allergy (${bane[0].toUpperCase()}${bane.slice(1)}, Severe), Vulnerability (${bane[0].toUpperCase()}${bane.slice(1)})`;
+  const form = f && { key: f.key, name: `${animal[0].toUpperCase()}${animal.slice(1)} form`, img: "", body: f.b, quickness: f.q, strength: f.s,
+    charisma: 5, intelligence: 3, willpower: 3, reactionMod: 5 - Math.floor((f.q + 3) / 2), initiativeDice: f.dice, ballistic: 0, impact: 0 };
+  return { name, page, b: 5, q: 4, mult: 5, s: 5, c: 5, i: 3, w: 3, e: 8, dual: true, r: 5, bane, forms: form ? [form] : [],
+    printedAttacks: "Humanoid (human form); (A + 1)(A) (animal form)", powers: SHIFT_P, weak, desc,
+    attacks: [...HUMANOID, ...(f ? [{ name: `Natural Attack (${animal[0].toUpperCase()}${animal.slice(1)})`, code: f.code, form: f.key,
+      notes: `${form.name} only (the ${f.a}'s ${f.printed} with Power + 1).` }] : [])],
+    note: `This sheet is the HUMAN form. In ${animal} form use the ${animal}'s attributes (A, from the core critter tables): Body A + 2, Quickness (A + 1) with running multiplier (A + 1), Strength A + 2, Charisma 5, Intelligence 3, Willpower 3, Essence (8), Reaction 5, attack (A + 1)(A) as printed, from the animal's Attack code. ${mods}`
+      + (f ? ` A = the core book's ${f.a} (${f.aStats}, core p.233); the ${form.name.toLowerCase()} is under Forms on the sheet. Only its natural attack works in animal form.` : ""),
+    sheetNotes: [f ? `animal-form running multiplier ×${f.mult} by hand` : "the animal form isn't modelled: no book prints hog stats"] };
+};
 
 const C = [
   // Philippines (* in the book: native to the Philippines)
@@ -167,12 +179,16 @@ C.push(
     "The Philippine variant of the North American vampire (an aswang)."),
   VAMP("Abat, Boroka, Mangalok", 149, "Allergy (Sunlight, Severe), Induced Dormancy (lack of air), Essence Loss, Vulnerability (Salt, Wood), in some a psychologically based Allergy (Holy Objects, Severe)",
     "Philippine vampires (aswang) that eat internal organs instead of drinking blood."),
-  SHIFT("Malakat", 149, "dog", "Allergy (Silver, Severe), Vulnerability (Silver)", "Malakat also add +1 Body, +1 Quickness and +1D6 Initiative in animal form.",
-    "A Philippine dog shapeshifter (aswang); in human form it has enlarged canine teeth."),
-  SHIFT("Pugot", 149, "hog", "Allergy (Silver, Severe), Vulnerability (Silver)", "Pugot also add +1 Body, +1 Strength and +2D6 Initiative in animal form.",
-    "A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails."),
-  SHIFT("Warek", 155, "leopard", "Allergy (Gold, Severe), Vulnerability (Gold)", "Add +2D6 Initiative in animal form.",
-    "The West African leopard shapeshifter, the most common shapeshifter on the continent.")
+  // Dog, Large (core p.233; p.230: "a large, well-formed member of its species") 3 4×4 3 6M, + malakat +1B +1Q +1D6.
+  SHIFT("Malakat", 149, "dog", "silver", "Malakat also add +1 Body, +1 Quickness and +1D6 Initiative in animal form.",
+    "A Philippine dog shapeshifter (aswang); in human form it has enlarged canine teeth.",
+    { key: "dog", a: "Dog, Large", aStats: "B 3 · Q 4 × 4 · S 3 · 6M", printed: "6M", b: 6, q: 6, s: 5, mult: 5, dice: 2, code: "7M" }),
+  SHIFT("Pugot", 149, "hog", "silver", "Pugot also add +1 Body, +1 Strength and +2D6 Initiative in animal form.",
+    "A Philippine hog shapeshifter (aswang); in human form it has extremely thick, hard fingernails.", null),
+  // Leopard (core p.233) 5 5×4 5 9S, + warek +2D6.
+  SHIFT("Warek", 155, "leopard", "gold", "Add +2D6 Initiative in animal form.",
+    "The West African leopard shapeshifter, the most common shapeshifter on the continent.",
+    { key: "leopard", a: "Leopard", aStats: "B 5 · Q 5 × 4 · S 5 · 9S", printed: "9S", b: 7, q: 6, s: 7, mult: 5, dice: 3, code: "10S" })
 );
 
 writePack("cp-critters", C.map(critter));

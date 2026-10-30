@@ -2,6 +2,19 @@
 
 ## Unreleased
 
+## 0.5.0 — 2026-10-29
+- **The malakat and warek have their animal forms** (needs sr2e 0.125.1). Each sheet is the human
+  form, and the animal form is under *Forms* with its own Natural Attack (the animal's Power + 1).
+  - Malakat (p.149): Large dog form (core p.233) with the malakat's +1 Body, +1 Quickness and
+    +1D6 Initiative: B6 Q6 S5, 2D6, 7M.
+  - Warek (p.155): leopard form with +2D6 Initiative: B7 Q6 S7, 3D6, 10S.
+- **Malakat, pugot and warek are now marked as shapeshifters.** Regeneration runs each Combat
+  Turn, and a death check opens when one goes down. The bane works in damage resistance: silver
+  for the malakat and pugot, gold for the warek.
+- The pugot's hog form isn't built yet: no book prints mundane hog stats. Its sheet says so.
+- The validator checks NPC form blocks and form-tagged weapons, and the schema snapshot is now
+  from sr2e 0.125.1.
+
 ## 0.4.0 — 2026-10-29
 - **The ancestor spirit is summonable** (needs sr2e 0.123.0): Conjuring → a nature spirit →
   Ancestor. Printed statistics (B F+2, Q F×3, S F+1, R F), the six powers (Accident, Confusion,

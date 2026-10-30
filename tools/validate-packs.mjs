@@ -46,6 +46,22 @@ const checkSystem = (where, doc) => {
   if (doc.type === "npc" && ess && [ess.value, ess.max].some(v => v != null && v < 0)) note(`${where}: NPC Essence below 0`);
 };
 
+// NPC alternate forms: NPCData's flat contract (sr2e module/data/actor-data.mjs), and weapon tags must name a form.
+const INT0 = ["body", "quickness", "strength", "charisma", "intelligence", "willpower", "ballistic", "impact"];
+const checkForms = (where, doc) => {
+  const keys = new Set();
+  for (const f of doc.system?.forms ?? []) {
+    for (const k of ["key", "name", "img"]) if (typeof f[k] !== "string") note(`${where}: form ${k} not a string`);
+    if (!f.key || keys.has(f.key)) note(`${where}: form key "${f.key}" blank or duplicate`);
+    keys.add(f.key);
+    for (const k of INT0) if (!Number.isInteger(f[k]) || f[k] < 0) note(`${where}: form ${f.key}.${k} = ${f[k]}`);
+    if (!Number.isInteger(f.initiativeDice) || f.initiativeDice < 1) note(`${where}: form ${f.key}.initiativeDice = ${f.initiativeDice}`);
+    if (!Number.isInteger(f.reactionMod)) note(`${where}: form ${f.key}.reactionMod = ${f.reactionMod}`);
+  }
+  if (doc.system?.activeForm && !keys.has(doc.system.activeForm)) note(`${where}: activeForm "${doc.system.activeForm}" unknown`);
+  for (const i of doc.items ?? []) if (i.system?.form && !keys.has(i.system.form)) note(`${where} → ${i.name}: tagged "${i.system.form}", no such form`);
+};
+
 for (const pack of packs.sort()) {
   const type = TYPE_OF[pack];
   if (!type) { note(`${pack}: not declared in module.json`); continue; }
@@ -64,6 +80,7 @@ for (const pack of packs.sort()) {
     if (doc._id && doc._key !== `!${collection}!${doc._id}`) note(`${f}: _key should be "!${collection}!${doc._id}"`);
     if (ids.has(doc._id)) note(`${f}: duplicate _id with ${ids.get(doc._id)}`); else ids.set(doc._id, f);
     if (type !== "JournalEntry") checkSystem(f, doc);
+    if (doc.type === "npc") checkForms(f, doc);
     const sub = new Set();
     for (const child of [...(doc.items ?? []), ...(doc.pages ?? []), ...(doc.effects ?? [])]) {
       if (!child?._id) { note(`${f}: an embedded document has no _id`); continue; }

@@ -20,5 +20,6 @@
 - [ ] Ink grenade drops a smoke-style cloud; Rattan Sticks swing as (Str+1)M Stun, Spear as (Str+2)M Physical.
 - [ ] Diving armor equips (4/2); cybergill, cyberfins, peg leg and hook hand install with their Essence.
 - [ ] A critter drags onto a scene and rolls an attack; Reaction, Initiative dice, Essence, armor and dual nature match the printed line in its biography (Gomatia: Tongue 6L Stun and Bite 6M).
+- [ ] (0.5.0) Warek: shift to Leopard form → B7 Q6 S7, 3D6; only Natural Attack (Leopard) 10S rolls; the Unarmed Strike reads "(other form)". Damage resistance offers the bane box ("gold"). Malakat Dog form → B6 Q6 S5, 2D6, 7M.
 - [ ] A banca, the Anago, the Sea Stallion and a Delphin drag onto a scene and open their sheets (notes list Sonar/Depth/fuel); the ship reference pages open.
 - [ ] Every compendium entry shows its art; vehicle tokens are transparent, sized to the art, and turn to face movement (nose leading).
