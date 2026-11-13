@@ -1,4 +1,4 @@
-// Offline validator for the Cyberpirates packs (docs/PLAN-content.md "Build tooling"). Runs without
+// Offline validator for the Cyberpirates packs (docs/archive/plans/PLAN-content.md "Build tooling"). Runs without
 // Foundry; the authoritative schema check is tools/foundry-check.js inside Foundry.
 //  - every pack's document type comes from module.json;
 //  - required keys, `_key` form, unique ids (embedded ids unique per parent);
@@ -108,7 +108,7 @@ for (const pack of packs.sort()) {
 }
 
 // Inherited statistics (tools/data/inherited.mjs) against the sibling system's pack: a WARNING only,
-// so CI without the sibling checkout still passes (PLAN-content.md R1 #10).
+// so CI without the sibling checkout still passes (docs/archive/plans/PLAN-content.md R1 #10).
 const SIB = "../sr2e-foundryvtt/packs-src/weapons";
 if (existsSync(SIB)) {
   const { BASES } = await import("./data/inherited.mjs");

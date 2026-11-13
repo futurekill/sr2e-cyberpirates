@@ -1,7 +1,7 @@
 # Cyberpirates! module — development notes
 
 A FoundryVTT v13 content module for the sr2e system (own repo, own packs, no shared code).
-Plan: docs/PLAN-content.md (Codex-reviewed). Content only — no underwater/ship rules.
+Plan: docs/archive/plans/PLAN-content.md (Codex-reviewed). Content only — no underwater/ship rules.
 
 ## Source material — IMAGE-ONLY PDF
 `../Shadowrun 2e - Cyberpirates {FASA7124}.pdf` has no text layer. OCR is for finding things;

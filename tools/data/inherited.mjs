@@ -1,5 +1,5 @@
 // "Use the statistics of X" bases (Cyberpirates p.170 → core Street Gear p.254), snapshotted from the
-// sr2e system's weapons pack (PLAN-content.md R1 #10) so generation never reads a sibling checkout.
+// sr2e system's weapons pack (docs/archive/plans/PLAN-content.md R1 #10) so generation never reads a sibling checkout.
 // Street Gear is canonical (sr2e CLAUDE.md); the Pole Arm's (STR)S is the Street Gear value — the
 // combat chapter (p.101) prints (STR+3)S. Street Index from the Street Gear table (300 dpi read).
 export const INHERITED_FROM = { system: "sr2e", version: "0.121.0", pack: "sr2e.weapons" };

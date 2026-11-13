@@ -1,5 +1,5 @@
 # Plan: Cyberpirates! content module (`sr2e-cyberpirates`)
-_Round 2 — revised after Codex R1–R2 (see PLAN-content-REVIEW-LOG.md)._ User ruling: content only (no underwater or ship rules); Edges &
+_Round 2 — revised after Codex R1–R2 (see docs/archive/plans/PLAN-content-REVIEW-LOG.md)._ User ruling: content only (no underwater or ship rules); Edges &
 Flaws follow the Shadowrun Companion module's model._
 
 ## Goal
