@@ -8,7 +8,11 @@
     "category": "social",
     "pointValue": -1,
     "source": "Cyberpirates",
-    "notes": "Can't resist topping everyone else's story, and will lie to do it. Backing down from a boast takes an Intelligence (4) Test with at least 2 successes. Starts fights in bars."
+    "notes": "Can't resist topping everyone else's story, and will lie to do it. Backing down from a boast takes an Intelligence (4) Test with at least 2 successes. Starts fights in bars.",
+    "citation": {
+      "book": "cp",
+      "page": "142"
+    }
   },
   "effects": [],
   "flags": {

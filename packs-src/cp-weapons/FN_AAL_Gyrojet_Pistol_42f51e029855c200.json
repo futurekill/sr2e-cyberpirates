@@ -36,7 +36,11 @@
     "cost": 600,
     "availability": "4/48 hrs",
     "streetIndex": 1.5,
-    "notes": "Heavy pistol of the British Special Boat Squadron, firing 6 mm rockets whose alkaline fuel burns on contact with water. Load the gyrojet ammunition (ball, APDS, explosive). Hydrostatic shock: explosive gyrojets add +2 Power instead of +1 (built into the Explosive Gyrojets item). Cyberpirates p.172."
+    "notes": "Heavy pistol of the British Special Boat Squadron, firing 6 mm rockets whose alkaline fuel burns on contact with water. Load the gyrojet ammunition (ball, APDS, explosive). Hydrostatic shock: explosive gyrojets add +2 Power instead of +1 (built into the Explosive Gyrojets item). Cyberpirates p.172.",
+    "citation": {
+      "book": "cp",
+      "page": "172"
+    }
   },
   "effects": [],
   "flags": {

@@ -36,7 +36,11 @@
     "cost": 10,
     "availability": "2/6 hrs",
     "streetIndex": 1,
-    "notes": "Lightweight clubs of arnis de mano, the Philippine martial art. Statistics of the Club (core p.254; sr2e.weapons d527c4c61ac29e8a, sr2e 0.121.0), but they weigh 0.2 kg and hit like flechette weapons: (Str+1)S Stun against an unarmored opponent; against an armored one, double the target's Impact Armor (apply by hand). Cyberpirates p.170."
+    "notes": "Lightweight clubs of arnis de mano, the Philippine martial art. Statistics of the Club (core p.254; sr2e.weapons d527c4c61ac29e8a, sr2e 0.121.0), but they weigh 0.2 kg and hit like flechette weapons: (Str+1)S Stun against an unarmored opponent; against an armored one, double the target's Impact Armor (apply by hand). Cyberpirates p.170.",
+    "citation": {
+      "book": "cp",
+      "page": "170"
+    }
   },
   "effects": [],
   "flags": {

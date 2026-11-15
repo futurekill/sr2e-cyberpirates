@@ -12,7 +12,11 @@
     "armorCalc": "half_ballistic",
     "cost": 100,
     "streetIndex": 5,
-    "notes": "FN-AAL gyrojet clip of 10. APDS rules: Street Samurai Catalog p.63 (halves Ballistic armor). Cyberpirates p.172. Availability 14/14 days, weight 1.75 kg, Concealability 8."
+    "notes": "FN-AAL gyrojet clip of 10. APDS rules: Street Samurai Catalog p.63 (halves Ballistic armor). Cyberpirates p.172. Availability 14/14 days, weight 1.75 kg, Concealability 8.",
+    "citation": {
+      "book": "ssc",
+      "page": "63"
+    }
   },
   "effects": [],
   "flags": {

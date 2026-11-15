@@ -12,7 +12,11 @@
     "armorCalc": "standard",
     "cost": 80,
     "streetIndex": 2.5,
-    "notes": "FN-AAL gyrojet clip of 10, 12M: hydrostatic shock makes it +2 Power instead of explosive ammo's usual +1. Cyberpirates p.172. Availability 4/48 hrs, weight 1.75 kg, Concealability 8."
+    "notes": "FN-AAL gyrojet clip of 10, 12M: hydrostatic shock makes it +2 Power instead of explosive ammo's usual +1. Cyberpirates p.172. Availability 4/48 hrs, weight 1.75 kg, Concealability 8.",
+    "citation": {
+      "book": "cp",
+      "page": "172"
+    }
   },
   "effects": [],
   "flags": {

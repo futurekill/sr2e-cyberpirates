@@ -8,7 +8,11 @@
     "category": "social",
     "pointValue": 3,
     "source": "Cyberpirates",
-    "notes": "Born into the pirate life: an extended family across ports worldwide who turn up to help or hinder. They aren't contacts but Friends of Friends. The GM may make this a Flaw or cut its cost to 1 to reflect troublesome relatives (debts, feuds, an arranged marriage)."
+    "notes": "Born into the pirate life: an extended family across ports worldwide who turn up to help or hinder. They aren't contacts but Friends of Friends. The GM may make this a Flaw or cut its cost to 1 to reflect troublesome relatives (debts, feuds, an arranged marriage).",
+    "citation": {
+      "book": "cp",
+      "page": "143"
+    }
   },
   "effects": [],
   "flags": {

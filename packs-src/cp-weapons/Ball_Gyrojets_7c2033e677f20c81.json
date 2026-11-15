@@ -12,7 +12,11 @@
     "armorCalc": "standard",
     "cost": 50,
     "streetIndex": 2,
-    "notes": "FN-AAL gyrojet clip of 10, 10M. Cyberpirates p.172. Availability 3/36 hrs, weight 1.75 kg, Concealability 8."
+    "notes": "FN-AAL gyrojet clip of 10, 10M. Cyberpirates p.172. Availability 3/36 hrs, weight 1.75 kg, Concealability 8.",
+    "citation": {
+      "book": "cp",
+      "page": "172"
+    }
   },
   "effects": [],
   "flags": {

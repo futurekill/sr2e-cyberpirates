@@ -30,7 +30,11 @@
     "damageType": "physical",
     "reach": 0,
     "damageCode": "(Str)L",
-    "notes": "Retractable spurs and webbing in the hands and feet: extended, the user swims as if wearing standard fins, and can attack with them as hand razors, (Str)L. Not compatible with standard fins or gloves. Cyberpirates p.174."
+    "notes": "Retractable spurs and webbing in the hands and feet: extended, the user swims as if wearing standard fins, and can attack with them as hand razors, (Str)L. Not compatible with standard fins or gloves. Cyberpirates p.174.",
+    "citation": {
+      "book": "cp",
+      "page": "174"
+    }
   },
   "effects": [],
   "flags": {

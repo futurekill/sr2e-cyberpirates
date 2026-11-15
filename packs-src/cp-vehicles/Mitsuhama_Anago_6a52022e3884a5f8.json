@@ -24,7 +24,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A propulsion craft like a water scooter that can also move underwater: it tows divers on long swims and carries bulky cargo to and from the surface. The armed \"Fugu\" variant (underwater and surface assault) has no printed statistics.</p><ul><li>Sonar 0. Depth: 75 meters.</li><li>Entry: open. Fuel: electric (75 PF). Economy: 1 km/PF.</li><li>Other: underwater movement (no life support).</li></ul>"
+    "notes": "<p>A propulsion craft like a water scooter that can also move underwater: it tows divers on long swims and carries bulky cargo to and from the surface. The armed \"Fugu\" variant (underwater and surface assault) has no printed statistics.</p><ul><li>Sonar 0. Depth: 75 meters.</li><li>Entry: open. Fuel: electric (75 PF). Economy: 1 km/PF.</li><li>Other: underwater movement (no life support).</li></ul>",
+    "citation": {
+      "book": "cp",
+      "page": "175"
+    }
   },
   "items": [],
   "effects": [],

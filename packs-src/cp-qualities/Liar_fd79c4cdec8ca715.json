@@ -8,7 +8,11 @@
     "category": "social",
     "pointValue": -2,
     "source": "Cyberpirates",
-    "notes": "Sounds insincere even when truthful. Each time the character addresses someone, the GM rolls 1D6: on a 1 they assume a lie. With that person afterwards the chance grows by 1 each meeting; once caught on a 1–6, they stop dealing with the character (a contact is lost for good, perhaps as an Enemy)."
+    "notes": "Sounds insincere even when truthful. Each time the character addresses someone, the GM rolls 1D6: on a 1 they assume a lie. With that person afterwards the chance grows by 1 each meeting; once caught on a 1–6, they stop dealing with the character (a contact is lost for good, perhaps as an Enemy).",
+    "citation": {
+      "book": "cp",
+      "page": "143"
+    }
   },
   "effects": [],
   "flags": {

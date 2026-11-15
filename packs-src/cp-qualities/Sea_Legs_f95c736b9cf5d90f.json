@@ -8,7 +8,11 @@
     "category": "mental",
     "pointValue": -2,
     "source": "Cyberpirates",
-    "notes": "After 24 hours on land: Willpower (4) Test needing 2 successes, or the character seeks a way back to sea; failed tests add +1 to all TNs. Repeat every Intelligence hours (+1 TN after a success, +2 after a failure, cumulative failures tracked). Ends after hours at sea equal to the failures; past 24 failures, days at sea."
+    "notes": "After 24 hours on land: Willpower (4) Test needing 2 successes, or the character seeks a way back to sea; failed tests add +1 to all TNs. Repeat every Intelligence hours (+1 TN after a success, +2 after a failure, cumulative failures tracked). Ends after hours at sea equal to the failures; past 24 failures, days at sea.",
+    "citation": {
+      "book": "cp",
+      "page": "143"
+    }
   },
   "effects": [],
   "flags": {

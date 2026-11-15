@@ -36,7 +36,11 @@
     "cost": 1000,
     "availability": "5/48 hrs",
     "streetIndex": 2.5,
-    "notes": "SMG designed for the UCAS Navy SEALs: a sealed firing chamber fed by the diver's scuba tank lets it fire regular ammunition underwater, and a purge valve clears water when changing clips. Caseless ammunition: 1.5 × the brass-cased price, Availability +1. Cyberpirates p.171–172."
+    "notes": "SMG designed for the UCAS Navy SEALs: a sealed firing chamber fed by the diver's scuba tank lets it fire regular ammunition underwater, and a purge valve clears water when changing clips. Caseless ammunition: 1.5 × the brass-cased price, Availability +1. Cyberpirates p.171–172.",
+    "citation": {
+      "book": "cp",
+      "page": "171–172"
+    }
   },
   "effects": [],
   "flags": {

@@ -38,7 +38,11 @@
     "streetIndex": 2,
     "blastType": "smoke",
     "quantity": 1,
-    "notes": "Underwater: spews a black ink cloud of about 5 m radius. Everyone inside takes +4 to all visual tests, cumulative with the underwater vision modifiers. No damage. Cyberpirates p.172."
+    "notes": "Underwater: spews a black ink cloud of about 5 m radius. Everyone inside takes +4 to all visual tests, cumulative with the underwater vision modifiers. No damage. Cyberpirates p.172.",
+    "citation": {
+      "book": "cp",
+      "page": "172"
+    }
   },
   "effects": [],
   "flags": {

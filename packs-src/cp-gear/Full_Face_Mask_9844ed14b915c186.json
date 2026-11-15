@@ -14,7 +14,11 @@
     "cost": 360,
     "availability": "4/24 hours",
     "streetIndex": 1.25,
-    "notes": "Covers eyes, nose and mouth; a quick-release takes a standard breathing regulator, and side plugs take communication systems, voice microphones and other add-ons. Cyberpirates p.173."
+    "notes": "Covers eyes, nose and mouth; a quick-release takes a standard breathing regulator, and side plugs take communication systems, voice microphones and other add-ons. Cyberpirates p.173.",
+    "citation": {
+      "book": "cp",
+      "page": "173"
+    }
   },
   "effects": [],
   "flags": {

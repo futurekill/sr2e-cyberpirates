@@ -36,7 +36,11 @@
     "cost": 40,
     "availability": "1/14 hrs",
     "streetIndex": 1,
-    "notes": "An overgrown slingshot strung between two anchor points on a vessel, with at least a two-meter draw; the pouch holds anything under a kilogram (rocks, grenades, water balloons). Damage is the hurled item's. Range is an aerodynamic grenade's (Grenade Range Table, core p.96) and it scatters the same way (core p.97) — resolve by hand. Projectile Weapons. Cyberpirates p.171."
+    "notes": "An overgrown slingshot strung between two anchor points on a vessel, with at least a two-meter draw; the pouch holds anything under a kilogram (rocks, grenades, water balloons). Damage is the hurled item's. Range is an aerodynamic grenade's (Grenade Range Table, core p.96) and it scatters the same way (core p.97) — resolve by hand. Projectile Weapons. Cyberpirates p.171.",
+    "citation": {
+      "book": "cp",
+      "page": "171"
+    }
   },
   "effects": [],
   "flags": {

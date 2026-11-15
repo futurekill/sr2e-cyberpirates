@@ -8,7 +8,11 @@
     "category": "physical",
     "pointValue": 1,
     "source": "Cyberpirates",
-    "notes": "1 point per improvement: hold breath underwater +20 seconds; swimming distance +0.1 to the multiplier; swimming fatigue +1 (normally Body ÷ 2); treading water +1 minute between tests and −1 to its Damage Resistance TN; floating −1 to Buoyancy and Treading Water tests (not damage resistance) and +1 Body for how long the character can float."
+    "notes": "1 point per improvement: hold breath underwater +20 seconds; swimming distance +0.1 to the multiplier; swimming fatigue +1 (normally Body ÷ 2); treading water +1 minute between tests and −1 to its Damage Resistance TN; floating −1 to Buoyancy and Treading Water tests (not damage resistance) and +1 Body for how long the character can float.",
+    "citation": {
+      "book": "cp",
+      "page": "144"
+    }
   },
   "effects": [],
   "flags": {

@@ -24,7 +24,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A non-powered Philippine river boat; the statistics apply to any similar small river boat anywhere. It can be fitted with sails or an outboard motor.</p><ul><li>Sensor —. Entry: open. Fuel: sail. Economy: NA.</li><li>If rowed instead: Speed = the rowers' combined Strength ÷ 2, Acceleration always 1; rowing is a Complex Action.</li></ul>"
+    "notes": "<p>A non-powered Philippine river boat; the statistics apply to any similar small river boat anywhere. It can be fitted with sails or an outboard motor.</p><ul><li>Sensor —. Entry: open. Fuel: sail. Economy: NA.</li><li>If rowed instead: Speed = the rowers' combined Strength ÷ 2, Acceleration always 1; rowing is a Complex Action.</li></ul>",
+    "citation": {
+      "book": "cp",
+      "page": "175"
+    }
   },
   "items": [],
   "effects": [],

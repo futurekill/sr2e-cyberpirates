@@ -14,7 +14,11 @@
     "cost": 62000,
     "availability": "8/2 weeks",
     "streetIndex": 3,
-    "notes": "Transducer and radio transmitter that turn thoughts into words and send and receive them unspoken, with no outward sign. Quadruples the words available as a Free Action (core p.81). Listed with the LBA. Cyberpirates p.174."
+    "notes": "Transducer and radio transmitter that turn thoughts into words and send and receive them unspoken, with no outward sign. Quadruples the words available as a Free Action (core p.81). Listed with the LBA. Cyberpirates p.174.",
+    "citation": {
+      "book": "cp",
+      "page": "174"
+    }
   },
   "effects": [],
   "flags": {

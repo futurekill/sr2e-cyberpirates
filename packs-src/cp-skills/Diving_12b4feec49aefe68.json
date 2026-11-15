@@ -16,7 +16,11 @@
       "rating": 0
     },
     "isMagical": false,
-    "notes": "Active Skill covering all underwater diving: safe diving times, oxygen-nitrogen-helium mixtures, surface intervals between dives, and using diving gear (it may come into play when equipment fails). Defaults to Intelligence, six dots (+12 default) — apply by hand. Concentrations: Deep-water Diving (JIM, LBA), Mixed-gas Diving."
+    "notes": "Active Skill covering all underwater diving: safe diving times, oxygen-nitrogen-helium mixtures, surface intervals between dives, and using diving gear (it may come into play when equipment fails). Defaults to Intelligence, six dots (+12 default) — apply by hand. Concentrations: Deep-water Diving (JIM, LBA), Mixed-gas Diving.",
+    "citation": {
+      "book": "cp",
+      "page": "144"
+    }
   },
   "effects": [],
   "flags": {

@@ -24,7 +24,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A two-person submarine for underwater exploration, retrieval and rescue, working down to 900 m on 50 man-hours of independent air. Swivel-mount lamps and an extendible claw (a poor weapon, but it loads the isolated cargo hold underwater).</p><ul><li>Signature 6/7: Sonar Signature 7. Sonar 1. Depth: 900 meters.</li><li>Entry: 1 hatch. Fuel: diesel/electric (300 liters/250 PF). Economy: 1 km/liter; 1 km/PF.</li><li>Other: enviroseal (water and engine), life support (10 man-hours), mechanical claw arm (Strength 16).</li><li>The claw follows the mechanical arm rules (Rigger 2 p.34), but the operator takes +3 on all Success Tests for its clumsy design.</li></ul>"
+    "notes": "<p>A two-person submarine for underwater exploration, retrieval and rescue, working down to 900 m on 50 man-hours of independent air. Swivel-mount lamps and an extendible claw (a poor weapon, but it loads the isolated cargo hold underwater).</p><ul><li>Signature 6/7: Sonar Signature 7. Sonar 1. Depth: 900 meters.</li><li>Entry: 1 hatch. Fuel: diesel/electric (300 liters/250 PF). Economy: 1 km/liter; 1 km/PF.</li><li>Other: enviroseal (water and engine), life support (10 man-hours), mechanical claw arm (Strength 16).</li><li>The claw follows the mechanical arm rules (Rigger 2 p.34), but the operator takes +3 on all Success Tests for its clumsy design.</li></ul>",
+    "citation": {
+      "book": "r2",
+      "page": "34"
+    }
   },
   "items": [],
   "effects": [],

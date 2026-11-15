@@ -36,7 +36,11 @@
     "cost": 50,
     "availability": "3/24 hrs",
     "streetIndex": 1,
-    "notes": "Statistics of the Staff (core p.254; sr2e.weapons 4caa88d2088bac75, sr2e 0.121.0), except the damage is Physical. Thrust point damage is (Str+4)L — choose it by hand. Cyberpirates p.170."
+    "notes": "Statistics of the Staff (core p.254; sr2e.weapons 4caa88d2088bac75, sr2e 0.121.0), except the damage is Physical. Thrust point damage is (Str+4)L — choose it by hand. Cyberpirates p.170.",
+    "citation": {
+      "book": "cp",
+      "page": "170"
+    }
   },
   "effects": [],
   "flags": {

@@ -14,7 +14,11 @@
     "cost": 3250,
     "availability": "4/12 hours",
     "streetIndex": 1,
-    "notes": "Wraparound face-piece whose jaw filters extract oxygen from water by forced osmosis; no training needed. Pure oxygen: shallow water only (under 7 m) — deeper, the diver risks oxygen toxicity. Cyberpirates p.173."
+    "notes": "Wraparound face-piece whose jaw filters extract oxygen from water by forced osmosis; no training needed. Pure oxygen: shallow water only (under 7 m) — deeper, the diver risks oxygen toxicity. Cyberpirates p.173.",
+    "citation": {
+      "book": "cp",
+      "page": "173"
+    }
   },
   "effects": [],
   "flags": {
