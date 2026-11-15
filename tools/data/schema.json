@@ -1,8 +1,9 @@
 {
- "systemVersion": "0.125.1",
+ "systemVersion": "0.155.0",
  "coreVersion": "13.351",
  "keys": {
   "skill": {
+   "citation": "SchemaField",
    "category": "StringField",
    "linkedAttribute": "StringField",
    "rating": "NumberField",
@@ -17,6 +18,7 @@
    "notes": "StringField"
   },
   "weapon": {
+   "citation": "SchemaField",
    "weaponType": "StringField",
    "skill": "StringField",
    "damageCode": "StringField",
@@ -50,6 +52,7 @@
    "notes": "StringField"
   },
   "armor": {
+   "citation": "SchemaField",
    "ballistic": "NumberField",
    "impact": "NumberField",
    "concealability": "NumberField",
@@ -64,6 +67,7 @@
    "notes": "StringField"
   },
   "spell": {
+   "citation": "SchemaField",
    "category": "StringField",
    "subcategory": "StringField",
    "type": "StringField",
@@ -89,6 +93,7 @@
    "notes": "StringField"
   },
   "cyberware": {
+   "citation": "SchemaField",
    "location": "StringField",
    "grade": "StringField",
    "secondhand": "BooleanField",
@@ -120,6 +125,7 @@
    "reach": "NumberField",
    "combatTnMod": "NumberField",
    "isVcr": "BooleanField",
+   "reflexTrigger": "BooleanField",
    "isTacticalComputer": "BooleanField",
    "unarmedPowerBonus": "NumberField",
    "noReactionBonus": "BooleanField",
@@ -142,6 +148,7 @@
    "notes": "StringField"
   },
   "bioware": {
+   "citation": "SchemaField",
    "bodySystem": "StringField",
    "grade": "StringField",
    "secondhandDiscount": "NumberField",
@@ -169,6 +176,7 @@
    "notes": "StringField"
   },
   "gear": {
+   "citation": "SchemaField",
    "category": "StringField",
    "rating": "NumberField",
    "quantity": "NumberField",
@@ -199,6 +207,7 @@
    "notes": "StringField"
   },
   "program": {
+   "citation": "SchemaField",
    "category": "StringField",
    "rating": "NumberField",
    "size": "NumberField",
@@ -210,9 +219,16 @@
    "crashed": "BooleanField",
    "offense": "StringField",
    "damageLevel": "StringField",
+   "options": "ArrayField",
+   "manufacturer": "StringField",
+   "frameCore": "SchemaField",
+   "commandSet": "BooleanField",
+   "csSize": "NumberField",
+   "objectCodeOnly": "BooleanField",
    "notes": "StringField"
   },
   "adept_power": {
+   "citation": "SchemaField",
    "pointCost": "NumberField",
    "level": "NumberField",
    "maxLevel": "NumberField",
@@ -222,6 +238,7 @@
    "notes": "StringField"
   },
   "contact": {
+   "citation": "SchemaField",
    "contactType": "StringField",
    "archetype": "StringField",
    "loyalty": "NumberField",
@@ -230,6 +247,7 @@
    "notes": "StringField"
   },
   "lifestyle": {
+   "citation": "SchemaField",
    "level": "StringField",
    "monthlyCost": "NumberField",
    "monthsPaid": "NumberField",
@@ -237,6 +255,7 @@
    "notes": "StringField"
   },
   "ammo": {
+   "citation": "SchemaField",
    "ammoType": "StringField",
    "quantity": "NumberField",
    "streetIndex": "NumberField",
@@ -246,9 +265,11 @@
    "armorCalc": "StringField",
    "cost": "NumberField",
    "material": "StringField",
+   "guided": "SchemaField",
    "notes": "StringField"
   },
   "focus": {
+   "citation": "SchemaField",
    "focusType": "StringField",
    "force": "NumberField",
    "bondingCost": "NumberField",
@@ -264,6 +285,7 @@
    "notes": "StringField"
   },
   "vehicle_mod": {
+   "citation": "SchemaField",
    "modType": "StringField",
    "rating": "NumberField",
    "cost": "NumberField",
@@ -276,10 +298,24 @@
    "loadReduction": "NumberField",
    "loadPerLevel": "NumberField",
    "loadTable": "ArrayField",
+   "dpFormula": "StringField",
+   "cfFormula": "StringField",
+   "loadFormula": "StringField",
+   "designable": "BooleanField",
+   "designNuyen": "BooleanField",
+   "mountPoints": "NumberField",
+   "maxRating": "StringField",
+   "effects": "ObjectField",
+   "components": "ObjectField",
+   "stack": "StringField",
+   "custom": "SchemaField",
+   "restrictions": "ArrayField",
+   "modKey": "StringField",
    "installed": "BooleanField",
    "notes": "StringField"
   },
   "race": {
+   "citation": "SchemaField",
    "raceKey": "StringField",
    "species": "StringField",
    "attributeMods": "SchemaField",
@@ -289,18 +325,21 @@
    "description": "HTMLField"
   },
   "tradition": {
+   "citation": "SchemaField",
    "magicType": "StringField",
    "tradition": "StringField",
    "skill": "StringField",
    "description": "HTMLField"
   },
   "quality": {
+   "citation": "SchemaField",
    "kind": "StringField",
    "category": "StringField",
    "pointValue": "NumberField",
    "attribute": "StringField",
    "attributeBonus": "NumberField",
    "maximumBonus": "NumberField",
+   "rule": "StringField",
    "source": "StringField",
    "notes": "HTMLField"
   },
@@ -336,11 +375,16 @@
    "tacticalComputer": "NumberField",
    "activeSkillDice": "NumberField",
    "rigging": "BooleanField",
+   "vcrOff": "BooleanField",
+   "deckerJack": "BooleanField",
+   "usingSimsense": "BooleanField",
    "astralState": "StringField",
    "matrixMode": "BooleanField",
+   "matrixIcon": "FilePathField",
    "dumpShock": "BooleanField",
    "combatRecoil": "NumberField",
    "linkedVehicles": "ArrayField",
+   "controlledVehicles": "ArrayField",
    "boundSpirits": "ArrayField"
   },
   "npc": {
@@ -371,7 +415,9 @@
    "movement": "SchemaField"
   },
   "vehicle": {
+   "citation": "SchemaField",
    "vehicleType": "StringField",
+   "r2Class": "StringField",
    "skill": "StringField",
    "handling": "NumberField",
    "speed": "NumberField",
@@ -381,6 +427,8 @@
    "signature": "NumberField",
    "pilot": "NumberField",
    "sensor": "NumberField",
+   "sensorInstalled": "BooleanField",
+   "stress": "NumberField",
    "cargo": "NumberField",
    "load": "NumberField",
    "seating": "StringField",
@@ -389,7 +437,27 @@
    "conditionMonitor": "SchemaField",
    "autonav": "NumberField",
    "notes": "HTMLField",
-   "design": "SchemaField"
+   "design": "SchemaField",
+   "handlingOffRoad": "NumberField",
+   "plantCost": "NumberField",
+   "tires": "StringField",
+   "stallSpeed": "NumberField",
+   "economy": "NumberField",
+   "economyUnit": "StringField",
+   "economyIdle": "StringField",
+   "fuelType": "StringField",
+   "fuelSize": "NumberField",
+   "fuelLevel": "NumberField",
+   "fuelUnit": "StringField",
+   "entryPoints": "StringField",
+   "ltProfile": "StringField",
+   "setupTime": "StringField",
+   "otherFeatures": "StringField",
+   "seatingExtra": "NumberField",
+   "designPointValue": "NumberField",
+   "streetIndex": "NumberField",
+   "learningPool": "SchemaField",
+   "threatRating": "NumberField"
   },
   "spirit": {
    "spiritType": "StringField",
@@ -445,17 +513,49 @@
    "protects": "StringField",
    "defense": "StringField",
    "armorDefense": "BooleanField",
-   "generation": "NumberField"
+   "generation": "NumberField",
+   "expert": "NumberField",
+   "cascading": "BooleanField",
+   "cascadeEpoch": "NumberField",
+   "party": "SchemaField",
+   "construct": "SchemaField"
   },
   "host": {
    "securityCode": "StringField",
    "systemRating": "NumberField",
+   "manufacturer": "StringField",
    "attempts": "NumberField",
    "alert": "StringField",
    "subsystems": "SchemaField",
    "securityValueOverride": "NumberField",
+   "kind": "StringField",
+   "grid": "DocumentUUIDField",
+   "links": "ArrayField",
+   "entryPoints": "ArrayField",
+   "unlisted": "BooleanField",
+   "ratingShift": "NumberField",
+   "hubSubsystem": "StringField",
    "probe": "NumberField",
    "sheaf": "ArrayField",
+   "notes": "HTMLField"
+  },
+  "frame": {
+   "kind": "StringField",
+   "nativeHostUuid": "StringField",
+   "pool": "NumberField",
+   "coreRating": "NumberField",
+   "bod": "NumberField",
+   "evasion": "NumberField",
+   "masking": "NumberField",
+   "sensor": "NumberField",
+   "initPoints": "NumberField",
+   "dinab": "NumberField",
+   "ownerUuid": "StringField",
+   "coreUuid": "StringField",
+   "uploadId": "StringField",
+   "hostUuid": "StringField",
+   "conn": "NumberField",
+   "sessionId": "StringField",
    "notes": "HTMLField"
   }
  }
