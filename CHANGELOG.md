@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+
+### Added
+- **Citations**: every catalog item (and vehicle) records the page it's printed on (`system.citation`), shown as a badge on its sheet (needs sr2e 0.156.0+). `npm run validate` now fails an entry without one.
+
 ## 0.5.1 — 2026-10-29
 - **The pugot has its hog form.** No book prints mundane hog stats, so it uses the core book's
   Large dog (p.233) as the animal's base, by GM choice. With the pugot's +1 Body, +1 Strength and
