@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 0.6.0 — 2026-11-15
+
+Requires sr2e 0.156.0 (citations).
 
 
 ### Added
