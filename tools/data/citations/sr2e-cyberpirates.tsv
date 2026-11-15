@@ -1,11 +1,11 @@
-name	_id	book	page	checked
-Braggart	1258fa4a0e011983	cp	142	render (printed folio, 72 dpi)
-Connected	ca097e4e850955b5	cp	142	render (printed folio, 72 dpi)
-Liar	fd79c4cdec8ca715	cp	143	render (printed folio, 72 dpi)
-Natural Immunity (Cyberpirates)	c076a957272eb9b0	cp	143	render (printed folio, 72 dpi)
-Pirate Family	fa299c77e7806f1f	cp	143	render (printed folio, 72 dpi)
-Sea Legs	f95c736b9cf5d90f	cp	143	render (printed folio, 72 dpi)
-Sea Madness	61a6a085b6e0cec1	cp	143	render (printed folio, 72 dpi)
-Water Sprite	8ab46ae201e4ab6f	cp	144	render (printed folio, 72 dpi)
-Diving	12b4feec49aefe68	cp	144	render (printed folio, 72 dpi)
-Ship	cb0b41167b2ca8e0	cp	144	render (printed folio, 72 dpi)
+name	_id	book	page	checked	status
+Braggart	1258fa4a0e011983	cp	142	render (printed folio, 72 dpi)	cited
+Connected	ca097e4e850955b5	cp	142	render (printed folio, 72 dpi)	cited
+Liar	fd79c4cdec8ca715	cp	143	render (printed folio, 72 dpi)	cited
+Natural Immunity (Cyberpirates)	c076a957272eb9b0	cp	143	render (printed folio, 72 dpi)	cited
+Pirate Family	fa299c77e7806f1f	cp	143	render (printed folio, 72 dpi)	cited
+Sea Legs	f95c736b9cf5d90f	cp	143	render (printed folio, 72 dpi)	cited
+Sea Madness	61a6a085b6e0cec1	cp	143	render (printed folio, 72 dpi)	cited
+Water Sprite	8ab46ae201e4ab6f	cp	144	render (printed folio, 72 dpi)	cited
+Diving	12b4feec49aefe68	cp	144	render (printed folio, 72 dpi)	cited
+Ship	cb0b41167b2ca8e0	cp	144	render (printed folio, 72 dpi)	cited
